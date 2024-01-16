@@ -1,1 +1,0 @@
-/home/jetson/projects/robot_ws/src/vision/setup.py
