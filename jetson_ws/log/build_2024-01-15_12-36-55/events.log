@@ -1,0 +1,130 @@
+[0.000000] (-) TimerEvent: {}
+[0.000472] (central) JobQueued: {'identifier': 'central', 'dependencies': OrderedDict()}
+[0.000639] (vision) JobQueued: {'identifier': 'vision', 'dependencies': OrderedDict()}
+[0.001476] (central) JobStarted: {'identifier': 'central'}
+[0.098369] (-) TimerEvent: {}
+[0.104617] (vision) JobStarted: {'identifier': 'vision'}
+[0.198527] (-) TimerEvent: {}
+[0.299655] (-) TimerEvent: {}
+[0.400610] (-) TimerEvent: {}
+[0.501341] (-) TimerEvent: {}
+[0.602113] (-) TimerEvent: {}
+[0.704284] (-) TimerEvent: {}
+[0.804934] (-) TimerEvent: {}
+[0.905593] (-) TimerEvent: {}
+[1.006285] (-) TimerEvent: {}
+[1.106935] (-) TimerEvent: {}
+[1.207649] (-) TimerEvent: {}
+[1.308385] (-) TimerEvent: {}
+[1.409753] (-) TimerEvent: {}
+[1.510467] (-) TimerEvent: {}
+[1.611277] (-) TimerEvent: {}
+[1.712159] (-) TimerEvent: {}
+[1.812782] (-) TimerEvent: {}
+[1.913398] (-) TimerEvent: {}
+[2.014143] (-) TimerEvent: {}
+[2.114763] (-) TimerEvent: {}
+[2.215391] (-) TimerEvent: {}
+[2.316024] (-) TimerEvent: {}
+[2.416898] (-) TimerEvent: {}
+[2.517591] (-) TimerEvent: {}
+[2.618332] (-) TimerEvent: {}
+[2.719004] (-) TimerEvent: {}
+[2.819803] (-) TimerEvent: {}
+[2.920569] (-) TimerEvent: {}
+[3.021549] (-) TimerEvent: {}
+[3.122454] (-) TimerEvent: {}
+[3.223083] (-) TimerEvent: {}
+[3.323793] (-) TimerEvent: {}
+[3.424468] (-) TimerEvent: {}
+[3.525221] (-) TimerEvent: {}
+[3.625933] (-) TimerEvent: {}
+[3.726579] (-) TimerEvent: {}
+[3.827605] (-) TimerEvent: {}
+[3.928334] (-) TimerEvent: {}
+[4.029064] (-) TimerEvent: {}
+[4.129749] (-) TimerEvent: {}
+[4.230497] (-) TimerEvent: {}
+[4.331215] (-) TimerEvent: {}
+[4.431870] (-) TimerEvent: {}
+[4.532504] (-) TimerEvent: {}
+[4.633166] (-) TimerEvent: {}
+[4.733919] (-) TimerEvent: {}
+[4.834611] (-) TimerEvent: {}
+[4.935235] (-) TimerEvent: {}
+[5.035977] (-) TimerEvent: {}
+[5.136832] (central) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/jetson/PycharmProjects/boat_litter_collection/robot_ws/build/central/build', '--no-deps', 'install_data'], 'cwd': '/home/jetson/PycharmProjects/boat_litter_collection/robot_ws/build/central', 'env': {'JETSON_BOARD': 'P3449-0000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'JETSON_TYPE': 'Nano (Developer Kit Version)', 'USER': 'jetson', 'LC_TIME': 'nl_NL.UTF-8', 'JETSON_CUDA': '10.2.300', 'SSH_AGENT_PID': '7489', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda/lib64:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson/PycharmProjects/boat_litter_collection', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_TENSORRT': '8.0.1.6', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'nl_NL.UTF-8', 'MANAGERPID': '7073', 'JETSON_OPENCV_CUDA': 'YES', 'JETSON_VISIONWORKS': '1.6.0.501', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=c6ce97198ff79c74fd13f4ec65a4e2a9', 'COLORTERM': 'truecolor', 'JETSON_CHIP_ID': '33', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/jetson/PycharmProjects/boat_litter_collection/robot_ws/install:/home/jetson/projects/robot_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'P3448-0000', 'JETSON_SERIAL_NUMBER': '1420623040592', 'JETSON_CUDNN': '8.2.1.32', 'JOURNAL_STREAM': '8:38043', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'porg', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'jetson', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/usr/local/cuda/bin:/opt/ros/foxy/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/nano:@/tmp/.ICE-unix/7525,unix/nano:/tmp/.ICE-unix/7525', 'INVOCATION_ID': '28439e426253458aa506497ddde31fe9', 'JETSON_OPENCV': '4.6.0', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'nl_NL.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f03c839f_453a_4324_a32a_67a1ea3c1348', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ZEITGEIST_DATA_PATH': '/home/jetson/.local/share/zeitgeist', 'DISPLAY': ':0', 'JETSON_MACHINE': 'NVIDIA Jetson Nano (Developer Kit Version)', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'JETSON_L4T_REVISION': '6.1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'GNOME_TERMINAL_SERVICE': ':1.116', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/jetson/PycharmProjects/boat_litter_collection/robot_ws/install/vision:/home/jetson/projects/robot_ws/install/vision:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': '3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_L4T_RELEASE': '32', 'JETSON_VULKAN_INFO': '1.2.141', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/PycharmProjects/boat_litter_collection/robot_ws/build/central', 'CUDA_HOME': '/usr/local/cuda', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=c6ce97198ff79c74fd13f4ec65a4e2a9', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'JETSON_VPI': 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library', 'PYTHONPATH': '/home/jetson/PycharmProjects/boat_litter_collection/robot_ws/build/central/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/robot_ws/install/central/lib/python3.8/site-packages:/home/jetson/PycharmProjects/boat_litter_collection/robot_ws/install/vision/lib/python3.8/site-packages:/home/jetson/projects/robot_ws/build/vision:/home/jetson/projects/robot_ws/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'JETSON_JETPACK': '4.6'}, 'shell': False}
+[5.141381] (-) TimerEvent: {}
+[5.183252] (vision) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/jetson/PycharmProjects/boat_litter_collection/robot_ws/build/vision/build', '--no-deps', 'install_data'], 'cwd': '/home/jetson/PycharmProjects/boat_litter_collection/robot_ws/build/vision', 'env': {'JETSON_BOARD': 'P3449-0000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'JETSON_TYPE': 'Nano (Developer Kit Version)', 'USER': 'jetson', 'LC_TIME': 'nl_NL.UTF-8', 'JETSON_CUDA': '10.2.300', 'SSH_AGENT_PID': '7489', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda/lib64:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson/PycharmProjects/boat_litter_collection', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_TENSORRT': '8.0.1.6', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'nl_NL.UTF-8', 'MANAGERPID': '7073', 'JETSON_OPENCV_CUDA': 'YES', 'JETSON_VISIONWORKS': '1.6.0.501', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=c6ce97198ff79c74fd13f4ec65a4e2a9', 'COLORTERM': 'truecolor', 'JETSON_CHIP_ID': '33', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/jetson/PycharmProjects/boat_litter_collection/robot_ws/install:/home/jetson/projects/robot_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'P3448-0000', 'JETSON_SERIAL_NUMBER': '1420623040592', 'JETSON_CUDNN': '8.2.1.32', 'JOURNAL_STREAM': '8:38043', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'porg', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'jetson', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/usr/local/cuda/bin:/opt/ros/foxy/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/nano:@/tmp/.ICE-unix/7525,unix/nano:/tmp/.ICE-unix/7525', 'INVOCATION_ID': '28439e426253458aa506497ddde31fe9', 'JETSON_OPENCV': '4.6.0', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'nl_NL.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f03c839f_453a_4324_a32a_67a1ea3c1348', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ZEITGEIST_DATA_PATH': '/home/jetson/.local/share/zeitgeist', 'DISPLAY': ':0', 'JETSON_MACHINE': 'NVIDIA Jetson Nano (Developer Kit Version)', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'JETSON_L4T_REVISION': '6.1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'GNOME_TERMINAL_SERVICE': ':1.116', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/jetson/PycharmProjects/boat_litter_collection/robot_ws/install/vision:/home/jetson/projects/robot_ws/install/vision:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': '3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_L4T_RELEASE': '32', 'JETSON_VULKAN_INFO': '1.2.141', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/PycharmProjects/boat_litter_collection/robot_ws/build/vision', 'CUDA_HOME': '/usr/local/cuda', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=c6ce97198ff79c74fd13f4ec65a4e2a9', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'JETSON_VPI': 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library', 'PYTHONPATH': '/home/jetson/PycharmProjects/boat_litter_collection/robot_ws/build/vision/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/robot_ws/install/vision/lib/python3.8/site-packages:/home/jetson/PycharmProjects/boat_litter_collection/robot_ws/install/vision/lib/python3.8/site-packages:/home/jetson/projects/robot_ws/build/vision:/home/jetson/projects/robot_ws/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'JETSON_JETPACK': '4.6'}, 'shell': False}
+[5.241615] (-) TimerEvent: {}
+[5.342616] (-) TimerEvent: {}
+[5.443735] (-) TimerEvent: {}
+[5.544885] (-) TimerEvent: {}
+[5.645532] (-) TimerEvent: {}
+[5.746207] (-) TimerEvent: {}
+[5.848697] (-) TimerEvent: {}
+[5.949344] (-) TimerEvent: {}
+[6.050142] (-) TimerEvent: {}
+[6.150760] (-) TimerEvent: {}
+[6.251428] (-) TimerEvent: {}
+[6.352089] (-) TimerEvent: {}
+[6.355064] (central) StderrLine: {'line': b"/usr/local/lib/python3.8/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[6.355731] (central) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.376622] (vision) StderrLine: {'line': b"/usr/local/lib/python3.8/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[6.377286] (vision) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.452293] (-) TimerEvent: {}
+[6.553065] (-) TimerEvent: {}
+[6.570612] (central) StdoutLine: {'line': b'running develop\n'}
+[6.590717] (vision) StdoutLine: {'line': b'running develop\n'}
+[6.653228] (-) TimerEvent: {}
+[6.753977] (-) TimerEvent: {}
+[6.854624] (-) TimerEvent: {}
+[6.955266] (-) TimerEvent: {}
+[7.055910] (-) TimerEvent: {}
+[7.156662] (-) TimerEvent: {}
+[7.257519] (-) TimerEvent: {}
+[7.358612] (-) TimerEvent: {}
+[7.395485] (central) StdoutLine: {'line': b'running egg_info\n'}
+[7.396149] (central) StdoutLine: {'line': b'creating central.egg-info\n'}
+[7.396847] (central) StdoutLine: {'line': b'writing central.egg-info/PKG-INFO\n'}
+[7.397512] (central) StdoutLine: {'line': b'writing dependency_links to central.egg-info/dependency_links.txt\n'}
+[7.398583] (central) StdoutLine: {'line': b'writing entry points to central.egg-info/entry_points.txt\n'}
+[7.400367] (central) StdoutLine: {'line': b'writing requirements to central.egg-info/requires.txt\n'}
+[7.400737] (central) StdoutLine: {'line': b'writing top-level names to central.egg-info/top_level.txt\n'}
+[7.412128] (central) StdoutLine: {'line': b"writing manifest file 'central.egg-info/SOURCES.txt'\n"}
+[7.414233] (vision) StdoutLine: {'line': b'running egg_info\n'}
+[7.414901] (vision) StdoutLine: {'line': b'writing vision.egg-info/PKG-INFO\n'}
+[7.416917] (vision) StdoutLine: {'line': b'writing dependency_links to vision.egg-info/dependency_links.txt\n'}
+[7.417579] (vision) StdoutLine: {'line': b'writing entry points to vision.egg-info/entry_points.txt\n'}
+[7.418363] (vision) StdoutLine: {'line': b'writing requirements to vision.egg-info/requires.txt\n'}
+[7.418961] (vision) StdoutLine: {'line': b'writing top-level names to vision.egg-info/top_level.txt\n'}
+[7.420958] (central) StdoutLine: {'line': b"reading manifest file 'central.egg-info/SOURCES.txt'\n"}
+[7.423660] (central) StdoutLine: {'line': b"writing manifest file 'central.egg-info/SOURCES.txt'\n"}
+[7.431444] (vision) StdoutLine: {'line': b"reading manifest file 'vision.egg-info/SOURCES.txt'\n"}
+[7.434945] (vision) StdoutLine: {'line': b"writing manifest file 'vision.egg-info/SOURCES.txt'\n"}
+[7.458770] (-) TimerEvent: {}
+[7.559714] (-) TimerEvent: {}
+[7.597130] (central) StdoutLine: {'line': b'running build_ext\n'}
+[7.598034] (central) StdoutLine: {'line': b'Creating /home/jetson/PycharmProjects/boat_litter_collection/robot_ws/install/central/lib/python3.8/site-packages/central.egg-link (link to .)\n'}
+[7.602553] (central) StdoutLine: {'line': b'\n'}
+[7.603676] (central) StdoutLine: {'line': b'Installed /home/jetson/PycharmProjects/boat_litter_collection/robot_ws/build/central\n'}
+[7.604485] (central) StdoutLine: {'line': b'running install_data\n'}
+[7.605231] (central) StdoutLine: {'line': b'creating /home/jetson/PycharmProjects/boat_litter_collection/robot_ws/install/central/share/ament_index\n'}
+[7.605796] (central) StdoutLine: {'line': b'creating /home/jetson/PycharmProjects/boat_litter_collection/robot_ws/install/central/share/ament_index/resource_index\n'}
+[7.608205] (central) StdoutLine: {'line': b'creating /home/jetson/PycharmProjects/boat_litter_collection/robot_ws/install/central/share/ament_index/resource_index/packages\n'}
+[7.608954] (central) StdoutLine: {'line': b'copying resource/central -> /home/jetson/PycharmProjects/boat_litter_collection/robot_ws/install/central/share/ament_index/resource_index/packages\n'}
+[7.609661] (central) StdoutLine: {'line': b'copying package.xml -> /home/jetson/PycharmProjects/boat_litter_collection/robot_ws/install/central/share/central\n'}
+[7.612996] (vision) StdoutLine: {'line': b'running build_ext\n'}
+[7.614106] (vision) StdoutLine: {'line': b'Creating /home/jetson/PycharmProjects/boat_litter_collection/robot_ws/install/vision/lib/python3.8/site-packages/vision.egg-link (link to .)\n'}
+[7.616425] (vision) StdoutLine: {'line': b'Installing vision script to /home/jetson/PycharmProjects/boat_litter_collection/robot_ws/install/vision/lib/vision\n'}
+[7.618411] (vision) StdoutLine: {'line': b'\n'}
+[7.619387] (vision) StdoutLine: {'line': b'Installed /home/jetson/PycharmProjects/boat_litter_collection/robot_ws/build/vision\n'}
+[7.619965] (vision) StdoutLine: {'line': b'running install_data\n'}
+[7.659915] (-) TimerEvent: {}
+[7.751436] (central) CommandEnded: {'returncode': 0}
+[7.763961] (-) TimerEvent: {}
+[7.859583] (central) JobEnded: {'identifier': 'central', 'rc': 0}
+[7.872277] (-) TimerEvent: {}
+[7.872706] (vision) CommandEnded: {'returncode': 0}
+[7.935430] (vision) JobEnded: {'identifier': 'vision', 'rc': 0}
+[7.938295] (-) EventReactorShutdown: {}

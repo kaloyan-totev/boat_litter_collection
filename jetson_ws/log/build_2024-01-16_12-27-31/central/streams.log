@@ -1,0 +1,19 @@
+[7.943s] Invoking command in '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/central': PYTHONPATH=/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/central/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/central/build --no-deps install_data
+[9.104s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[9.105s]   warnings.warn(
+[9.312s] running develop
+[10.123s] running egg_info
+[10.125s] writing central.egg-info/PKG-INFO
+[10.125s] writing dependency_links to central.egg-info/dependency_links.txt
+[10.126s] writing entry points to central.egg-info/entry_points.txt
+[10.126s] writing requirements to central.egg-info/requires.txt
+[10.127s] writing top-level names to central.egg-info/top_level.txt
+[10.143s] reading manifest file 'central.egg-info/SOURCES.txt'
+[10.149s] writing manifest file 'central.egg-info/SOURCES.txt'
+[10.320s] running build_ext
+[10.321s] Creating /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central/lib/python3.8/site-packages/central.egg-link (link to .)
+[10.324s] Installing central script to /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central/lib/central
+[10.326s] 
+[10.327s] Installed /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/central
+[10.327s] running install_data
+[10.470s] Invoked command in '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/central' returned '0': PYTHONPATH=/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/central/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/central/build --no-deps install_data
