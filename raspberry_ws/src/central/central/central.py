@@ -15,7 +15,7 @@ class CentralRaspberrySubscriber(Node):
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
-        os.system("nmcli device wifi hotspot ssid ros_network password 12345678")
+        #os.system("nmcli device wifi hotspot ssid ros_network password 12345678")
         
     def listener_callback(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)

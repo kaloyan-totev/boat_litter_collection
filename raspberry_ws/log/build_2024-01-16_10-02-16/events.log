@@ -1,0 +1,106 @@
+[0.000000] (-) TimerEvent: {}
+[0.001588] (central) JobQueued: {'identifier': 'central', 'dependencies': OrderedDict()}
+[0.002226] (central) JobStarted: {'identifier': 'central'}
+[0.098922] (-) TimerEvent: {}
+[0.199842] (-) TimerEvent: {}
+[0.301075] (-) TimerEvent: {}
+[0.402752] (-) TimerEvent: {}
+[0.505645] (-) TimerEvent: {}
+[0.606542] (-) TimerEvent: {}
+[0.707243] (-) TimerEvent: {}
+[0.807951] (-) TimerEvent: {}
+[0.908728] (-) TimerEvent: {}
+[1.009395] (-) TimerEvent: {}
+[1.110249] (-) TimerEvent: {}
+[1.211047] (-) TimerEvent: {}
+[1.311798] (-) TimerEvent: {}
+[1.412591] (-) TimerEvent: {}
+[1.513538] (-) TimerEvent: {}
+[1.614432] (-) TimerEvent: {}
+[1.715110] (-) TimerEvent: {}
+[1.815856] (-) TimerEvent: {}
+[1.916664] (-) TimerEvent: {}
+[2.017784] (-) TimerEvent: {}
+[2.118564] (-) TimerEvent: {}
+[2.219842] (-) TimerEvent: {}
+[2.322594] (-) TimerEvent: {}
+[2.423761] (-) TimerEvent: {}
+[2.525115] (-) TimerEvent: {}
+[2.626248] (-) TimerEvent: {}
+[2.726966] (-) TimerEvent: {}
+[2.827877] (-) TimerEvent: {}
+[2.928621] (-) TimerEvent: {}
+[3.029288] (-) TimerEvent: {}
+[3.129988] (-) TimerEvent: {}
+[3.230666] (-) TimerEvent: {}
+[3.331325] (-) TimerEvent: {}
+[3.432368] (-) TimerEvent: {}
+[3.533104] (-) TimerEvent: {}
+[3.633908] (-) TimerEvent: {}
+[3.735109] (-) TimerEvent: {}
+[3.836338] (-) TimerEvent: {}
+[3.937593] (-) TimerEvent: {}
+[4.038985] (-) TimerEvent: {}
+[4.140206] (-) TimerEvent: {}
+[4.240976] (-) TimerEvent: {}
+[4.341770] (-) TimerEvent: {}
+[4.443260] (-) TimerEvent: {}
+[4.458343] (central) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/build', '--no-deps', 'install_data'], 'cwd': '/home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/build/central', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'QT_SCALE_FACTOR': '1', 'LANGUAGE': 'en_US', 'USER': 'kaloyan', 'XDG_SEAT': 'seat0', 'XDG_SESSION_TYPE': 'x11', 'COMPIZ_CONFIG_PROFILE': 'mate', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib', 'HOME': '/home/kaloyan', 'DESKTOP_SESSION': 'mate', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'UBUNTU_MENUPROXY': '1', 'QT_QPA_PLATFORMTHEME': 'gtk2', 'ROS_DISTRO': 'iron', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'kaloyan', 'WINDOWID': '56631615', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'XDG_SESSION_ID': 'c2', 'INSIDE_CAJA_PYTHON': '', 'PATH': '/opt/ros/iron/bin:/home/kaloyan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/kaloyan-desktop:@/tmp/.ICE-unix/1661,unix/kaloyan-desktop:/tmp/.ICE-unix/1661', 'GDM_LANG': 'en_US', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'MATE', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'mate', 'XAUTHORITY': '/home/kaloyan/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/kaloyan', 'AMENT_PREFIX_PATH': '/opt/ros/iron', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'mate', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'XDG_VTNR': '7', 'PWD': '/home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/build/central', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-mate:/etc/xdg', 'CLUTTER_IM_MODULE': 'ibus', 'XDG_DATA_DIRS': '/usr/share/mate:/usr/share/mate:/usr/share/gnome:/home/kaloyan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/prefix_override:/home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'MATE_DESKTOP_SESSION_ID': 'this-is-deprecated', 'COLCON': '1', 'VTE_VERSION': '6800', 'QT_FONT_DPI': '96'}, 'shell': False}
+[4.543387] (-) TimerEvent: {}
+[4.644076] (-) TimerEvent: {}
+[4.744892] (-) TimerEvent: {}
+[4.845975] (-) TimerEvent: {}
+[4.946763] (-) TimerEvent: {}
+[5.047429] (-) TimerEvent: {}
+[5.148183] (-) TimerEvent: {}
+[5.248958] (-) TimerEvent: {}
+[5.349620] (-) TimerEvent: {}
+[5.450403] (-) TimerEvent: {}
+[5.551344] (-) TimerEvent: {}
+[5.652090] (-) TimerEvent: {}
+[5.722428] (central) StderrLine: {'line': b"/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[5.723338] (central) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.752237] (-) TimerEvent: {}
+[5.844899] (central) StdoutLine: {'line': b'running develop\n'}
+[5.846343] (central) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[5.846990] (central) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.851856] (central) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[5.852440] (-) TimerEvent: {}
+[5.852813] (central) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.952652] (-) TimerEvent: {}
+[6.053534] (-) TimerEvent: {}
+[6.154327] (-) TimerEvent: {}
+[6.255686] (-) TimerEvent: {}
+[6.356987] (-) TimerEvent: {}
+[6.458609] (-) TimerEvent: {}
+[6.560953] (-) TimerEvent: {}
+[6.661782] (-) TimerEvent: {}
+[6.762449] (-) TimerEvent: {}
+[6.863143] (-) TimerEvent: {}
+[6.963844] (-) TimerEvent: {}
+[7.064521] (-) TimerEvent: {}
+[7.165181] (-) TimerEvent: {}
+[7.220193] (central) StdoutLine: {'line': b'running egg_info\n'}
+[7.221135] (central) StdoutLine: {'line': b'writing central.egg-info/PKG-INFO\n'}
+[7.222477] (central) StdoutLine: {'line': b'writing dependency_links to central.egg-info/dependency_links.txt\n'}
+[7.223548] (central) StdoutLine: {'line': b'writing entry points to central.egg-info/entry_points.txt\n'}
+[7.224832] (central) StdoutLine: {'line': b'writing requirements to central.egg-info/requires.txt\n'}
+[7.225974] (central) StdoutLine: {'line': b'writing top-level names to central.egg-info/top_level.txt\n'}
+[7.233829] (central) StdoutLine: {'line': b"reading manifest file 'central.egg-info/SOURCES.txt'\n"}
+[7.236972] (central) StdoutLine: {'line': b"writing manifest file 'central.egg-info/SOURCES.txt'\n"}
+[7.242833] (central) StdoutLine: {'line': b'running build_ext\n'}
+[7.243806] (central) StdoutLine: {'line': b'Creating /home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib/python3.10/site-packages/central.egg-link (link to .)\n'}
+[7.247549] (central) StdoutLine: {'line': b'Installing central script to /home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib/central\n'}
+[7.248917] (central) StdoutLine: {'line': b'\n'}
+[7.249481] (central) StdoutLine: {'line': b'Installed /home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/build/central\n'}
+[7.249962] (central) StdoutLine: {'line': b'running install_data\n'}
+[7.265449] (-) TimerEvent: {}
+[7.366787] (-) TimerEvent: {}
+[7.444432] (central) CommandEnded: {'returncode': 0}
+[7.467061] (-) TimerEvent: {}
+[7.568187] (-) TimerEvent: {}
+[7.672317] (-) TimerEvent: {}
+[7.773339] (-) TimerEvent: {}
+[7.876720] (-) TimerEvent: {}
+[7.896355] (central) JobEnded: {'identifier': 'central', 'rc': 0}
+[7.899419] (-) EventReactorShutdown: {}
