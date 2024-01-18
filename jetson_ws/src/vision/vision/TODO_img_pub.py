@@ -1,0 +1,1 @@
+# TODO: write an image publisher, and send the image to the detecton node 

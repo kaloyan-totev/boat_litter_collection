@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_msgs/msg/StringArray.msg
+// generated code does not contain a copyright notice
+
+#include "custom_msgs/msg/Detections.idl"
+
+module custom_msgs {
+  module msg {
+    struct StringArray {
+      sequence<custom_msgs::msg::Detections> detections;
+    };
+  };
+};

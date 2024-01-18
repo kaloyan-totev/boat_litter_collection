@@ -1,0 +1,249 @@
+[0.000000] (-) TimerEvent: {}
+[0.000837] (-) JobUnselected: {'identifier': 'central'}
+[0.001193] (-) JobUnselected: {'identifier': 'vision'}
+[0.001319] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.001429] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.098219] (-) TimerEvent: {}
+[0.201010] (-) TimerEvent: {}
+[0.301717] (-) TimerEvent: {}
+[0.405436] (-) TimerEvent: {}
+[0.508824] (-) TimerEvent: {}
+[0.617418] (-) TimerEvent: {}
+[0.723650] (-) TimerEvent: {}
+[0.824480] (-) TimerEvent: {}
+[0.928218] (-) TimerEvent: {}
+[0.953239] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.954078] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs', '-DCMAKE_INSTALL_PREFIX=/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/custom_msgs'], 'cwd': '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs', 'env': OrderedDict([('JETSON_BOARD', 'P3449-0000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'Nano (Developer Kit Version)'), ('USER', 'jetson'), ('LC_TIME', 'nl_NL.UTF-8'), ('JETSON_CUDA', '10.2.300'), ('SSH_AGENT_PID', '7658'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/custom_msgs/lib:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/custom_msgs/lib:/usr/local/cuda/lib64:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '8.0.1.6'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '7232'), ('JETSON_OPENCV_CUDA', 'YES'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2a7933a251195709611da15665a8148c'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'P3448-0000'), ('JETSON_SERIAL_NUMBER', '1420623040592'), ('JETSON_CUDNN', '8.2.1.32'), ('JOURNAL_STREAM', '8:35548'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'porg'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'jetson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/opt/ros/foxy/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nano:@/tmp/.ICE-unix/7694,unix/nano:/tmp/.ICE-unix/7694'), ('INVOCATION_ID', '9565e8fd1b7a48afa7df12aefa6e9a4f'), ('JETSON_OPENCV', '4.6.0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0e8a3a8a_3e83_4f65_b761_8620d58ff8ff'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ZEITGEIST_DATA_PATH', '/home/jetson/.local/share/zeitgeist'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson Nano (Developer Kit Version)'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('JETSON_L4T_REVISION', '6.1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/custom_msgs:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/vision:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/vision:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/central:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/custom_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', '3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.141'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2a7933a251195709611da15665a8148c'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/custom_msgs/lib/python3.8/site-packages:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/vision:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/vision/lib/python3.8/site-packages:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/central:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central/lib/python3.8/site-packages:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/build/vision:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/vision/lib/python3.8/site-packages:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/build/central:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/central/lib/python3.8/site-packages:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/custom_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/custom_msgs:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/custom_msgs:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/vision:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/vision:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/central:/opt/ros/foxy')]), 'shell': False}
+[1.028530] (-) TimerEvent: {}
+[1.129390] (-) TimerEvent: {}
+[1.179588] (custom_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 8.4.0\n'}
+[1.229562] (-) TimerEvent: {}
+[1.330237] (-) TimerEvent: {}
+[1.382600] (custom_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 8.4.0\n'}
+[1.401152] (custom_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.430492] (-) TimerEvent: {}
+[1.531128] (-) TimerEvent: {}
+[1.631827] (-) TimerEvent: {}
+[1.657153] (custom_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.660451] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.732085] (-) TimerEvent: {}
+[1.832821] (-) TimerEvent: {}
+[1.916707] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.932988] (-) TimerEvent: {}
+[1.965084] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.966149] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.976522] (custom_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.033173] (-) TimerEvent: {}
+[2.133847] (-) TimerEvent: {}
+[2.234529] (-) TimerEvent: {}
+[2.269871] (custom_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[2.274030] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.334762] (-) TimerEvent: {}
+[2.435431] (-) TimerEvent: {}
+[2.536144] (-) TimerEvent: {}
+[2.567231] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.617264] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.619306] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.631722] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[2.636278] (-) TimerEvent: {}
+[2.736926] (-) TimerEvent: {}
+[2.746827] (custom_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[2.747568] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.837134] (-) TimerEvent: {}
+[2.937798] (-) TimerEvent: {}
+[3.038463] (-) TimerEvent: {}
+[3.139081] (-) TimerEvent: {}
+[3.239712] (-) TimerEvent: {}
+[3.340398] (-) TimerEvent: {}
+[3.441009] (-) TimerEvent: {}
+[3.541660] (-) TimerEvent: {}
+[3.642266] (-) TimerEvent: {}
+[3.742988] (-) TimerEvent: {}
+[3.843641] (-) TimerEvent: {}
+[3.862954] (custom_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[3.943848] (-) TimerEvent: {}
+[4.044451] (-) TimerEvent: {}
+[4.145141] (-) TimerEvent: {}
+[4.205143] (custom_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[4.245357] (-) TimerEvent: {}
+[4.346088] (-) TimerEvent: {}
+[4.369651] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.405702] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[4.446302] (-) TimerEvent: {}
+[4.546976] (-) TimerEvent: {}
+[4.647674] (-) TimerEvent: {}
+[4.748381] (-) TimerEvent: {}
+[4.796406] (custom_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[4.848547] (-) TimerEvent: {}
+[4.913749] (custom_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[4.948721] (-) TimerEvent: {}
+[5.049413] (-) TimerEvent: {}
+[5.150161] (-) TimerEvent: {}
+[5.251006] (-) TimerEvent: {}
+[5.285343] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.351231] (-) TimerEvent: {}
+[5.451952] (-) TimerEvent: {}
+[5.552647] (-) TimerEvent: {}
+[5.653331] (-) TimerEvent: {}
+[5.689453] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[5.753521] (-) TimerEvent: {}
+[5.840784] (custom_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[5.853673] (-) TimerEvent: {}
+[5.954294] (-) TimerEvent: {}
+[6.055067] (-) TimerEvent: {}
+[6.155728] (-) TimerEvent: {}
+[6.256414] (-) TimerEvent: {}
+[6.311425] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[6.356582] (-) TimerEvent: {}
+[6.457277] (-) TimerEvent: {}
+[6.557968] (-) TimerEvent: {}
+[6.658764] (-) TimerEvent: {}
+[6.759501] (-) TimerEvent: {}
+[6.860238] (-) TimerEvent: {}
+[6.960930] (-) TimerEvent: {}
+[7.061608] (-) TimerEvent: {}
+[7.162263] (-) TimerEvent: {}
+[7.188841] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.262517] (-) TimerEvent: {}
+[7.363150] (-) TimerEvent: {}
+[7.463804] (-) TimerEvent: {}
+[7.508880] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.563971] (-) TimerEvent: {}
+[7.622992] (custom_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[7.630891] (custom_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[7.664181] (-) TimerEvent: {}
+[7.751959] (custom_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[7.752831] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[7.753444] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[7.753854] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[7.764330] (-) TimerEvent: {}
+[7.851332] (custom_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[7.864496] (-) TimerEvent: {}
+[7.965182] (-) TimerEvent: {}
+[8.065879] (-) TimerEvent: {}
+[8.153470] (custom_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[8.164924] (custom_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.165983] (-) TimerEvent: {}
+[8.171645] (custom_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.206500] (custom_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.266219] (-) TimerEvent: {}
+[8.366920] (-) TimerEvent: {}
+[8.397774] (custom_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[8.410561] (custom_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs\n'}
+[8.448642] (custom_msgs) CommandEnded: {'returncode': 0}
+[8.451716] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'build'}
+[8.454873] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs', '--', '-j4', '-l4'], 'cwd': '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs', 'env': OrderedDict([('JETSON_BOARD', 'P3449-0000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'Nano (Developer Kit Version)'), ('USER', 'jetson'), ('LC_TIME', 'nl_NL.UTF-8'), ('JETSON_CUDA', '10.2.300'), ('SSH_AGENT_PID', '7658'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/custom_msgs/lib:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/custom_msgs/lib:/usr/local/cuda/lib64:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '8.0.1.6'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '7232'), ('JETSON_OPENCV_CUDA', 'YES'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2a7933a251195709611da15665a8148c'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'P3448-0000'), ('JETSON_SERIAL_NUMBER', '1420623040592'), ('JETSON_CUDNN', '8.2.1.32'), ('JOURNAL_STREAM', '8:35548'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'porg'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'jetson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/opt/ros/foxy/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nano:@/tmp/.ICE-unix/7694,unix/nano:/tmp/.ICE-unix/7694'), ('INVOCATION_ID', '9565e8fd1b7a48afa7df12aefa6e9a4f'), ('JETSON_OPENCV', '4.6.0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0e8a3a8a_3e83_4f65_b761_8620d58ff8ff'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ZEITGEIST_DATA_PATH', '/home/jetson/.local/share/zeitgeist'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson Nano (Developer Kit Version)'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('JETSON_L4T_REVISION', '6.1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/custom_msgs:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/vision:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/vision:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/central:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/custom_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', '3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.141'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2a7933a251195709611da15665a8148c'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/custom_msgs/lib/python3.8/site-packages:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/vision:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/vision/lib/python3.8/site-packages:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/central:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central/lib/python3.8/site-packages:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/build/vision:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/vision/lib/python3.8/site-packages:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/build/central:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/central/lib/python3.8/site-packages:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/custom_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/custom_msgs:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/custom_msgs:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/vision:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/vision:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/install/central:/opt/ros/foxy')]), 'shell': False}
+[8.467122] (-) TimerEvent: {}
+[8.567853] (-) TimerEvent: {}
+[8.623731] (custom_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[8.624628] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__cpp\x1b[0m\n'}
+[8.667875] (custom_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[8.668498] (-) TimerEvent: {}
+[8.769101] (-) TimerEvent: {}
+[8.869779] (-) TimerEvent: {}
+[8.970492] (-) TimerEvent: {}
+[9.071165] (-) TimerEvent: {}
+[9.171825] (-) TimerEvent: {}
+[9.272498] (-) TimerEvent: {}
+[9.373214] (-) TimerEvent: {}
+[9.473881] (-) TimerEvent: {}
+[9.574615] (-) TimerEvent: {}
+[9.675216] (-) TimerEvent: {}
+[9.775874] (-) TimerEvent: {}
+[9.876503] (-) TimerEvent: {}
+[9.977211] (-) TimerEvent: {}
+[10.078132] (-) TimerEvent: {}
+[10.111179] (custom_msgs) StdoutLine: {'line': b'[  5%] Built target custom_msgs__cpp\n'}
+[10.156046] (custom_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.161488] (custom_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.175025] (custom_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[10.178304] (-) TimerEvent: {}
+[10.184606] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__rosidl_generator_c\x1b[0m\n'}
+[10.261688] (custom_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/detections__functions.c.o\x1b[0m\n'}
+[10.278499] (-) TimerEvent: {}
+[10.379196] (-) TimerEvent: {}
+[10.479892] (-) TimerEvent: {}
+[10.505842] (custom_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/string_array__functions.c.o\x1b[0m\n'}
+[10.561758] (custom_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/string_array__functions.h:19\x1b[m\x1b[K,\n'}
+[10.562505] (custom_msgs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/string_array__functions.c:4\x1b[m\x1b[K:\n'}
+[10.563016] (custom_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/string_array__struct.h:22:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcustom_msgs/msg/detail/detection__struct.h: No such file or directory\n'}
+[10.563460] (custom_msgs) StderrLine: {'line': b' #include \x1b[01;31m\x1b[K"custom_msgs/msg/detail/detection__struct.h"\x1b[m\x1b[K\n'}
+[10.563869] (custom_msgs) StderrLine: {'line': b'          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.564210] (custom_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[10.569875] (custom_msgs) StderrLine: {'line': b'make[2]: *** [CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make:153: CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/string_array__functions.c.o] Error 1\n'}
+[10.570578] (custom_msgs) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:353: CMakeFiles/custom_msgs__rosidl_generator_c.dir/all] Error 2\n'}
+[10.570990] (custom_msgs) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[10.580061] (-) TimerEvent: {}
+[10.681029] (-) TimerEvent: {}
+[10.781976] (-) TimerEvent: {}
+[10.882950] (-) TimerEvent: {}
+[10.983904] (-) TimerEvent: {}
+[11.084844] (-) TimerEvent: {}
+[11.186545] (-) TimerEvent: {}
+[11.287505] (-) TimerEvent: {}
+[11.359475] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[11.387686] (-) TimerEvent: {}
+[11.421249] (custom_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/string_array__type_support.cpp.o\x1b[0m\n'}
+[11.432305] (custom_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/detections__type_support.cpp.o\x1b[0m\n'}
+[11.487880] (-) TimerEvent: {}
+[11.582003] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[11.586494] (custom_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_cpp/custom_msgs/msg/string_array__type_support.cpp:7\x1b[m\x1b[K:\n'}
+[11.587477] (custom_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/detail/string_array__struct.hpp:19:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcustom_msgs/msg/detail/detection__struct.hpp: No such file or directory\n'}
+[11.588002] (-) TimerEvent: {}
+[11.588894] (custom_msgs) StderrLine: {'line': b' #include \x1b[01;31m\x1b[K"custom_msgs/msg/detail/detection__struct.hpp"\x1b[m\x1b[K\n'}
+[11.589411] (custom_msgs) StderrLine: {'line': b'          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.589845] (custom_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[11.599636] (custom_msgs) StderrLine: {'line': b'make[2]: *** [CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/build.make:122: CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/string_array__type_support.cpp.o] Error 1\n'}
+[11.601766] (custom_msgs) StderrLine: {'line': b'make[2]: *** Waiting for unfinished jobs....\n'}
+[11.642707] (custom_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/detections__type_support.cpp.o\x1b[0m\n'}
+[11.644592] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[11.652473] (custom_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/string_array__type_support.cpp.o\x1b[0m\n'}
+[11.688199] (-) TimerEvent: {}
+[11.723440] (custom_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/detections__type_support.cpp.o\x1b[0m\n'}
+[11.788390] (-) TimerEvent: {}
+[11.819764] (custom_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/string_array__type_support.cpp:12\x1b[m\x1b[K:\n'}
+[11.820456] (custom_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/detail/string_array__struct.hpp:19:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcustom_msgs/msg/detail/detection__struct.hpp: No such file or directory\n'}
+[11.821040] (custom_msgs) StderrLine: {'line': b' #include \x1b[01;31m\x1b[K"custom_msgs/msg/detail/detection__struct.hpp"\x1b[m\x1b[K\n'}
+[11.821718] (custom_msgs) StderrLine: {'line': b'          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.822436] (custom_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[11.828145] (custom_msgs) StderrLine: {'line': b'make[2]: *** [CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:130: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/string_array__type_support.cpp.o] Error 1\n'}
+[11.830860] (custom_msgs) StderrLine: {'line': b'make[2]: *** Waiting for unfinished jobs....\n'}
+[11.888580] (-) TimerEvent: {}
+[11.911126] (custom_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/string_array__type_support.cpp.o\x1b[0m\n'}
+[11.988766] (-) TimerEvent: {}
+[12.089518] (-) TimerEvent: {}
+[12.126547] (custom_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/string_array__rosidl_typesupport_fastrtps_cpp.hpp:11\x1b[m\x1b[K,\n'}
+[12.127566] (custom_msgs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/string_array__type_support.cpp:4\x1b[m\x1b[K:\n'}
+[12.129148] (custom_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/detail/string_array__struct.hpp:19:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcustom_msgs/msg/detail/detection__struct.hpp: No such file or directory\n'}
+[12.130093] (custom_msgs) StderrLine: {'line': b' #include \x1b[01;31m\x1b[K"custom_msgs/msg/detail/detection__struct.hpp"\x1b[m\x1b[K\n'}
+[12.130986] (custom_msgs) StderrLine: {'line': b'          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.131891] (custom_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[12.142522] (custom_msgs) StderrLine: {'line': b'make[2]: *** [CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:130: CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/string_array__type_support.cpp.o] Error 1\n'}
+[12.143255] (custom_msgs) StderrLine: {'line': b'make[2]: *** Waiting for unfinished jobs....\n'}
+[12.190546] (-) TimerEvent: {}
+[12.306665] (-) TimerEvent: {}
+[12.407398] (-) TimerEvent: {}
+[12.467480] (custom_msgs) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:526: CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/all] Error 2\n'}
+[12.507588] (-) TimerEvent: {}
+[12.608282] (-) TimerEvent: {}
+[12.709061] (-) TimerEvent: {}
+[12.712585] (custom_msgs) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:499: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/all] Error 2\n'}
+[12.809288] (-) TimerEvent: {}
+[12.910009] (-) TimerEvent: {}
+[13.010772] (-) TimerEvent: {}
+[13.111421] (-) TimerEvent: {}
+[13.200415] (custom_msgs) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:272: CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2\n'}
+[13.201184] (custom_msgs) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[13.207791] (custom_msgs) CommandEnded: {'returncode': 2}
+[13.213703] (-) TimerEvent: {}
+[13.315588] (-) TimerEvent: {}
+[13.416232] (-) TimerEvent: {}
+[13.518201] (-) TimerEvent: {}
+[13.619626] (-) TimerEvent: {}
+[13.720325] (-) TimerEvent: {}
+[13.821939] (-) TimerEvent: {}
+[13.929613] (-) TimerEvent: {}
+[14.035855] (-) TimerEvent: {}
+[14.138699] (-) TimerEvent: {}
+[14.196813] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 2}
+[14.208880] (-) EventReactorShutdown: {}

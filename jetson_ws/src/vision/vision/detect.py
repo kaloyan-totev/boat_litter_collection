@@ -1,10 +1,13 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String
+from custom_msgs.msg import StringArray
+from custom_msgs.msg import Detections
 
 from ultralytics import YOLO
 import cv2
+import numpy as np
 
+from array import array
 import json
 
 # DTO class to send to raspberry
@@ -27,7 +30,7 @@ class DetectionPublisher(Node):
     def __init__(self):
 
         super().__init__('vision_detections') # name of the node
-        self.publisher_ = self.create_publisher(String, 'detections', 10) # initializing publisher with a name 'detections' of type string
+        self.publisher_ = self.create_publisher(StringArray, 'detections', 10) # initializing publisher with a name 'detections' of type string
         timer_period = 0.5  # seconds between message published
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
@@ -38,7 +41,7 @@ class DetectionPublisher(Node):
         self.cap = cv2.VideoCapture(video_path)
         self.ret = True
         
-        self.msg = String()
+        self.msg = StringArray()
         self.items = [] # holding the current detected objects
 
     def timer_callback(self):
@@ -51,6 +54,7 @@ class DetectionPublisher(Node):
             for r in results:
                 left_item_counter = 0
                 right_item_counter = 0
+                self.items.clear()
                 
                 boxes = r.boxes
 
@@ -79,8 +83,20 @@ class DetectionPublisher(Node):
                         id = "none"
 
                     item = Detection(name=name, id=id, center_point_location=location, screen_size = screen_size)
-                    self.msg.data = item.to_json()
+                    detection = Detections()
+                    detection.name.data = str(name)
+                    detection.id.data = str(id)
+                    detection.location_x.data = str(center_x)
+                    detection.location_y.data = str(center_y)
+                    detection.screen_size_x.data = str(width)
+                    detection.screen_size_y.data = str(height)
+                    self.msg.detections.append(detection)
+                    #self.msg.data = item.to_json()
+                    #item = item.to_json()
                     #self.items.append(item)
+                    #print(type(self.items[0]))
+                    #self.msg.detections = array('u',self.items)
+
                     
 
             print(f'left: {left_item_counter}, right: {right_item_counter}')
@@ -88,7 +104,7 @@ class DetectionPublisher(Node):
         
         #self.msg.data = 'Hello World: %d' % self.i
         self.publisher_.publish(self.msg)
-        self.get_logger().info('Publishing: "%s"' % self.msg.data)
+        self.get_logger().info('Publishing: "%s"' % self.msg.detections)
         self.i += 1
 
 

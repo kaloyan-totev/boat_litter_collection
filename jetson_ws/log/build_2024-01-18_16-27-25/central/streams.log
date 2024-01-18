@@ -1,0 +1,26 @@
+[9.934s] Invoking command in '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/central': PYTHONPATH=/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/central/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/central/build --no-deps install_data
+[11.251s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[11.251s]   warnings.warn(
+[11.508s] running develop
+[12.431s] running egg_info
+[12.431s] creating central.egg-info
+[12.432s] writing central.egg-info/PKG-INFO
+[12.433s] writing dependency_links to central.egg-info/dependency_links.txt
+[12.434s] writing entry points to central.egg-info/entry_points.txt
+[12.434s] writing requirements to central.egg-info/requires.txt
+[12.435s] writing top-level names to central.egg-info/top_level.txt
+[12.453s] writing manifest file 'central.egg-info/SOURCES.txt'
+[12.462s] reading manifest file 'central.egg-info/SOURCES.txt'
+[12.466s] writing manifest file 'central.egg-info/SOURCES.txt'
+[12.659s] running build_ext
+[12.661s] Creating /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central/lib/python3.8/site-packages/central.egg-link (link to .)
+[12.665s] Installing central script to /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central/lib/central
+[12.668s] 
+[12.668s] Installed /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/central
+[12.669s] running install_data
+[12.670s] creating /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central/share/ament_index
+[12.670s] creating /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central/share/ament_index/resource_index
+[12.671s] creating /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central/share/ament_index/resource_index/packages
+[12.671s] copying resource/central -> /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central/share/ament_index/resource_index/packages
+[12.672s] copying package.xml -> /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central/share/central
+[12.824s] Invoked command in '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/central' returned '0': PYTHONPATH=/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/central/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/central/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/central/build --no-deps install_data
