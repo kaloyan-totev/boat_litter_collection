@@ -1,0 +1,19 @@
+[12.910s] Invoking command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control': PYTHONPATH=/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control/build --no-deps install_data
+[16.356s] running develop
+[19.313s] running egg_info
+[19.314s] writing control.egg-info/PKG-INFO
+[19.317s] writing dependency_links to control.egg-info/dependency_links.txt
+[19.318s] writing entry points to control.egg-info/entry_points.txt
+[19.319s] writing requirements to control.egg-info/requires.txt
+[19.321s] writing top-level names to control.egg-info/top_level.txt
+[19.334s] reading manifest file 'control.egg-info/SOURCES.txt'
+[19.338s] writing manifest file 'control.egg-info/SOURCES.txt'
+[19.575s] running build_ext
+[19.577s] Creating /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/lib/python3.8/site-packages/control.egg-link (link to .)
+[19.581s] Installing arduino_control script to /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/lib/control
+[19.582s] Installing select_target script to /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/lib/control
+[19.583s] Installing target_target script to /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/lib/control
+[19.584s] 
+[19.585s] Installed /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control
+[19.586s] running install_data
+[25.701s] Invoked command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control' returned '0': PYTHONPATH=/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control/build --no-deps install_data

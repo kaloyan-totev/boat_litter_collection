@@ -20,7 +20,8 @@ class MotorControl(Node):
 
 
     def listener_callback(self, msg):
-        self.cmd.decide(Detection())
+        if(msg != None and msg != [] and msg.id.data != 0.0):
+            self.cmd.decide(msg)
         self.get_logger().info('I heard: "%s"' % msg.name)
 
 

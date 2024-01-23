@@ -5,6 +5,7 @@ control/ArduinoControl.py
 control/TargetSelect.py
 control/__init__.py
 control/arduinoCommandCenter.py
+control/selectTarget.py
 control/tryCommands.py
 control.egg-info/PKG-INFO
 control.egg-info/SOURCES.txt

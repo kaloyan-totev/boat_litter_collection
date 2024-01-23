@@ -1,0 +1,431 @@
+[0.000000] (-) TimerEvent: {}
+[0.000982] (central) JobQueued: {'identifier': 'central', 'dependencies': OrderedDict()}
+[0.001296] (control) JobQueued: {'identifier': 'control', 'dependencies': OrderedDict()}
+[0.002066] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.002697] (central) JobStarted: {'identifier': 'central'}
+[0.099828] (-) TimerEvent: {}
+[0.202388] (-) TimerEvent: {}
+[0.304958] (-) TimerEvent: {}
+[0.408496] (-) TimerEvent: {}
+[0.515949] (-) TimerEvent: {}
+[0.620701] (-) TimerEvent: {}
+[0.724652] (-) TimerEvent: {}
+[0.826789] (-) TimerEvent: {}
+[0.929285] (-) TimerEvent: {}
+[0.990340] (control) JobStarted: {'identifier': 'control'}
+[1.029996] (-) TimerEvent: {}
+[1.132812] (-) TimerEvent: {}
+[1.234499] (-) TimerEvent: {}
+[1.335870] (-) TimerEvent: {}
+[1.437191] (-) TimerEvent: {}
+[1.538326] (-) TimerEvent: {}
+[1.640708] (-) TimerEvent: {}
+[1.742212] (-) TimerEvent: {}
+[1.844311] (-) TimerEvent: {}
+[1.940353] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[1.944472] (-) TimerEvent: {}
+[2.045250] (-) TimerEvent: {}
+[2.148588] (-) TimerEvent: {}
+[2.250756] (-) TimerEvent: {}
+[2.352664] (-) TimerEvent: {}
+[2.454383] (-) TimerEvent: {}
+[2.556346] (-) TimerEvent: {}
+[2.658463] (-) TimerEvent: {}
+[2.759504] (-) TimerEvent: {}
+[2.860502] (-) TimerEvent: {}
+[2.961258] (-) TimerEvent: {}
+[3.061994] (-) TimerEvent: {}
+[3.162744] (-) TimerEvent: {}
+[3.263554] (-) TimerEvent: {}
+[3.364229] (-) TimerEvent: {}
+[3.464919] (-) TimerEvent: {}
+[3.565767] (-) TimerEvent: {}
+[3.666453] (-) TimerEvent: {}
+[3.767139] (-) TimerEvent: {}
+[3.867914] (-) TimerEvent: {}
+[3.968612] (-) TimerEvent: {}
+[4.069336] (-) TimerEvent: {}
+[4.170200] (-) TimerEvent: {}
+[4.272566] (-) TimerEvent: {}
+[4.376902] (-) TimerEvent: {}
+[4.478702] (-) TimerEvent: {}
+[4.580865] (-) TimerEvent: {}
+[4.684846] (-) TimerEvent: {}
+[4.790760] (-) TimerEvent: {}
+[4.892423] (-) TimerEvent: {}
+[4.993470] (-) TimerEvent: {}
+[5.094160] (-) TimerEvent: {}
+[5.194924] (-) TimerEvent: {}
+[5.295662] (-) TimerEvent: {}
+[5.396378] (-) TimerEvent: {}
+[5.497162] (-) TimerEvent: {}
+[5.597870] (-) TimerEvent: {}
+[5.698608] (-) TimerEvent: {}
+[5.799929] (-) TimerEvent: {}
+[5.901258] (-) TimerEvent: {}
+[6.002938] (-) TimerEvent: {}
+[6.103817] (-) TimerEvent: {}
+[6.205110] (-) TimerEvent: {}
+[6.306098] (-) TimerEvent: {}
+[6.407523] (-) TimerEvent: {}
+[6.509007] (-) TimerEvent: {}
+[6.610588] (-) TimerEvent: {}
+[6.715164] (-) TimerEvent: {}
+[6.817493] (-) TimerEvent: {}
+[6.919412] (-) TimerEvent: {}
+[7.029220] (-) TimerEvent: {}
+[7.130641] (-) TimerEvent: {}
+[7.237584] (-) TimerEvent: {}
+[7.343978] (-) TimerEvent: {}
+[7.451161] (-) TimerEvent: {}
+[7.554005] (-) TimerEvent: {}
+[7.654782] (-) TimerEvent: {}
+[7.756381] (-) TimerEvent: {}
+[7.857760] (-) TimerEvent: {}
+[7.959530] (-) TimerEvent: {}
+[8.017038] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[8.020918] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'build'}
+[8.025788] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs', '--', '-j4', '-l4'], 'cwd': '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs', 'env': OrderedDict([('JETSON_BOARD', 'P3449-0000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'Nano (Developer Kit Version)'), ('USER', 'jetson'), ('LC_TIME', 'nl_NL.UTF-8'), ('JETSON_CUDA', '10.2.300'), ('SSH_AGENT_PID', '7632'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jetson'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '8.0.1.6'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '7125'), ('JETSON_OPENCV_CUDA', 'YES'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87ad57355688c7c6082e630065aecf3d'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'P3448-0000'), ('JETSON_SERIAL_NUMBER', '1420623040592'), ('JETSON_CUDNN', '8.2.1.32'), ('JOURNAL_STREAM', '8:40654'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'porg'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'jetson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/opt/ros/foxy/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nano:@/tmp/.ICE-unix/7728,unix/nano:/tmp/.ICE-unix/7728'), ('INVOCATION_ID', 'b50074a500044451b304d90394515bd6'), ('JETSON_OPENCV', '4.6.0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8b69568f_9980_41ef_aa64_c529abce363c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ZEITGEIST_DATA_PATH', '/home/jetson/.local/share/zeitgeist'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson Nano (Developer Kit Version)'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('JETSON_L4T_REVISION', '6.1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', '3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.141'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87ad57355688c7c6082e630065aecf3d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[8.060053] (-) TimerEvent: {}
+[8.161881] (-) TimerEvent: {}
+[8.263528] (-) TimerEvent: {}
+[8.367924] (-) TimerEvent: {}
+[8.468812] (-) TimerEvent: {}
+[8.574323] (-) TimerEvent: {}
+[8.677667] (-) TimerEvent: {}
+[8.778798] (-) TimerEvent: {}
+[8.880617] (-) TimerEvent: {}
+[8.981476] (-) TimerEvent: {}
+[9.083791] (-) TimerEvent: {}
+[9.185128] (-) TimerEvent: {}
+[9.286954] (-) TimerEvent: {}
+[9.370292] (custom_msgs) StdoutLine: {'line': b'[  2%] Built target custom_msgs__cpp\n'}
+[9.381738] (custom_msgs) StdoutLine: {'line': b'[ 12%] Built target custom_msgs__rosidl_generator_c\n'}
+[9.387151] (-) TimerEvent: {}
+[9.488359] (-) TimerEvent: {}
+[9.589924] (-) TimerEvent: {}
+[9.691165] (-) TimerEvent: {}
+[9.792126] (-) TimerEvent: {}
+[9.855418] (custom_msgs) StdoutLine: {'line': b'[ 23%] Built target custom_msgs__rosidl_typesupport_introspection_cpp\n'}
+[9.865945] (custom_msgs) StdoutLine: {'line': b'[ 33%] Built target custom_msgs__rosidl_typesupport_c\n'}
+[9.892277] (-) TimerEvent: {}
+[9.907599] (custom_msgs) StdoutLine: {'line': b'[ 43%] Built target custom_msgs__rosidl_typesupport_cpp\n'}
+[9.992458] (-) TimerEvent: {}
+[10.059890] (custom_msgs) StdoutLine: {'line': b'[ 53%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[10.092632] (-) TimerEvent: {}
+[10.193425] (-) TimerEvent: {}
+[10.233274] (custom_msgs) StdoutLine: {'line': b'[ 64%] Built target custom_msgs__rosidl_typesupport_introspection_c\n'}
+[10.304205] (-) TimerEvent: {}
+[10.405003] (-) TimerEvent: {}
+[10.506449] (-) TimerEvent: {}
+[10.514732] (custom_msgs) StdoutLine: {'line': b'[ 74%] Built target custom_msgs__rosidl_typesupport_fastrtps_c\n'}
+[10.607098] (-) TimerEvent: {}
+[10.711407] (-) TimerEvent: {}
+[10.814065] (-) TimerEvent: {}
+[10.919523] (-) TimerEvent: {}
+[11.020316] (custom_msgs) StdoutLine: {'line': b'[ 74%] Built target custom_msgs\n'}
+[11.021071] (-) TimerEvent: {}
+[11.122858] (-) TimerEvent: {}
+[11.224411] (-) TimerEvent: {}
+[11.327194] (-) TimerEvent: {}
+[11.345301] (custom_msgs) StdoutLine: {'line': b'[ 76%] Built target custom_msgs__py\n'}
+[11.427371] (-) TimerEvent: {}
+[11.528383] (-) TimerEvent: {}
+[11.629793] (-) TimerEvent: {}
+[11.731960] (-) TimerEvent: {}
+[11.748081] (custom_msgs) StdoutLine: {'line': b'[ 84%] Built target custom_msgs__python\n'}
+[11.832147] (-) TimerEvent: {}
+[11.934708] (-) TimerEvent: {}
+[12.035606] (-) TimerEvent: {}
+[12.136375] (-) TimerEvent: {}
+[12.237491] (-) TimerEvent: {}
+[12.276701] (custom_msgs) StdoutLine: {'line': b'[ 89%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[12.337683] (-) TimerEvent: {}
+[12.350631] (custom_msgs) StdoutLine: {'line': b'[ 94%] Built target custom_msgs__rosidl_typesupport_c__pyext\n'}
+[12.352095] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[12.438137] (-) TimerEvent: {}
+[12.546757] (-) TimerEvent: {}
+[12.608308] (custom_msgs) CommandEnded: {'returncode': 0}
+[12.646999] (-) TimerEvent: {}
+[12.750159] (-) TimerEvent: {}
+[12.852143] (-) TimerEvent: {}
+[12.956238] (-) TimerEvent: {}
+[13.057427] (-) TimerEvent: {}
+[13.158472] (-) TimerEvent: {}
+[13.259813] (-) TimerEvent: {}
+[13.361756] (-) TimerEvent: {}
+[13.462641] (-) TimerEvent: {}
+[13.567379] (-) TimerEvent: {}
+[13.668418] (-) TimerEvent: {}
+[13.769435] (-) TimerEvent: {}
+[13.870354] (-) TimerEvent: {}
+[13.898094] (control) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control/build', '--no-deps', 'install_data'], 'cwd': '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control', 'env': {'JETSON_BOARD': 'P3449-0000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'JETSON_TYPE': 'Nano (Developer Kit Version)', 'USER': 'jetson', 'LC_TIME': 'nl_NL.UTF-8', 'JETSON_CUDA': '10.2.300', 'SSH_AGENT_PID': '7632', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda/lib64:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/jetson', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_TENSORRT': '8.0.1.6', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'nl_NL.UTF-8', 'MANAGERPID': '7125', 'JETSON_OPENCV_CUDA': 'YES', 'JETSON_VISIONWORKS': '1.6.0.501', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=87ad57355688c7c6082e630065aecf3d', 'COLORTERM': 'truecolor', 'JETSON_CHIP_ID': '33', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'P3448-0000', 'JETSON_SERIAL_NUMBER': '1420623040592', 'JETSON_CUDNN': '8.2.1.32', 'JOURNAL_STREAM': '8:40654', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'porg', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'jetson', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/usr/local/cuda/bin:/opt/ros/foxy/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/nano:@/tmp/.ICE-unix/7728,unix/nano:/tmp/.ICE-unix/7728', 'INVOCATION_ID': 'b50074a500044451b304d90394515bd6', 'JETSON_OPENCV': '4.6.0', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'nl_NL.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/8b69568f_9980_41ef_aa64_c529abce363c', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ZEITGEIST_DATA_PATH': '/home/jetson/.local/share/zeitgeist', 'DISPLAY': ':0', 'JETSON_MACHINE': 'NVIDIA Jetson Nano (Developer Kit Version)', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'JETSON_L4T_REVISION': '6.1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'GNOME_TERMINAL_SERVICE': ':1.97', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': '3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_L4T_RELEASE': '32', 'JETSON_VULKAN_INFO': '1.2.141', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control', 'CUDA_HOME': '/usr/local/cuda', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=87ad57355688c7c6082e630065aecf3d', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'JETSON_VPI': 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library', 'PYTHONPATH': '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'JETSON_JETPACK': '4.6'}, 'shell': False}
+[13.983269] (central) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/build', '--no-deps', 'install_data'], 'cwd': '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central', 'env': {'JETSON_BOARD': 'P3449-0000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'JETSON_TYPE': 'Nano (Developer Kit Version)', 'USER': 'jetson', 'LC_TIME': 'nl_NL.UTF-8', 'JETSON_CUDA': '10.2.300', 'SSH_AGENT_PID': '7632', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda/lib64:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/jetson', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_TENSORRT': '8.0.1.6', 'JETSON_L4T': '32.6.1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'nl_NL.UTF-8', 'MANAGERPID': '7125', 'JETSON_OPENCV_CUDA': 'YES', 'JETSON_VISIONWORKS': '1.6.0.501', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=87ad57355688c7c6082e630065aecf3d', 'COLORTERM': 'truecolor', 'JETSON_CHIP_ID': '33', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'P3448-0000', 'JETSON_SERIAL_NUMBER': '1420623040592', 'JETSON_CUDNN': '8.2.1.32', 'JOURNAL_STREAM': '8:40654', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'porg', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'jetson', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/usr/local/cuda/bin:/opt/ros/foxy/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/nano:@/tmp/.ICE-unix/7728,unix/nano:/tmp/.ICE-unix/7728', 'INVOCATION_ID': 'b50074a500044451b304d90394515bd6', 'JETSON_OPENCV': '4.6.0', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'nl_NL.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/8b69568f_9980_41ef_aa64_c529abce363c', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ZEITGEIST_DATA_PATH': '/home/jetson/.local/share/zeitgeist', 'DISPLAY': ':0', 'JETSON_MACHINE': 'NVIDIA Jetson Nano (Developer Kit Version)', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'JETSON_L4T_REVISION': '6.1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra210', 'GNOME_TERMINAL_SERVICE': ':1.97', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'JETSON_BOARDIDS': '3448', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'JETSON_L4T_RELEASE': '32', 'JETSON_VULKAN_INFO': '1.2.141', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '5.3', 'PWD': '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central', 'CUDA_HOME': '/usr/local/cuda', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=87ad57355688c7c6082e630065aecf3d', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'JETSON_VPI': 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library', 'PYTHONPATH': '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'JETSON_JETPACK': '4.6'}, 'shell': False}
+[13.987951] (-) TimerEvent: {}
+[14.088836] (-) TimerEvent: {}
+[14.184625] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'install'}
+[14.192025] (-) TimerEvent: {}
+[14.276110] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs'], 'cwd': '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs', 'env': OrderedDict([('JETSON_BOARD', 'P3449-0000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'Nano (Developer Kit Version)'), ('USER', 'jetson'), ('LC_TIME', 'nl_NL.UTF-8'), ('JETSON_CUDA', '10.2.300'), ('SSH_AGENT_PID', '7632'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jetson'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '8.0.1.6'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '7125'), ('JETSON_OPENCV_CUDA', 'YES'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87ad57355688c7c6082e630065aecf3d'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'P3448-0000'), ('JETSON_SERIAL_NUMBER', '1420623040592'), ('JETSON_CUDNN', '8.2.1.32'), ('JOURNAL_STREAM', '8:40654'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'porg'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'jetson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/opt/ros/foxy/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nano:@/tmp/.ICE-unix/7728,unix/nano:/tmp/.ICE-unix/7728'), ('INVOCATION_ID', 'b50074a500044451b304d90394515bd6'), ('JETSON_OPENCV', '4.6.0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8b69568f_9980_41ef_aa64_c529abce363c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ZEITGEIST_DATA_PATH', '/home/jetson/.local/share/zeitgeist'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson Nano (Developer Kit Version)'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('JETSON_L4T_REVISION', '6.1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', '3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.141'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87ad57355688c7c6082e630065aecf3d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[14.292307] (-) TimerEvent: {}
+[14.363401] (custom_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.371164] (custom_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[14.373112] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs\n'}
+[14.378134] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__functions.h\n'}
+[14.382221] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__struct.h\n'}
+[14.384335] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__type_support.h\n'}
+[14.385202] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__functions.h\n'}
+[14.390444] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__struct.h\n'}
+[14.392451] (-) TimerEvent: {}
+[14.393688] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__type_support.h\n'}
+[14.396496] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detection.h\n'}
+[14.399439] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detections_array.h\n'}
+[14.401797] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[14.404737] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/environment/library_path.sh\n'}
+[14.418454] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/environment/library_path.dsv\n'}
+[14.426598] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_c.h\n'}
+[14.431253] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__rosidl_typesupport_fastrtps_c.h\n'}
+[14.433958] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[14.441917] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[14.450176] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.454846] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.456097] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[14.471310] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[14.475678] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h\n'}
+[14.477949] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__rosidl_typesupport_introspection_c.h\n'}
+[14.480301] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[14.484687] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__builder.hpp\n'}
+[14.486865] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__struct.hpp\n'}
+[14.489077] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__traits.hpp\n'}
+[14.491243] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__type_support.hpp\n'}
+[14.492608] (-) TimerEvent: {}
+[14.494752] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__builder.hpp\n'}
+[14.497026] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__struct.hpp\n'}
+[14.499204] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__traits.hpp\n'}
+[14.501659] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__type_support.hpp\n'}
+[14.504828] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detection.hpp\n'}
+[14.509765] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detections_array.hpp\n'}
+[14.512127] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[14.516294] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.518820] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.523770] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh\n'}
+[14.526302] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv\n'}
+[14.529149] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/__init__.py\n'}
+[14.533045] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/__init__.py\n'}
+[14.535471] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/_detection.py\n'}
+[14.537617] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/_detections_array.py\n'}
+[14.540842] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[14.544081] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[14.547376] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[14.550715] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/libcustom_msgs__python.so\n'}
+[14.553487] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/msg/Detection.idl\n'}
+[14.556296] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/msg/DetectionsArray.idl\n'}
+[14.558946] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/msg/Detection.msg\n'}
+[14.561360] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/msg/DetectionsArray.msg\n'}
+[14.564001] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs\n'}
+[14.566685] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs\n'}
+[14.569423] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh\n'}
+[14.572287] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv\n'}
+[14.574862] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/environment/path.sh\n'}
+[14.577467] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/environment/path.dsv\n'}
+[14.580058] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/local_setup.bash\n'}
+[14.582535] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/local_setup.sh\n'}
+[14.585005] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/local_setup.zsh\n'}
+[14.587497] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/local_setup.dsv\n'}
+[14.589777] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/package.dsv\n'}
+[14.592765] (-) TimerEvent: {}
+[14.693999] (-) TimerEvent: {}
+[14.705583] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs\n'}
+[14.715759] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[14.722245] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.729019] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[14.732055] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[14.735394] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[14.744237] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[14.747064] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[14.750112] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake\n'}
+[14.752559] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake\n'}
+[14.755317] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/package.xml\n'}
+[14.757758] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so\n'}
+[14.760685] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so\n'}
+[14.763796] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so\n'}
+[14.766793] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[14.770028] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so\n'}
+[14.794166] (-) TimerEvent: {}
+[14.895531] (-) TimerEvent: {}
+[14.998189] (-) TimerEvent: {}
+[15.099732] (-) TimerEvent: {}
+[15.204535] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_generator_cExport.cmake\n'}
+[15.205353] (-) TimerEvent: {}
+[15.206700] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[15.207612] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[15.208368] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[15.209334] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake\n'}
+[15.210368] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[15.211601] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_generator_cppExport.cmake\n'}
+[15.212133] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[15.212792] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[15.213459] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[15.213994] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[15.239253] (custom_msgs) CommandEnded: {'returncode': 0}
+[15.313796] (-) TimerEvent: {}
+[15.415741] (-) TimerEvent: {}
+[15.516782] (-) TimerEvent: {}
+[15.620668] (-) TimerEvent: {}
+[15.722431] (-) TimerEvent: {}
+[15.826911] (-) TimerEvent: {}
+[15.932874] (-) TimerEvent: {}
+[16.034320] (-) TimerEvent: {}
+[16.135170] (-) TimerEvent: {}
+[16.236596] (-) TimerEvent: {}
+[16.338186] (-) TimerEvent: {}
+[16.439622] (-) TimerEvent: {}
+[16.540991] (-) TimerEvent: {}
+[16.642168] (-) TimerEvent: {}
+[16.775051] (-) TimerEvent: {}
+[16.877498] (-) TimerEvent: {}
+[16.978553] (-) TimerEvent: {}
+[17.082380] (-) TimerEvent: {}
+[17.093013] (central) StdoutLine: {'line': b'running develop\n'}
+[17.192235] (-) TimerEvent: {}
+[17.295071] (-) TimerEvent: {}
+[17.346631] (control) StdoutLine: {'line': b'running develop\n'}
+[17.395550] (-) TimerEvent: {}
+[17.504555] (-) TimerEvent: {}
+[17.607669] (-) TimerEvent: {}
+[17.709025] (-) TimerEvent: {}
+[17.815191] (-) TimerEvent: {}
+[17.936654] (-) TimerEvent: {}
+[18.037818] (-) TimerEvent: {}
+[18.145440] (-) TimerEvent: {}
+[18.262129] (-) TimerEvent: {}
+[18.364791] (-) TimerEvent: {}
+[18.466925] (-) TimerEvent: {}
+[18.568753] (-) TimerEvent: {}
+[18.670625] (-) TimerEvent: {}
+[18.772149] (-) TimerEvent: {}
+[18.874961] (-) TimerEvent: {}
+[18.976382] (-) TimerEvent: {}
+[19.080424] (-) TimerEvent: {}
+[19.211324] (-) TimerEvent: {}
+[19.327185] (-) TimerEvent: {}
+[19.428371] (-) TimerEvent: {}
+[19.529802] (-) TimerEvent: {}
+[19.631121] (-) TimerEvent: {}
+[19.732543] (-) TimerEvent: {}
+[19.834996] (-) TimerEvent: {}
+[19.908811] (central) StdoutLine: {'line': b'running egg_info\n'}
+[19.911620] (central) StdoutLine: {'line': b'writing central.egg-info/PKG-INFO\n'}
+[19.914657] (central) StdoutLine: {'line': b'writing dependency_links to central.egg-info/dependency_links.txt\n'}
+[19.915665] (central) StdoutLine: {'line': b'writing entry points to central.egg-info/entry_points.txt\n'}
+[19.918049] (central) StdoutLine: {'line': b'writing requirements to central.egg-info/requires.txt\n'}
+[19.920758] (central) StdoutLine: {'line': b'writing top-level names to central.egg-info/top_level.txt\n'}
+[19.935362] (-) TimerEvent: {}
+[19.949744] (central) StdoutLine: {'line': b"reading manifest file 'central.egg-info/SOURCES.txt'\n"}
+[19.958390] (central) StdoutLine: {'line': b"writing manifest file 'central.egg-info/SOURCES.txt'\n"}
+[20.035520] (-) TimerEvent: {}
+[20.136578] (-) TimerEvent: {}
+[20.237458] (-) TimerEvent: {}
+[20.303899] (control) StdoutLine: {'line': b'running egg_info\n'}
+[20.304885] (control) StdoutLine: {'line': b'writing control.egg-info/PKG-INFO\n'}
+[20.306985] (control) StdoutLine: {'line': b'writing dependency_links to control.egg-info/dependency_links.txt\n'}
+[20.308662] (control) StdoutLine: {'line': b'writing entry points to control.egg-info/entry_points.txt\n'}
+[20.309744] (control) StdoutLine: {'line': b'writing requirements to control.egg-info/requires.txt\n'}
+[20.310923] (control) StdoutLine: {'line': b'writing top-level names to control.egg-info/top_level.txt\n'}
+[20.324302] (control) StdoutLine: {'line': b"reading manifest file 'control.egg-info/SOURCES.txt'\n"}
+[20.328519] (control) StdoutLine: {'line': b"writing manifest file 'control.egg-info/SOURCES.txt'\n"}
+[20.337747] (-) TimerEvent: {}
+[20.395896] (central) StdoutLine: {'line': b'running build_ext\n'}
+[20.398562] (central) StdoutLine: {'line': b'Creating /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib/python3.8/site-packages/central.egg-link (link to .)\n'}
+[20.406621] (central) StdoutLine: {'line': b'Installing central script to /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib/central\n'}
+[20.410070] (central) StdoutLine: {'line': b'\n'}
+[20.411481] (central) StdoutLine: {'line': b'Installed /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central\n'}
+[20.413569] (central) StdoutLine: {'line': b'running install_data\n'}
+[20.437949] (-) TimerEvent: {}
+[20.539392] (-) TimerEvent: {}
+[20.565041] (control) StdoutLine: {'line': b'running build_ext\n'}
+[20.567830] (control) StdoutLine: {'line': b'Creating /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/lib/python3.8/site-packages/control.egg-link (link to .)\n'}
+[20.570838] (control) StdoutLine: {'line': b'Installing arduino_control script to /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/lib/control\n'}
+[20.572069] (control) StdoutLine: {'line': b'Installing select_target script to /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/lib/control\n'}
+[20.573135] (control) StdoutLine: {'line': b'Installing target_target script to /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/lib/control\n'}
+[20.574255] (control) StdoutLine: {'line': b'\n'}
+[20.575235] (control) StdoutLine: {'line': b'Installed /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control\n'}
+[20.577158] (control) StdoutLine: {'line': b'running install_data\n'}
+[20.642125] (-) TimerEvent: {}
+[20.718182] (central) CommandEnded: {'returncode': 0}
+[20.743298] (-) TimerEvent: {}
+[20.845079] (-) TimerEvent: {}
+[20.947373] (-) TimerEvent: {}
+[21.049570] (-) TimerEvent: {}
+[21.153433] (-) TimerEvent: {}
+[21.255671] (-) TimerEvent: {}
+[21.360313] (-) TimerEvent: {}
+[21.462590] (-) TimerEvent: {}
+[21.564633] (-) TimerEvent: {}
+[21.666050] (-) TimerEvent: {}
+[21.766862] (-) TimerEvent: {}
+[21.868250] (-) TimerEvent: {}
+[21.969664] (-) TimerEvent: {}
+[22.083133] (-) TimerEvent: {}
+[22.186474] (-) TimerEvent: {}
+[22.289355] (-) TimerEvent: {}
+[22.391489] (-) TimerEvent: {}
+[22.493269] (-) TimerEvent: {}
+[22.595240] (-) TimerEvent: {}
+[22.696812] (-) TimerEvent: {}
+[22.798650] (-) TimerEvent: {}
+[22.919215] (-) TimerEvent: {}
+[22.977148] (central) JobEnded: {'identifier': 'central', 'rc': 0}
+[23.028742] (-) TimerEvent: {}
+[23.143547] (-) TimerEvent: {}
+[23.245153] (-) TimerEvent: {}
+[23.347229] (-) TimerEvent: {}
+[23.448942] (-) TimerEvent: {}
+[23.550657] (-) TimerEvent: {}
+[23.653247] (-) TimerEvent: {}
+[23.756192] (-) TimerEvent: {}
+[23.860578] (-) TimerEvent: {}
+[23.968802] (-) TimerEvent: {}
+[24.074458] (-) TimerEvent: {}
+[24.177550] (-) TimerEvent: {}
+[24.279192] (-) TimerEvent: {}
+[24.380237] (-) TimerEvent: {}
+[24.484191] (-) TimerEvent: {}
+[24.586171] (-) TimerEvent: {}
+[24.687742] (-) TimerEvent: {}
+[24.789151] (-) TimerEvent: {}
+[24.891179] (-) TimerEvent: {}
+[24.993993] (-) TimerEvent: {}
+[25.096112] (-) TimerEvent: {}
+[25.202286] (-) TimerEvent: {}
+[25.305507] (-) TimerEvent: {}
+[25.410047] (-) TimerEvent: {}
+[25.511323] (-) TimerEvent: {}
+[25.613177] (-) TimerEvent: {}
+[25.719206] (-) TimerEvent: {}
+[25.820402] (-) TimerEvent: {}
+[25.926283] (-) TimerEvent: {}
+[26.030038] (-) TimerEvent: {}
+[26.137416] (-) TimerEvent: {}
+[26.238707] (-) TimerEvent: {}
+[26.341239] (-) TimerEvent: {}
+[26.445522] (-) TimerEvent: {}
+[26.550901] (-) TimerEvent: {}
+[26.660895] (-) TimerEvent: {}
+[26.685639] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 0}
+[26.690778] (control) CommandEnded: {'returncode': 0}
+[26.761422] (-) TimerEvent: {}
+[26.862876] (-) TimerEvent: {}
+[26.964342] (-) TimerEvent: {}
+[27.067699] (-) TimerEvent: {}
+[27.168588] (-) TimerEvent: {}
+[27.269942] (-) TimerEvent: {}
+[27.373267] (-) TimerEvent: {}
+[27.476725] (-) TimerEvent: {}
+[27.578120] (-) TimerEvent: {}
+[27.680198] (-) TimerEvent: {}
+[27.782553] (-) TimerEvent: {}
+[27.883972] (-) TimerEvent: {}
+[27.984713] (-) TimerEvent: {}
+[28.090680] (-) TimerEvent: {}
+[28.103995] (control) JobEnded: {'identifier': 'control', 'rc': 0}
+[28.108587] (-) EventReactorShutdown: {}
