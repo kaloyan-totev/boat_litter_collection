@@ -2,8 +2,8 @@ import rclpy
 from rclpy.node import Node
 
 from std_msgs.msg import String
-from custom_msgs.msg import StringArray
-from custom_msgs.msg import Detections
+from custom_msgs.msg import DetectionsArray
+from custom_msgs.msg import Detection
 import json
 
 
@@ -17,7 +17,7 @@ class CentralJetsonPublisher(Node):
         super().__init__('central_jetson_publisher')
         
         # Detections PUBLISHER
-        self.publisher_ = self.create_publisher(StringArray, 'central_jetson_pub', 10)
+        self.publisher_ = self.create_publisher(DetectionsArray, 'central_jetson_pub', 10)
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
@@ -25,14 +25,14 @@ class CentralJetsonPublisher(Node):
 
 	# Detections SUBSCRIBER
         self.image_subscription = self.create_subscription(
-            StringArray,
+            DetectionsArray,
             'detections',
             self.listener_callback,
             10)
 
 
     def timer_callback(self):
-        msg = StringArray()
+        msg = DetectionsArray()
         print("MESSAGE TYPE: " + str(type(self.detection_msg)))
         if(self.detection_msg != None):
             msg.detections = self.detection_msg

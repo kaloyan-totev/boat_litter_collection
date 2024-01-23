@@ -1,8 +1,11 @@
 import rclpy
-import os
 from rclpy.node import Node
+from custom_msgs.msg import DetectionsArray
+from custom_msgs.msg import Detection
+
 
 from std_msgs.msg import String
+
 
 
 class CentralRaspberrySubscriber(Node):
@@ -15,10 +18,27 @@ class CentralRaspberrySubscriber(Node):
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
-        #os.system("nmcli device wifi hotspot ssid ros_network password 12345678")
+
+        # Locked detection PUBLISHER
+        self.publisher_ = self.create_publisher(DetectionsArray, 'raspberry_detections_array', 10)
+        timer_period = 0.5  # seconds
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.i = 0
+        self.detection_msg = None
         
     def listener_callback(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
+
+    def timer_callback(self, msg):
+        msg = DetectionsArray()
+        print("MESSAGE TYPE: " + str(type(self.detection_msg)))
+        if (self.detection_msg != None):
+            msg.detections = self.detection_msg
+
+        # msg.data = 'CENTRAL_PUB: %d' % self.i
+        self.publisher_.publish(msg)
+        self.get_logger().info('CENTRAL_PUB: "%s"' % msg)
+        self.i += 1
 
 
 def main(args=None):
