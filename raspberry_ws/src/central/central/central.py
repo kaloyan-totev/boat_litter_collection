@@ -13,7 +13,7 @@ class CentralRaspberrySubscriber(Node):
     def __init__(self):
         super().__init__('central_raspberry_subscriber')
         self.subscription = self.create_subscription(
-            String,
+            DetectionsArray,
             'central_jetson_pub',
             self.listener_callback,
             10)
@@ -27,17 +27,18 @@ class CentralRaspberrySubscriber(Node):
         self.detection_msg = None
         
     def listener_callback(self, msg):
-        self.get_logger().info('I heard: "%s"' % msg.data)
+        self.detection_msg = msg
+        #self.get_logger().info('I heard: "%s"' % msg)
 
-    def timer_callback(self, msg):
+    def timer_callback(self):
         msg = DetectionsArray()
         print("MESSAGE TYPE: " + str(type(self.detection_msg)))
         if (self.detection_msg != None):
-            msg.detections = self.detection_msg
+            msg = self.detection_msg
 
         # msg.data = 'CENTRAL_PUB: %d' % self.i
         self.publisher_.publish(msg)
-        self.get_logger().info('CENTRAL_PUB: "%s"' % msg)
+        self.get_logger().info('\n\r CENTRAL_PUB: "%s" \n\r' % msg)
         self.i += 1
 
 

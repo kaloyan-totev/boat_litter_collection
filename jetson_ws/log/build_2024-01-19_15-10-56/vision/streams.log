@@ -1,0 +1,17 @@
+[7.499s] Invoking command in '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/vision': PYTHONPATH=/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/vision/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/vision/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/vision/build --no-deps install_data
+[9.038s] running develop
+[9.983s] running egg_info
+[9.984s] writing vision.egg-info/PKG-INFO
+[9.985s] writing dependency_links to vision.egg-info/dependency_links.txt
+[9.986s] writing entry points to vision.egg-info/entry_points.txt
+[9.986s] writing requirements to vision.egg-info/requires.txt
+[9.987s] writing top-level names to vision.egg-info/top_level.txt
+[10.005s] reading manifest file 'vision.egg-info/SOURCES.txt'
+[10.009s] writing manifest file 'vision.egg-info/SOURCES.txt'
+[10.200s] running build_ext
+[10.202s] Creating /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/vision/lib/python3.8/site-packages/vision.egg-link (link to .)
+[10.207s] Installing vision script to /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/vision/lib/vision
+[10.209s] 
+[10.210s] Installed /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/vision
+[10.211s] running install_data
+[11.837s] Invoked command in '/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/vision' returned '0': PYTHONPATH=/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/vision/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/install/vision/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/vision/build --no-deps install_data

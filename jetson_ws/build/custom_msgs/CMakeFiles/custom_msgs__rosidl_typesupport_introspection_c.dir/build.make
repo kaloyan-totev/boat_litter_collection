@@ -57,96 +57,96 @@ include CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/progress.
 # Include the compile flags for this target's objects.
 include CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_introspection_c/__init__.py
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/idl__type_support.c.em
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/msg__rosidl_typesupport_introspection_c.h.em
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_msgs/msg/Detections.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_msgs/msg/StringArray.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Byte.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Char.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/ColorRGBA.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Empty.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Float32.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Float32MultiArray.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Float64.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Float64MultiArray.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Header.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Int16.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Int16MultiArray.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Int32.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Int32MultiArray.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Int64.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Int64MultiArray.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Int8.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Int8MultiArray.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/MultiArrayDimension.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/MultiArrayLayout.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/String.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/UInt16.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/UInt16MultiArray.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/UInt32.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/UInt32MultiArray.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/UInt64.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/UInt64MultiArray.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/UInt8.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_introspection_c/__init__.py
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/idl__type_support.c.em
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/msg__rosidl_typesupport_introspection_c.h.em
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_msgs/msg/Detection.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_msgs/msg/DetectionsArray.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Byte.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Char.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/ColorRGBA.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Empty.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Float32.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Float32MultiArray.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Float64.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Float64MultiArray.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Header.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Int16.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Int16MultiArray.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Int32.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Int32MultiArray.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Int64.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Int64MultiArray.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Int8.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Int8MultiArray.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/MultiArrayDimension.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/MultiArrayLayout.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/String.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/UInt16.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/UInt16MultiArray.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/UInt32.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/UInt32MultiArray.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/UInt64.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/UInt64MultiArray.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/UInt8.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/foxy/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_introspection_c__arguments.json
 
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__rosidl_typesupport_introspection_c.h
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__rosidl_typesupport_introspection_c.h
 
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c
 
-rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c
 
-CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
-CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c.o   -c /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c.o   -c /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c
 
-CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c > CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c.i
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c > CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c.i
 
-CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c.s
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c.s
 
-CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
-CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c.o   -c /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c.o   -c /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c
 
-CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c > CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c.i
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c > CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c.i
 
-CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c.s
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c.s
 
 # Object files for target custom_msgs__rosidl_typesupport_introspection_c
 custom_msgs__rosidl_typesupport_introspection_c_OBJECTS = \
-"CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c.o" \
-"CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c.o"
+"CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c.o" \
+"CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c.o"
 
 # External object files for target custom_msgs__rosidl_typesupport_introspection_c
 custom_msgs__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
-libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c.o
-libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c.o
+libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c.o
+libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c.o
 libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make
 libcustom_msgs__rosidl_typesupport_introspection_c.so: libcustom_msgs__rosidl_generator_c.so
 libcustom_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
@@ -179,10 +179,10 @@ CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/clean
 
-CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__rosidl_typesupport_introspection_c.h
-CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__rosidl_typesupport_introspection_c.h
-CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections__type_support.c
-CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/string_array__type_support.c
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__rosidl_typesupport_introspection_c.h
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detection__type_support.c
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/detections_array__type_support.c
 	cd /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend
 

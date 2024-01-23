@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'select_target = control.TargetSelect:main',
+            'arduino_control = control.ArduinoControl:main',
         ],
     },
 )

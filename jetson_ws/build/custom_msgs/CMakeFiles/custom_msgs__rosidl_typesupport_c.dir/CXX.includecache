@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_c/custom_msgs/msg/detections__type_support.cpp
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_c/custom_msgs/msg/detection__type_support.cpp
 cstddef
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_c/custom_msgs/msg/cstddef
 rosidl_runtime_c/message_type_support_struct.h
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_c/custom_msgs/msg/rosidl_runtime_c/message_type_support_struct.h
 custom_msgs/msg/rosidl_typesupport_c__visibility_control.h
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_c/custom_msgs/msg/custom_msgs/msg/rosidl_typesupport_c__visibility_control.h
-custom_msgs/msg/detail/detections__struct.h
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_c/custom_msgs/msg/custom_msgs/msg/detail/detections__struct.h
+custom_msgs/msg/detail/detection__struct.h
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_c/custom_msgs/msg/custom_msgs/msg/detail/detection__struct.h
 rosidl_typesupport_c/identifier.h
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_c/custom_msgs/msg/rosidl_typesupport_c/identifier.h
 rosidl_typesupport_c/message_type_support_dispatch.h
@@ -26,15 +26,15 @@ rosidl_typesupport_c/visibility_control.h
 rosidl_typesupport_interface/macros.h
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_c/custom_msgs/msg/rosidl_typesupport_interface/macros.h
 
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_c/custom_msgs/msg/string_array__type_support.cpp
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_c/custom_msgs/msg/detections_array__type_support.cpp
 cstddef
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_c/custom_msgs/msg/cstddef
 rosidl_runtime_c/message_type_support_struct.h
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_c/custom_msgs/msg/rosidl_runtime_c/message_type_support_struct.h
 custom_msgs/msg/rosidl_typesupport_c__visibility_control.h
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_c/custom_msgs/msg/custom_msgs/msg/rosidl_typesupport_c__visibility_control.h
-custom_msgs/msg/detail/string_array__struct.h
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_c/custom_msgs/msg/custom_msgs/msg/detail/string_array__struct.h
+custom_msgs/msg/detail/detections_array__struct.h
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_c/custom_msgs/msg/custom_msgs/msg/detail/detections_array__struct.h
 rosidl_typesupport_c/identifier.h
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_typesupport_c/custom_msgs/msg/rosidl_typesupport_c/identifier.h
 rosidl_typesupport_c/message_type_support_dispatch.h
@@ -86,6 +86,14 @@ cstddef
 
 /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
 
+/opt/ros/foxy/include/std_msgs/msg/detail/float32__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
 /opt/ros/foxy/include/std_msgs/msg/detail/string__struct.h
 stdbool.h
 -
@@ -96,7 +104,7 @@ stdint.h
 rosidl_runtime_c/string.h
 /opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/string.h
 
-rosidl_generator_c/custom_msgs/msg/detail/detections__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/detection__struct.h
 stdbool.h
 -
 stddef.h
@@ -105,16 +113,18 @@ stdint.h
 -
 std_msgs/msg/detail/string__struct.h
 rosidl_generator_c/custom_msgs/msg/detail/std_msgs/msg/detail/string__struct.h
+std_msgs/msg/detail/float32__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/std_msgs/msg/detail/float32__struct.h
 
-rosidl_generator_c/custom_msgs/msg/detail/string_array__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/detections_array__struct.h
 stdbool.h
 -
 stddef.h
 -
 stdint.h
 -
-custom_msgs/msg/detail/detections__struct.h
-rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/detections__struct.h
+custom_msgs/msg/detail/detection__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/detection__struct.h
 
 rosidl_typesupport_c/custom_msgs/msg/rosidl_typesupport_c__visibility_control.h
 

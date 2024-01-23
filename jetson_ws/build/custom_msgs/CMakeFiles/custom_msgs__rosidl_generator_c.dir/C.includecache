@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/detections__functions.c
-custom_msgs/msg/detail/detections__functions.h
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/detections__functions.h
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/detection__functions.c
+custom_msgs/msg/detail/detection__functions.h
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/detection__functions.h
 assert.h
 -
 stdbool.h
@@ -21,10 +21,12 @@ rcutils/allocator.h
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/rcutils/allocator.h
 std_msgs/msg/detail/string__functions.h
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/std_msgs/msg/detail/string__functions.h
+std_msgs/msg/detail/float32__functions.h
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/std_msgs/msg/detail/float32__functions.h
 
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/string_array__functions.c
-custom_msgs/msg/detail/string_array__functions.h
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/string_array__functions.h
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/detections_array__functions.c
+custom_msgs/msg/detail/detections_array__functions.h
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/detections_array__functions.h
 assert.h
 -
 stdbool.h
@@ -35,8 +37,8 @@ string.h
 -
 rcutils/allocator.h
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/rcutils/allocator.h
-custom_msgs/msg/detail/detections__functions.h
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/detections__functions.h
+custom_msgs/msg/detail/detection__functions.h
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/detection__functions.h
 
 /opt/ros/foxy/include/rcutils/allocator.h
 stdbool.h
@@ -94,6 +96,26 @@ rosidl_runtime_c/primitives_sequence.h
 
 /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
 
+/opt/ros/foxy/include/std_msgs/msg/detail/float32__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
+std_msgs/msg/rosidl_generator_c__visibility_control.h
+/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/rosidl_generator_c__visibility_control.h
+std_msgs/msg/detail/float32__struct.h
+/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/detail/float32__struct.h
+
+/opt/ros/foxy/include/std_msgs/msg/detail/float32__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
 /opt/ros/foxy/include/std_msgs/msg/detail/string__functions.h
 stdbool.h
 -
@@ -118,7 +140,7 @@ rosidl_runtime_c/string.h
 
 /opt/ros/foxy/include/std_msgs/msg/rosidl_generator_c__visibility_control.h
 
-rosidl_generator_c/custom_msgs/msg/detail/detections__functions.h
+rosidl_generator_c/custom_msgs/msg/detail/detection__functions.h
 stdbool.h
 -
 stdlib.h
@@ -127,10 +149,10 @@ rosidl_runtime_c/visibility_control.h
 rosidl_generator_c/custom_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
 custom_msgs/msg/rosidl_generator_c__visibility_control.h
 rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/rosidl_generator_c__visibility_control.h
-custom_msgs/msg/detail/detections__struct.h
-rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/detections__struct.h
+custom_msgs/msg/detail/detection__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/detection__struct.h
 
-rosidl_generator_c/custom_msgs/msg/detail/detections__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/detection__struct.h
 stdbool.h
 -
 stddef.h
@@ -139,8 +161,10 @@ stdint.h
 -
 std_msgs/msg/detail/string__struct.h
 rosidl_generator_c/custom_msgs/msg/detail/std_msgs/msg/detail/string__struct.h
+std_msgs/msg/detail/float32__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/std_msgs/msg/detail/float32__struct.h
 
-rosidl_generator_c/custom_msgs/msg/detail/string_array__functions.h
+rosidl_generator_c/custom_msgs/msg/detail/detections_array__functions.h
 stdbool.h
 -
 stdlib.h
@@ -149,18 +173,18 @@ rosidl_runtime_c/visibility_control.h
 rosidl_generator_c/custom_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
 custom_msgs/msg/rosidl_generator_c__visibility_control.h
 rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/rosidl_generator_c__visibility_control.h
-custom_msgs/msg/detail/string_array__struct.h
-rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/string_array__struct.h
+custom_msgs/msg/detail/detections_array__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/detections_array__struct.h
 
-rosidl_generator_c/custom_msgs/msg/detail/string_array__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/detections_array__struct.h
 stdbool.h
 -
 stddef.h
 -
 stdint.h
 -
-custom_msgs/msg/detail/detections__struct.h
-rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/detections__struct.h
+custom_msgs/msg/detail/detection__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/detection__struct.h
 
 rosidl_generator_c/custom_msgs/msg/rosidl_generator_c__visibility_control.h
 

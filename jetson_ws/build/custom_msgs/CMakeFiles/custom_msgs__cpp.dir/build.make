@@ -53,113 +53,113 @@ CMAKE_BINARY_DIR = /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws
 # Include the progress variables for this target.
 include CMakeFiles/custom_msgs__cpp.dir/progress.make
 
-CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detections.hpp
-CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detections__builder.hpp
-CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detections__struct.hpp
-CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detections__traits.hpp
-CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detections__type_support.hpp
-CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/string_array.hpp
-CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/string_array__builder.hpp
-CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/string_array__struct.hpp
-CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/string_array__traits.hpp
-CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/string_array__type_support.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detection.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detection__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detection__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detection__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detection__type_support.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detections_array.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detections_array__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detections_array__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detections_array__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detections_array__type_support.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/lib/rosidl_generator_cpp/rosidl_generator_cpp
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/lib/python3.8/site-packages/rosidl_generator_cpp/__init__.py
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__builder.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__struct.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__traits.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__type_support.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__builder.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__struct.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__traits.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__type_support.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__builder.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__struct.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__traits.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__type_support.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__builder.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__type_support.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: rosidl_adapter/custom_msgs/msg/Detections.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: rosidl_adapter/custom_msgs/msg/StringArray.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/Byte.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/Char.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/ColorRGBA.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/Empty.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/Float32.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/Float32MultiArray.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/Float64.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/Float64MultiArray.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/Header.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/Int16.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/Int16MultiArray.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/Int32.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/Int32MultiArray.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/Int64.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/Int64MultiArray.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/Int8.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/Int8MultiArray.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/MultiArrayDimension.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/MultiArrayLayout.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/String.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/UInt16.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/UInt16MultiArray.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/UInt32.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/UInt32MultiArray.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/UInt64.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/UInt64MultiArray.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/UInt8.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
-rosidl_generator_cpp/custom_msgs/msg/detections.hpp: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/lib/rosidl_generator_cpp/rosidl_generator_cpp
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/lib/python3.8/site-packages/rosidl_generator_cpp/__init__.py
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__builder.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__struct.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__traits.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__type_support.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__builder.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__struct.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__traits.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__type_support.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__builder.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__struct.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__traits.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__type_support.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__builder.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__type_support.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: rosidl_adapter/custom_msgs/msg/Detection.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: rosidl_adapter/custom_msgs/msg/DetectionsArray.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/Byte.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/Char.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/ColorRGBA.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/Empty.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/Float32.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/Float32MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/Float64.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/Float64MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/Header.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/Int16.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/Int16MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/Int32.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/Int32MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/Int64.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/Int64MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/Int8.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/Int8MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/MultiArrayDimension.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/MultiArrayLayout.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/String.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/UInt16.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/UInt16MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/UInt32.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/UInt32MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/UInt64.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/UInt64MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/UInt8.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_cpp/custom_msgs/msg/detection.hpp: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_cpp__arguments.json
 
-rosidl_generator_cpp/custom_msgs/msg/detail/detections__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/detections.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/detections__builder.hpp
+rosidl_generator_cpp/custom_msgs/msg/detail/detection__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/detection__builder.hpp
 
-rosidl_generator_cpp/custom_msgs/msg/detail/detections__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/detections.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/detections__struct.hpp
+rosidl_generator_cpp/custom_msgs/msg/detail/detection__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/detection__struct.hpp
 
-rosidl_generator_cpp/custom_msgs/msg/detail/detections__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/detections.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/detections__traits.hpp
+rosidl_generator_cpp/custom_msgs/msg/detail/detection__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/detection__traits.hpp
 
-rosidl_generator_cpp/custom_msgs/msg/detail/detections__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/detections.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/detections__type_support.hpp
+rosidl_generator_cpp/custom_msgs/msg/detail/detection__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/detection__type_support.hpp
 
-rosidl_generator_cpp/custom_msgs/msg/string_array.hpp: rosidl_generator_cpp/custom_msgs/msg/detections.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/string_array.hpp
+rosidl_generator_cpp/custom_msgs/msg/detections_array.hpp: rosidl_generator_cpp/custom_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detections_array.hpp
 
-rosidl_generator_cpp/custom_msgs/msg/detail/string_array__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/detections.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/string_array__builder.hpp
+rosidl_generator_cpp/custom_msgs/msg/detail/detections_array__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/detections_array__builder.hpp
 
-rosidl_generator_cpp/custom_msgs/msg/detail/string_array__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/detections.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/string_array__struct.hpp
+rosidl_generator_cpp/custom_msgs/msg/detail/detections_array__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/detections_array__struct.hpp
 
-rosidl_generator_cpp/custom_msgs/msg/detail/string_array__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/detections.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/string_array__traits.hpp
+rosidl_generator_cpp/custom_msgs/msg/detail/detections_array__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/detections_array__traits.hpp
 
-rosidl_generator_cpp/custom_msgs/msg/detail/string_array__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/detections.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/string_array__type_support.hpp
+rosidl_generator_cpp/custom_msgs/msg/detail/detections_array__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/detection.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/detections_array__type_support.hpp
 
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp
-custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detections.hpp
-custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detections__builder.hpp
-custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detections__struct.hpp
-custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detections__traits.hpp
-custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detections__type_support.hpp
-custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/string_array.hpp
-custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/string_array__builder.hpp
-custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/string_array__struct.hpp
-custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/string_array__traits.hpp
-custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/string_array__type_support.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detection.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detection__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detection__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detection__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detection__type_support.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detections_array.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detections_array__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detections_array__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detections_array__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/detections_array__type_support.hpp
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp.dir/build.make
 
 .PHONY : custom_msgs__cpp

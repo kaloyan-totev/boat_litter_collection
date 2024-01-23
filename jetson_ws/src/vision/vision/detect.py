@@ -16,8 +16,8 @@ class DetectionPublisher(Node):
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
 
-        self.model = YOLO('yolov8s.pt')
-        self.model = YOLO('v4_greyscale_best.pt')  # load a custom model
+        self.model = YOLO('yolov8n.pt')
+        #self.model = YOLO('v4_greyscale_best.pt')  # load a custom model
         video_path = 0
         self.cap = cv2.VideoCapture(video_path)
         self.ret = True
@@ -71,7 +71,7 @@ class DetectionPublisher(Node):
                     detection.location_y.data = float(center_y)
                     detection.screen_size_x.data = float(width)
                     detection.screen_size_y.data = float(height)
-                    detection.screen_size_y.confidence = float(box.conf)
+                    detection.confidence.data = float(box.conf)
                     self.msg.detections.append(detection)
 
 

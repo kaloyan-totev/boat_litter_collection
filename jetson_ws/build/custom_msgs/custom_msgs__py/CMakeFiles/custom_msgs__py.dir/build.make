@@ -56,11 +56,11 @@ include custom_msgs__py/CMakeFiles/custom_msgs__py.dir/progress.make
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
-custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_detections.py
-custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_string_array.py
+custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_detection.py
+custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_detections_array.py
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/__init__.py
-custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_detections_s.c
-custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_string_array_s.c
+custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_detection_s.c
+custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_detections_array_s.c
 
 
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/lib/rosidl_generator_py/rosidl_generator_py
@@ -76,8 +76,8 @@ rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_msg.py.em
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv.py.em
-rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/Detections.idl
-rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/StringArray.idl
+rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/Detection.idl
+rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/DetectionsArray.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/std_msgs/msg/Byte.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl
@@ -119,30 +119,30 @@ rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspecti
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
 
-rosidl_generator_py/custom_msgs/msg/_detections.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_detections.py
+rosidl_generator_py/custom_msgs/msg/_detection.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_detection.py
 
-rosidl_generator_py/custom_msgs/msg/_string_array.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_string_array.py
+rosidl_generator_py/custom_msgs/msg/_detections_array.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_detections_array.py
 
 rosidl_generator_py/custom_msgs/msg/__init__.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/__init__.py
 
-rosidl_generator_py/custom_msgs/msg/_detections_s.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_detections_s.c
+rosidl_generator_py/custom_msgs/msg/_detection_s.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_detection_s.c
 
-rosidl_generator_py/custom_msgs/msg/_string_array_s.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_string_array_s.c
+rosidl_generator_py/custom_msgs/msg/_detections_array_s.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_detections_array_s.c
 
 custom_msgs__py: custom_msgs__py/CMakeFiles/custom_msgs__py
 custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
 custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
-custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_detections.py
-custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_string_array.py
+custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_detection.py
+custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_detections_array.py
 custom_msgs__py: rosidl_generator_py/custom_msgs/msg/__init__.py
-custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_detections_s.c
-custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_string_array_s.c
+custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_detection_s.c
+custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_detections_array_s.c
 custom_msgs__py: custom_msgs__py/CMakeFiles/custom_msgs__py.dir/build.make
 
 .PHONY : custom_msgs__py

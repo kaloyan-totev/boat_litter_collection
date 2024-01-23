@@ -367,17 +367,17 @@ include("/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/cus
 # install("TARGETS" "custom_msgs__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
 include("/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/ament_cmake_symlink_install_targets_5_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Detections.idl" "DESTINATION" "share/custom_msgs/msg")
-ament_cmake_symlink_install_files("/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs" FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Detections.idl" "DESTINATION" "share/custom_msgs/msg")
+# install(FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Detection.idl" "DESTINATION" "share/custom_msgs/msg")
+ament_cmake_symlink_install_files("/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs" FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Detection.idl" "DESTINATION" "share/custom_msgs/msg")
 
-# install(FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/StringArray.idl" "DESTINATION" "share/custom_msgs/msg")
-ament_cmake_symlink_install_files("/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs" FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/StringArray.idl" "DESTINATION" "share/custom_msgs/msg")
+# install(FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/DetectionsArray.idl" "DESTINATION" "share/custom_msgs/msg")
+ament_cmake_symlink_install_files("/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs" FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/DetectionsArray.idl" "DESTINATION" "share/custom_msgs/msg")
 
-# install(FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs/msg/Detections.msg" "DESTINATION" "share/custom_msgs/msg")
-ament_cmake_symlink_install_files("/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs" FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs/msg/Detections.msg" "DESTINATION" "share/custom_msgs/msg")
+# install(FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs/msg/Detection.msg" "DESTINATION" "share/custom_msgs/msg")
+ament_cmake_symlink_install_files("/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs" FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs/msg/Detection.msg" "DESTINATION" "share/custom_msgs/msg")
 
-# install(FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs/msg/StringArray.msg" "DESTINATION" "share/custom_msgs/msg")
-ament_cmake_symlink_install_files("/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs" FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs/msg/StringArray.msg" "DESTINATION" "share/custom_msgs/msg")
+# install(FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs/msg/DetectionsArray.msg" "DESTINATION" "share/custom_msgs/msg")
+ament_cmake_symlink_install_files("/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs" FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs/msg/DetectionsArray.msg" "DESTINATION" "share/custom_msgs/msg")
 
 # install(FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/custom_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs" FILES "/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/custom_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

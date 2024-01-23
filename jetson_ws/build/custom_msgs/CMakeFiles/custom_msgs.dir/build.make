@@ -53,8 +53,8 @@ CMAKE_BINARY_DIR = /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws
 # Include the progress variables for this target.
 include CMakeFiles/custom_msgs.dir/progress.make
 
-CMakeFiles/custom_msgs: /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs/msg/Detections.msg
-CMakeFiles/custom_msgs: /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs/msg/StringArray.msg
+CMakeFiles/custom_msgs: /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs/msg/Detection.msg
+CMakeFiles/custom_msgs: /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/src/custom_msgs/msg/DetectionsArray.msg
 CMakeFiles/custom_msgs: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
 CMakeFiles/custom_msgs: /opt/ros/foxy/share/std_msgs/msg/Byte.idl
 CMakeFiles/custom_msgs: /opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl

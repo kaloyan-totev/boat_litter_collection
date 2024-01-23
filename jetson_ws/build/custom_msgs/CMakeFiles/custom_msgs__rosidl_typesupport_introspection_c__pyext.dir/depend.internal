@@ -10,6 +10,7 @@ CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_gen
  /opt/ros/foxy/include/rosidl_runtime_c/string.h
  /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
  /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
+ /opt/ros/foxy/include/std_msgs/msg/detail/float32__struct.h
  /opt/ros/foxy/include/std_msgs/msg/detail/string__struct.h
  /usr/include/python3.8/Python.h
  /usr/include/python3.8/abstract.h
@@ -98,10 +99,10 @@ CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_gen
  /usr/include/python3.8/unicodeobject.h
  /usr/include/python3.8/warnings.h
  /usr/include/python3.8/weakrefobject.h
- rosidl_generator_c/custom_msgs/msg/detail/detections__functions.h
- rosidl_generator_c/custom_msgs/msg/detail/detections__struct.h
- rosidl_generator_c/custom_msgs/msg/detail/detections__type_support.h
- rosidl_generator_c/custom_msgs/msg/detail/string_array__functions.h
- rosidl_generator_c/custom_msgs/msg/detail/string_array__struct.h
- rosidl_generator_c/custom_msgs/msg/detail/string_array__type_support.h
+ rosidl_generator_c/custom_msgs/msg/detail/detection__functions.h
+ rosidl_generator_c/custom_msgs/msg/detail/detection__struct.h
+ rosidl_generator_c/custom_msgs/msg/detail/detection__type_support.h
+ rosidl_generator_c/custom_msgs/msg/detail/detections_array__functions.h
+ rosidl_generator_c/custom_msgs/msg/detail/detections_array__struct.h
+ rosidl_generator_c/custom_msgs/msg/detail/detections_array__type_support.h
  rosidl_generator_c/custom_msgs/msg/rosidl_generator_c__visibility_control.h

@@ -1,0 +1,271 @@
+[12.210s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[12.211s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f8f564df0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f8f564df0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f8f564970>)
+[12.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[12.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[12.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[12.715s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[12.715s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[12.715s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[12.715s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws'
+[12.716s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[12.716s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[12.716s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[12.716s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[12.717s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[12.717s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[12.717s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[12.717s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[12.717s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[12.763s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[12.764s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[12.764s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[12.764s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[12.764s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[12.765s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[12.765s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[12.765s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[12.766s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[12.766s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[12.766s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[12.767s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[12.767s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[12.767s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[12.768s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[12.768s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[12.768s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[12.768s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[12.769s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[12.769s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[12.769s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[12.769s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[12.769s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[12.770s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[12.770s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[12.770s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[12.770s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[12.770s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[12.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/central) by extensions ['ignore', 'ignore_ament_install']
+[12.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/central) by extension 'ignore'
+[12.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/central) by extension 'ignore_ament_install'
+[12.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/central) by extensions ['colcon_pkg']
+[12.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/central) by extension 'colcon_pkg'
+[12.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/central) by extensions ['colcon_meta']
+[12.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/central) by extension 'colcon_meta'
+[12.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/central) by extensions ['ros']
+[12.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/central) by extension 'ros'
+[12.781s] DEBUG:colcon.colcon_core.package_identification:Package 'src/central' with type 'ros.ament_python' and name 'central'
+[12.782s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['ignore', 'ignore_ament_install']
+[12.783s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ignore'
+[12.783s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ignore_ament_install'
+[12.783s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['colcon_pkg']
+[12.783s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'colcon_pkg'
+[12.784s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['colcon_meta']
+[12.784s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'colcon_meta'
+[12.784s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['ros']
+[12.784s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ros'
+[12.786s] DEBUG:colcon.colcon_core.package_identification:Package 'src/control' with type 'ros.ament_python' and name 'control'
+[12.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ignore', 'ignore_ament_install']
+[12.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore'
+[12.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore_ament_install'
+[12.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_pkg']
+[12.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_pkg'
+[12.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_meta']
+[12.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_meta'
+[12.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ros']
+[12.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ros'
+[12.790s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_msgs' with type 'ros.ament_cmake' and name 'custom_msgs'
+[12.791s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[12.791s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[12.791s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[12.791s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[12.791s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[13.929s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[13.930s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[14.136s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[14.137s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[14.137s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[14.137s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[14.349s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install
+[14.562s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 259 installed packages in /opt/ros/foxy
+[14.570s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[15.359s] Level 5:colcon.colcon_core.verb:set package 'central' build argument 'cmake_args' from command line to 'None'
+[15.359s] Level 5:colcon.colcon_core.verb:set package 'central' build argument 'cmake_target' from command line to 'None'
+[15.359s] Level 5:colcon.colcon_core.verb:set package 'central' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[15.359s] Level 5:colcon.colcon_core.verb:set package 'central' build argument 'cmake_clean_cache' from command line to 'False'
+[15.360s] Level 5:colcon.colcon_core.verb:set package 'central' build argument 'cmake_clean_first' from command line to 'False'
+[15.360s] Level 5:colcon.colcon_core.verb:set package 'central' build argument 'cmake_force_configure' from command line to 'False'
+[15.360s] Level 5:colcon.colcon_core.verb:set package 'central' build argument 'ament_cmake_args' from command line to 'None'
+[15.360s] Level 5:colcon.colcon_core.verb:set package 'central' build argument 'catkin_cmake_args' from command line to 'None'
+[15.360s] Level 5:colcon.colcon_core.verb:set package 'central' build argument 'catkin_skip_building_tests' from command line to 'False'
+[15.360s] DEBUG:colcon.colcon_core.verb:Building package 'central' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central', 'merge_install': False, 'path': '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/src/central', 'symlink_install': True, 'test_result_base': None}
+[15.568s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_args' from command line to 'None'
+[15.569s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_target' from command line to 'None'
+[15.569s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[15.569s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_clean_cache' from command line to 'False'
+[15.569s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_clean_first' from command line to 'False'
+[15.569s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_force_configure' from command line to 'False'
+[15.569s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'ament_cmake_args' from command line to 'None'
+[15.569s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'catkin_cmake_args' from command line to 'None'
+[15.569s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[15.570s] DEBUG:colcon.colcon_core.verb:Building package 'control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control', 'merge_install': False, 'path': '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/src/control', 'symlink_install': True, 'test_result_base': None}
+[15.772s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_args' from command line to 'None'
+[15.773s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target' from command line to 'None'
+[15.773s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[15.773s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[15.773s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[15.773s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[15.773s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[15.773s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[15.774s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[15.774s] DEBUG:colcon.colcon_core.verb:Building package 'custom_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs', 'merge_install': False, 'path': '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/src/custom_msgs', 'symlink_install': True, 'test_result_base': None}
+[15.984s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[16.189s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[16.190s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/src/central' with build type 'ament_python'
+[16.190s] Level 1:colcon.colcon_core.shell:create_environment_hook('central', 'ament_prefix_path')
+[16.422s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[16.423s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/central/hook/ament_prefix_path.ps1'
+[16.426s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/central/hook/ament_prefix_path.dsv'
+[16.428s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/central/hook/ament_prefix_path.sh'
+[16.651s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[16.652s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[17.318s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/src/control' with build type 'ament_python'
+[17.319s] Level 1:colcon.colcon_core.shell:create_environment_hook('control', 'ament_prefix_path')
+[17.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/share/control/hook/ament_prefix_path.ps1'
+[17.550s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/share/control/hook/ament_prefix_path.dsv'
+[17.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/share/control/hook/ament_prefix_path.sh'
+[17.771s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[17.771s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[18.451s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/src/custom_msgs' with build type 'ament_cmake'
+[18.452s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/src/custom_msgs'
+[18.677s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[18.677s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[20.678s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/src/central'
+[20.907s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[20.907s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[22.890s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/src/control'
+[23.116s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[23.116s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[23.858s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central:/opt/ros/foxy /usr/bin/cmake /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/src/custom_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs
+[26.013s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control': PYTHONPATH=/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control/build --no-deps install_data
+[26.049s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central': PYTHONPATH=/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/build --no-deps install_data
+[28.673s] Level 1:colcon.colcon_core.shell:create_environment_hook('control', 'pythonpath_develop')
+[28.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control' returned '0': PYTHONPATH=/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control/build --no-deps install_data
+[28.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control/share/control/hook/pythonpath_develop.ps1'
+[28.952s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control/share/control/hook/pythonpath_develop.dsv'
+[28.954s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/control/share/control/hook/pythonpath_develop.sh'
+[29.214s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control' for CMake module files
+[29.217s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control' for CMake config files
+[29.219s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/lib'
+[29.220s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/bin'
+[29.220s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/lib/pkgconfig/control.pc'
+[29.221s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/lib/python3.8/site-packages'
+[29.222s] Level 1:colcon.colcon_core.shell:create_environment_hook('control', 'pythonpath')
+[29.471s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/share/control/hook/pythonpath.ps1'
+[29.473s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/share/control/hook/pythonpath.dsv'
+[29.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/share/control/hook/pythonpath.sh'
+[29.476s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/bin'
+[29.477s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control)
+[29.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/share/control/package.ps1'
+[29.714s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/share/control/package.dsv'
+[29.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/share/control/package.sh'
+[29.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/share/control/package.bash'
+[29.723s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/share/control/package.zsh'
+[29.725s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control/share/colcon-core/packages/control)
+[29.730s] Level 1:colcon.colcon_core.shell:create_environment_hook('central', 'pythonpath_develop')
+[29.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central' returned '0': PYTHONPATH=/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/build --no-deps install_data
+[29.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/share/central/hook/pythonpath_develop.ps1'
+[29.982s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/share/central/hook/pythonpath_develop.dsv'
+[29.984s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/share/central/hook/pythonpath_develop.sh'
+[30.219s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central' for CMake module files
+[30.221s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central' for CMake config files
+[30.223s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib'
+[30.223s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/bin'
+[30.224s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib/pkgconfig/central.pc'
+[30.225s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib/python3.8/site-packages'
+[30.225s] Level 1:colcon.colcon_core.shell:create_environment_hook('central', 'pythonpath')
+[30.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/central/hook/pythonpath.ps1'
+[30.464s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/central/hook/pythonpath.dsv'
+[30.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/central/hook/pythonpath.sh'
+[30.467s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/bin'
+[30.468s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(central)
+[30.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/central/package.ps1'
+[30.702s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/central/package.dsv'
+[30.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/central/package.sh'
+[30.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/central/package.bash'
+[30.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/central/package.zsh'
+[30.710s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/colcon-core/packages/central)
+[31.830s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central:/opt/ros/foxy /usr/bin/cmake /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/src/custom_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs
+[31.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central:/opt/ros/foxy /usr/bin/cmake --build /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs -- -j4 -l4
+[45.038s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central:/opt/ros/foxy /usr/bin/cmake --build /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs -- -j4 -l4
+[45.342s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central:/opt/ros/foxy /usr/bin/cmake --install /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs
+[48.066s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[48.068s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central:/opt/ros/foxy /usr/bin/cmake --install /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs
+[48.291s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs' for CMake module files
+[48.295s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs' for CMake config files
+[48.298s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[48.522s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[48.524s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[48.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[48.527s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib'
+[48.527s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[48.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[48.744s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[48.745s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[48.747s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/bin'
+[48.747s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[48.748s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/python3.8/site-packages'
+[48.749s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'pythonpath')
+[48.968s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.ps1'
+[48.969s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.dsv'
+[48.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.sh'
+[48.972s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/bin'
+[49.191s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/package.ps1'
+[49.194s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/package.dsv'
+[49.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/package.sh'
+[49.197s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/package.bash'
+[49.199s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/package.zsh'
+[49.200s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[49.673s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[49.890s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs' for CMake module files
+[49.894s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs' for CMake config files
+[49.897s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[50.122s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[50.124s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[50.125s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[50.127s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib'
+[50.128s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[50.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[50.344s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[50.345s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[50.347s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/bin'
+[50.347s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[50.348s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/python3.8/site-packages'
+[50.348s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'pythonpath')
+[50.571s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.ps1'
+[50.573s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.dsv'
+[50.574s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/hook/pythonpath.sh'
+[50.576s] Level 1:colcon.colcon_core.environment:checking '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/bin'
+[50.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/package.ps1'
+[50.797s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/package.dsv'
+[50.800s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/package.sh'
+[50.802s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/package.bash'
+[50.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/package.zsh'
+[50.806s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[50.807s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[50.808s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[50.809s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[50.809s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[51.043s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[51.043s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[51.043s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[51.099s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[51.348s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/local_setup.ps1'
+[51.352s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/_local_setup_util_ps1.py'
+[51.358s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/setup.ps1'
+[51.625s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/local_setup.sh'
+[51.627s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/_local_setup_util_sh.py'
+[51.629s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/setup.sh'
+[51.839s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/local_setup.bash'
+[51.841s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/setup.bash'
+[52.060s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/local_setup.zsh'
+[52.062s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/setup.zsh'

@@ -1,2 +1,2 @@
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Detections.idl
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/StringArray.idl
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Detection.idl
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/DetectionsArray.idl

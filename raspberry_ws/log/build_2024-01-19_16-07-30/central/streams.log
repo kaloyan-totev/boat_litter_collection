@@ -1,0 +1,24 @@
+[9.857s] Invoking command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central': PYTHONPATH=/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/build --no-deps install_data
+[11.362s] running develop
+[12.263s] running egg_info
+[12.264s] creating central.egg-info
+[12.264s] writing central.egg-info/PKG-INFO
+[12.265s] writing dependency_links to central.egg-info/dependency_links.txt
+[12.266s] writing entry points to central.egg-info/entry_points.txt
+[12.266s] writing requirements to central.egg-info/requires.txt
+[12.267s] writing top-level names to central.egg-info/top_level.txt
+[12.273s] writing manifest file 'central.egg-info/SOURCES.txt'
+[12.280s] reading manifest file 'central.egg-info/SOURCES.txt'
+[12.283s] writing manifest file 'central.egg-info/SOURCES.txt'
+[12.489s] running build_ext
+[12.489s] Creating /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib/python3.8/site-packages/central.egg-link (link to .)
+[12.493s] Installing central script to /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib/central
+[12.494s] 
+[12.503s] Installed /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central
+[12.506s] running install_data
+[12.506s] creating /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/ament_index
+[12.507s] creating /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/ament_index/resource_index
+[12.509s] creating /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/ament_index/resource_index/packages
+[12.510s] copying resource/central -> /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/ament_index/resource_index/packages
+[12.510s] copying package.xml -> /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/central
+[13.541s] Invoked command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central' returned '0': PYTHONPATH=/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/prefix_override:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/build --no-deps install_data

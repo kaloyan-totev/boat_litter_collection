@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_detections_s.c
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_detection_s.c
 Python.h
 -
 stdbool.h
@@ -15,12 +15,12 @@ numpy/ndarrayobject.h
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/numpy/ndarrayobject.h
 rosidl_runtime_c/visibility_control.h
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/rosidl_runtime_c/visibility_control.h
-custom_msgs/msg/detail/detections__struct.h
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/custom_msgs/msg/detail/detections__struct.h
-custom_msgs/msg/detail/detections__functions.h
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/custom_msgs/msg/detail/detections__functions.h
+custom_msgs/msg/detail/detection__struct.h
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/custom_msgs/msg/detail/detection__struct.h
+custom_msgs/msg/detail/detection__functions.h
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/custom_msgs/msg/detail/detection__functions.h
 
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_string_array_s.c
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_detections_array_s.c
 Python.h
 -
 stdbool.h
@@ -29,16 +29,16 @@ numpy/ndarrayobject.h
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/numpy/ndarrayobject.h
 rosidl_runtime_c/visibility_control.h
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/rosidl_runtime_c/visibility_control.h
-custom_msgs/msg/detail/string_array__struct.h
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/custom_msgs/msg/detail/string_array__struct.h
-custom_msgs/msg/detail/string_array__functions.h
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/custom_msgs/msg/detail/string_array__functions.h
+custom_msgs/msg/detail/detections_array__struct.h
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/custom_msgs/msg/detail/detections_array__struct.h
+custom_msgs/msg/detail/detections_array__functions.h
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/custom_msgs/msg/detail/detections_array__functions.h
 rosidl_runtime_c/primitives_sequence.h
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/rosidl_runtime_c/primitives_sequence.h
 rosidl_runtime_c/primitives_sequence_functions.h
 /home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/rosidl_runtime_c/primitives_sequence_functions.h
-custom_msgs/msg/detail/detections__functions.h
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/custom_msgs/msg/detail/detections__functions.h
+custom_msgs/msg/detail/detection__functions.h
+/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/custom_msgs/msg/detail/detection__functions.h
 
 /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
 stdbool.h
@@ -65,6 +65,14 @@ rosidl_runtime_c/primitives_sequence.h
 /opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h
 
 /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
+
+/opt/ros/foxy/include/std_msgs/msg/detail/float32__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
 
 /opt/ros/foxy/include/std_msgs/msg/detail/string__struct.h
 stdbool.h
@@ -648,7 +656,7 @@ cpython/unicodeobject.h
 
 /usr/include/python3.8/weakrefobject.h
 
-rosidl_generator_c/custom_msgs/msg/detail/detections__functions.h
+rosidl_generator_c/custom_msgs/msg/detail/detection__functions.h
 stdbool.h
 -
 stdlib.h
@@ -657,10 +665,10 @@ rosidl_runtime_c/visibility_control.h
 rosidl_generator_c/custom_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
 custom_msgs/msg/rosidl_generator_c__visibility_control.h
 rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/rosidl_generator_c__visibility_control.h
-custom_msgs/msg/detail/detections__struct.h
-rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/detections__struct.h
+custom_msgs/msg/detail/detection__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/detection__struct.h
 
-rosidl_generator_c/custom_msgs/msg/detail/detections__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/detection__struct.h
 stdbool.h
 -
 stddef.h
@@ -669,8 +677,10 @@ stdint.h
 -
 std_msgs/msg/detail/string__struct.h
 rosidl_generator_c/custom_msgs/msg/detail/std_msgs/msg/detail/string__struct.h
+std_msgs/msg/detail/float32__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/std_msgs/msg/detail/float32__struct.h
 
-rosidl_generator_c/custom_msgs/msg/detail/string_array__functions.h
+rosidl_generator_c/custom_msgs/msg/detail/detections_array__functions.h
 stdbool.h
 -
 stdlib.h
@@ -679,18 +689,18 @@ rosidl_runtime_c/visibility_control.h
 rosidl_generator_c/custom_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
 custom_msgs/msg/rosidl_generator_c__visibility_control.h
 rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/rosidl_generator_c__visibility_control.h
-custom_msgs/msg/detail/string_array__struct.h
-rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/string_array__struct.h
+custom_msgs/msg/detail/detections_array__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/detections_array__struct.h
 
-rosidl_generator_c/custom_msgs/msg/detail/string_array__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/detections_array__struct.h
 stdbool.h
 -
 stddef.h
 -
 stdint.h
 -
-custom_msgs/msg/detail/detections__struct.h
-rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/detections__struct.h
+custom_msgs/msg/detail/detection__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/detection__struct.h
 
 rosidl_generator_c/custom_msgs/msg/rosidl_generator_c__visibility_control.h
 

@@ -1,0 +1,1 @@
+/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/src/custom_msgs/msg/Detection.msg

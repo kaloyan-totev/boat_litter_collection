@@ -1,1 +1,1 @@
-/home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/src/central/setup.py
+/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/src/central/setup.py

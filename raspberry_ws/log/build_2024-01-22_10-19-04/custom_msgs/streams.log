@@ -1,0 +1,108 @@
+[5.673s] Invoking command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central:/opt/ros/foxy /usr/bin/cmake --build /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs -- -j4 -l4
+[6.344s] [  2%] Built target custom_msgs__cpp
+[6.369s] [ 12%] Built target custom_msgs__rosidl_generator_c
+[6.557s] [ 23%] Built target custom_msgs__rosidl_typesupport_cpp
+[6.607s] [ 33%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp
+[6.619s] [ 43%] Built target custom_msgs__rosidl_typesupport_c
+[6.634s] [ 53%] Built target custom_msgs__rosidl_typesupport_introspection_cpp
+[6.725s] [ 64%] Built target custom_msgs__rosidl_typesupport_introspection_c
+[6.767s] [ 74%] Built target custom_msgs__rosidl_typesupport_fastrtps_c
+[6.860s] [ 74%] Built target custom_msgs
+[6.957s] [ 76%] Built target custom_msgs__py
+[7.109s] [ 84%] Built target custom_msgs__python
+[7.314s] [ 89%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext
+[7.330s] [ 94%] Built target custom_msgs__rosidl_typesupport_c__pyext
+[7.336s] [100%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext
+[7.381s] Invoked command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central:/opt/ros/foxy /usr/bin/cmake --build /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs -- -j4 -l4
+[7.742s] Invoking command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central:/opt/ros/foxy /usr/bin/cmake --install /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs
+[7.784s] -- Install configuration: ""
+[7.787s] -- Execute custom install script
+[7.790s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs
+[7.795s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__functions.h
+[7.797s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__struct.h
+[7.799s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__type_support.h
+[7.801s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__functions.h
+[7.802s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__struct.h
+[7.804s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__type_support.h
+[7.807s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detection.h
+[7.808s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detections_array.h
+[7.810s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/rosidl_generator_c__visibility_control.h
+[7.812s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/environment/library_path.sh
+[7.814s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/environment/library_path.dsv
+[7.818s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_c.h
+[7.819s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__rosidl_typesupport_fastrtps_c.h
+[7.821s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[7.824s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so
+[7.828s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp
+[7.830s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__rosidl_typesupport_fastrtps_cpp.hpp
+[7.832s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[7.835s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so
+[7.838s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h
+[7.840s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__rosidl_typesupport_introspection_c.h
+[7.841s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[7.847s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__builder.hpp
+[7.848s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__struct.hpp
+[7.848s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__traits.hpp
+[7.850s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__type_support.hpp
+[7.852s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__builder.hpp
+[7.854s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__struct.hpp
+[7.856s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__traits.hpp
+[7.858s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__type_support.hpp
+[7.859s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detection.hpp
+[7.861s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detections_array.hpp
+[7.862s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[7.866s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detection__rosidl_typesupport_introspection_cpp.hpp
+[7.867s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/include/custom_msgs/msg/detail/detections_array__rosidl_typesupport_introspection_cpp.hpp
+[7.869s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh
+[7.870s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv
+[7.872s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/__init__.py
+[7.874s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/__init__.py
+[7.875s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/_detection.py
+[7.876s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/msg/_detections_array.py
+[7.879s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[7.883s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[7.887s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/python3.8/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[7.889s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/libcustom_msgs__python.so
+[7.894s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/msg/Detection.idl
+[7.899s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/msg/DetectionsArray.idl
+[7.901s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/msg/Detection.msg
+[7.907s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/msg/DetectionsArray.msg
+[7.908s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs
+[7.911s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs
+[7.913s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh
+[7.914s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv
+[7.916s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/environment/path.sh
+[7.917s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/environment/path.dsv
+[7.919s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/local_setup.bash
+[7.924s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/local_setup.sh
+[7.926s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/local_setup.zsh
+[7.927s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/local_setup.dsv
+[7.928s] -- Symlinking: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/package.dsv
+[7.970s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs
+[7.972s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake
+[7.974s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.975s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[7.977s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[7.980s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.982s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[7.984s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[7.986s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake
+[7.988s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake
+[8.008s] -- Up-to-date symlink: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/package.xml
+[8.009s] -- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so
+[8.009s] -- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so
+[8.010s] -- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so
+[8.011s] -- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so
+[8.011s] -- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so
+[8.230s] -- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_generator_cExport.cmake
+[8.230s] -- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_generator_cExport-noconfig.cmake
+[8.232s] -- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake
+[8.232s] -- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.233s] -- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake
+[8.234s] -- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[8.236s] -- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_generator_cppExport.cmake
+[8.238s] -- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[8.238s] -- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.240s] -- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake
+[8.241s] -- Up-to-date: /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[8.251s] Invoked command in '/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/control:/home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/install/central:/opt/ros/foxy /usr/bin/cmake --install /home/jetson/PycharmProjects/boat_litter_collection/raspberry_ws/build/custom_msgs
