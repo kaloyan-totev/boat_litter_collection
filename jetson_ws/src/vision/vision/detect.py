@@ -16,7 +16,7 @@ class DetectionPublisher(Node):
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
 
-        self.model = YOLO('yolov8n.pt')
+        self.model = YOLO('yolov8n.engine')
         #self.model = YOLO('v4_greyscale_best.pt')  # load a custom model
         video_path = 0
         self.cap = cv2.VideoCapture(video_path)
@@ -29,7 +29,7 @@ class DetectionPublisher(Node):
         self.ret, self.frame = self.cap.read()
 
         if(self.ret):
-            results = self.model.track(self.frame, persist=True,conf=0.5, iou=0.3)
+            results = self.model.track(self.frame, persist=True,conf=0.5, iou=0.3, show=True)
 
             # count boxes from left and from right side of frame
             for r in results:
@@ -82,7 +82,9 @@ class DetectionPublisher(Node):
         
         #self.msg.data = 'Hello World: %d' % self.i
         self.publisher_.publish(self.msg)
-        self.get_logger().info('Publishing: "%s"' % self.msg.detections)
+        for item in self.msg.detections:
+            print(f"name: {item.name.data} id: {item.id.data} location: {item.location_x.data}\n")
+        #self.get_logger().info('Publishing: "%s"' % self.msg.detections)
         self.i += 1
 
 

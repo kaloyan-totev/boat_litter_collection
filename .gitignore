@@ -1,2 +1,3 @@
 /jetson_ws/v4_greyscale_best.pt
 /jetson_ws/yolov8s.pt
+/jetson_ws/yolov8n.engine

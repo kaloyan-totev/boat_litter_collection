@@ -3,17 +3,16 @@ import serial
 import time
 import threading
 import logging
-from custom_msgs.msg import Detection
+#from custom_msgs.msg import Detection
 
 
 response = None
-ser = serial.Serial("/dev/ttyACM0", 9600, timeout=0)
+ser = serial.Serial("/dev/ttyACM0", 9600, timeout=1)
 def flusfhDTR():
-    ser.setDTR(False)
-    time.sleep(1)
+    #ser.setDTR(False)
     ser.flushInput()
-    ser.setDTR(True)
-    time.sleep(2)
+    #ser.setDTR(True)
+    
     
 def read_serial():
     logging.info(f"ARDUINO SAID: {ser.read()}")
@@ -25,9 +24,11 @@ class Command:
         pass
 
     def stop_motors(self):
+        
         ser.write(b'0')
         self.currentCommand = b'0'
-        #print(ser.read())
+        print(ser.read())
+        flusfhDTR()
         pass
 
 
@@ -35,6 +36,7 @@ class Command:
         self.stop_motors()
         self.currentCommand = b'1'
         ser.write(b'1')
+        
         #print(ser.read())
 
 
@@ -43,6 +45,7 @@ class Command:
         self.stop_motors()
         self.currentCommand = b'2'
         ser.write(b'2')
+        
         #print(ser.read())
 
 
@@ -50,6 +53,7 @@ class Command:
         self.stop_motors()
         self.currentCommand = b'3'
         ser.write(b'3')
+        
         #print(ser.read())
 
 

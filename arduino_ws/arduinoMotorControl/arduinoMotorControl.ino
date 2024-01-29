@@ -13,7 +13,7 @@ void setup() {
   leftMotor.attach(9);
   rightMotor.attach(10);
 
- /* Serial.println("Zero Throttle");
+/*Serial.println("Zero Throttle");
 leftMotor.write(zeroSpeed);  // Set the output to the middle or "zero" position. CONNECT THE ESC DURING THIS DELAY!!
 rightMotor.write(zeroSpeed);
 delay(5000);       // This delay allows the ESC to be connected and powered on. The motor will beep once on
@@ -29,21 +29,7 @@ leftMotor.write(zeroSpeed); // Simulates the receiver sending a zero throttle si
 rightMotor.write(zeroSpeed);
 delay(2000);
 */
-Serial.println("Min");
-leftMotor.write(minSpeed); // "engages" reverse.
-rightMotor.write(minSpeed); // "engages" reverse.
 
-delay(20);
-
-Serial.println("Zero");
-leftMotor.write(zeroSpeed); // back to neutral
-rightMotor.write(zeroSpeed);
-delay(20);
-
-Serial.println("Min");
-leftMotor.write(minSpeed); // motor runs in reverse
-leftMotor.write(minSpeed);
-delay(2000);
 
 Serial.println("Setup Complete");
   
@@ -104,7 +90,7 @@ void loop() {
     case '3':
       go_left();
       Serial.println("go_left");
-      Serial.write("A", 1); // a - allright
+      Serial.write("Arrrr", 1); // a - allright
       break;
     default:
       Serial.write("E", 1); // error
@@ -114,6 +100,7 @@ void loop() {
     }
   } else {
     //Serial.write("W", 1); // w - waiting to connect
+    //Serial.println();
     //stop_motors();
   }
 }
