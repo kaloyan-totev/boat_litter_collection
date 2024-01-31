@@ -1,0 +1,29 @@
+[2.947s] Invoking command in '/home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/build/central': PYTHONPATH=/home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/prefix_override:/home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib/python3.10/site-packages: /usr/bin/python3 setup.py develop --editable --build-directory /home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/build --no-deps install_data
+[3.916s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[3.916s]   warnings.warn(
+[4.033s] running develop
+[4.035s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.036s]   warnings.warn(
+[4.041s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.041s]   warnings.warn(
+[4.629s] running egg_info
+[4.630s] creating central.egg-info
+[4.630s] writing central.egg-info/PKG-INFO
+[4.631s] writing dependency_links to central.egg-info/dependency_links.txt
+[4.632s] writing entry points to central.egg-info/entry_points.txt
+[4.632s] writing requirements to central.egg-info/requires.txt
+[4.633s] writing top-level names to central.egg-info/top_level.txt
+[4.634s] writing manifest file 'central.egg-info/SOURCES.txt'
+[4.640s] reading manifest file 'central.egg-info/SOURCES.txt'
+[4.643s] writing manifest file 'central.egg-info/SOURCES.txt'
+[4.649s] running build_ext
+[4.649s] Creating /home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib/python3.10/site-packages/central.egg-link (link to .)
+[4.653s] 
+[4.654s] Installed /home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/build/central
+[4.654s] running install_data
+[4.655s] creating /home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/ament_index
+[4.655s] creating /home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/ament_index/resource_index
+[4.656s] creating /home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/ament_index/resource_index/packages
+[4.657s] copying resource/central -> /home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/ament_index/resource_index/packages
+[4.659s] copying package.xml -> /home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/share/central
+[4.808s] Invoked command in '/home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/build/central' returned '0': PYTHONPATH=/home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/prefix_override:/home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/install/central/lib/python3.10/site-packages: /usr/bin/python3 setup.py develop --editable --build-directory /home/kaloyan/PycharmProjects/boat_litter_collection/raspberry_ws/build/central/build --no-deps install_data
