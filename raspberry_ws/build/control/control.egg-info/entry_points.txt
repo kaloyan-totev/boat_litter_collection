@@ -1,5 +1,0 @@
-[console_scripts]
-arduino_control = control.ArduinoControl:main
-select_target = control.TargetSelect:main
-target_target = control.selectTarget:main
-

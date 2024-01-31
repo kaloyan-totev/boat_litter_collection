@@ -1,1 +1,0 @@
-/home/jetson/PycharmProjects/boat_litter_collection/jetson_ws/build/custom_msgs/ament_cmake_core/custom_msgsConfig.cmake
