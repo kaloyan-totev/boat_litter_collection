@@ -1,3 +1,9 @@
 /jetson_ws/v4_greyscale_best.pt
 /jetson_ws/yolov8s.pt
 /jetson_ws/yolov8n.engine
+/jetson_ws/build/
+/jetson_ws/install/
+/jetson_ws/log/
+/raspberry_ws/build/
+/raspberry_ws/install/
+/raspberry_ws/log/
