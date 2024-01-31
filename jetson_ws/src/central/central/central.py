@@ -2,50 +2,63 @@ import rclpy
 from rclpy.node import Node
 
 from std_msgs.msg import String
+from custom_msgs.msg import DetectionsArray
+from custom_msgs.msg import Detection
+import json
 
-detection_msg = String()
+
 
 # subscribes to the detections node and redirects the information to the central publisher
-class DetectionsSubscriber(Node):
-
-    def __init__(self):
-        super().__init__('central_detection_subscriber')
-        self.image_subscription = self.create_subscription(
-            String,
-            'detections',
-            self.listener_callback,
-            10)
-        self.image_subscription  # prevent unused variable warning
-
-    def listener_callback(self, msg):
-        self.get_logger().info('IMAGE_SUB : "%s"' % msg.data)
-        detection_msg = msg.data
 
         
 class CentralJetsonPublisher(Node):
 
     def __init__(self):
         super().__init__('central_jetson_publisher')
-        self.publisher_ = self.create_publisher(String, 'central_jetson_pub', 10)
+        
+        # Detections PUBLISHER
+        self.publisher_ = self.create_publisher(DetectionsArray, 'central_jetson_pub', 10)
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
+        self.detection_msg = None
+
+	# Detections SUBSCRIBER
+        self.image_subscription = self.create_subscription(
+            DetectionsArray,
+            'detections',
+            self.listener_callback,
+            10)
+
 
     def timer_callback(self):
-        msg = String()
-        msg = detection_msg
-        msg.data = 'CENTRAL_PUB: %d' % self.i
+        msg = DetectionsArray()
+        print("MESSAGE TYPE: " + str(type(self.detection_msg)))
+        if(self.detection_msg != None):
+            msg.detections = self.detection_msg
+        else:
+            det = Detection()
+            msg.detections.append(det)
+
+
+        #msg.data = 'CENTRAL_PUB: %d' % self.i
         self.publisher_.publish(msg)
-        self.get_logger().info('CENTRAL_PUB: "%s"' % msg.data)
+        self.get_logger().info('CENTRAL_PUB: "%s"' % msg)
         self.i += 1
+
+
+
+    def listener_callback(self, msg):
+        self.get_logger().info('IMAGE_SUB : "%s"' % msg)
+        self.detection_msg = msg.detections
+
 
 
 def main(args=None):
     rclpy.init(args=args)
 
-    detecton_subscriber = DetectionsSubscriber()
     central_publisher = CentralJetsonPublisher()
-    rclpy.spin(detecton_subscriber)
+    rclpy.spin(central_publisher)
 
     # Destroy the node explicitly
     detecton_subscriber.destroy_node()
