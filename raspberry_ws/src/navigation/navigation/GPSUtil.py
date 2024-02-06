@@ -131,7 +131,7 @@ class GPSUtil:
             self.trajectory.add_to(self.mymap)
 
         # Save the map as an HTML file
-        self.mymap.save("trajectory_map.html")
+        self.plot_map()
 
 
     def plot_map(self,name="map"):
