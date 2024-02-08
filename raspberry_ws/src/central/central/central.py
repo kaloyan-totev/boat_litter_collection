@@ -2,10 +2,8 @@ import rclpy
 from rclpy.node import Node
 from custom_msgs.msg import DetectionsArray
 from custom_msgs.msg import Detection
-
-
+from enum import Enum
 from std_msgs.msg import String
-
 
 
 class CentralRaspberrySubscriber(Node):
@@ -25,21 +23,34 @@ class CentralRaspberrySubscriber(Node):
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
         self.detection_msg = None
+
+        self.JOBS = Enum('JOBS',['FOLLOW_LINE','FOLLOW_OBJECT'])
+        self.job = self.JOBS.FOLLOW_LINE
         
     def listener_callback(self, msg):
         self.detection_msg = msg
+
+        #trying to check if detections is empty string (NOT TRIED)
+        if(msg == DetectionsArray()):
+            self.job = self.JOBS.FOLLOW_LINE
+        else:
+            self.job = self.JOBS.FOLLOW_OBJECT
         #self.get_logger().info('I heard: "%s"' % msg)
 
     def timer_callback(self):
-        msg = DetectionsArray()
-        print("MESSAGE TYPE: " + str(type(self.detection_msg)))
-        if (self.detection_msg != None):
-            msg = self.detection_msg
 
-        # msg.data = 'CENTRAL_PUB: %d' % self.i
-        self.publisher_.publish(msg)
-        self.get_logger().info('\n\r CENTRAL_PUB: "%s" \n\r' % msg)
-        self.i += 1
+        if(self.job == self.JOBS.FOLLOW_OBJECT):
+            msg = DetectionsArray()
+            print("MESSAGE TYPE: " + str(type(self.detection_msg)))
+            if (self.detection_msg != None):
+                msg = self.detection_msg
+
+            # msg.data = 'CENTRAL_PUB: %d' % self.i
+            self.publisher_.publish(msg)
+            self.get_logger().info('\n\r CENTRAL_PUB: "%s" \n\r' % msg)
+            self.i += 1
+        elif(self.job == self.JOBS.FOLLOW_LINE):
+            pass
 
 
 def main(args=None):

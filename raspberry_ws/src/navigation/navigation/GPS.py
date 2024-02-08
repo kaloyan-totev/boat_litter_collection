@@ -21,16 +21,30 @@ class Gps(Node):
         port = "/dev/ttyAMA0"
         self.ser = serial.Serial(port, baudrate=9600, timeout=0.5)
         self.dataout = pynmea2.NMEAStreamReader()
-        self.util = GPSUtil()
         # Set frame points
-        top_left_point = (42.851781, 27.800468)
-        top_right_point = (42.850520, 27.879634)
-        bottom_right_point = (42.789835, 27.884055)
-        bottom_left_point = (42.801670, 27.790202)
-        trajectory_utility.update_frame(top_left_point, top_right_point, bottom_right_point, bottom_left_point)
+        top_left_point = (42.727850, 27.608618)
+        top_right_point = (42.725266, 27.612694)
+        bottom_right_point = (42.722352, 27.608125)
+        bottom_left_point = (42.725343, 27.602592)
+        example_location = (42.725343, 27.602592)
+        frame = (top_left_point, top_right_point, bottom_right_point, bottom_left_point)
+        self.util = GPSUtil(current_location=example_location,frame=frame)
+        #prevents trajectory from recalculating every cycle because this way the boat will
+        # always be on the trajectory ( when recalculating the boat's current location
+        # is almost always the start of the trajectory)
+        self.trajectory_is_set = False
 
+        # indicates to which direction the boat is moving
+        self.direction_is_left = False
+        self.is_moving_vertically = False
+        self.last_movement_is_horizontal = False
+
+
+
+    #TODO: create action for when requested the map file is sent to the central node
+    # and from there to a server
     def timer_callback(self):
-        msg = Detection()
+        msg = String()
 
         newdata = self.ser.readline()
         print(f"newdata[0:6] : {newdata[0:6]}")
@@ -41,6 +55,49 @@ class Gps(Node):
             gps = "Latitude=" + str(lat) + "and Longitude=" + str(lng)
             self.util.update_current_location((lat, lng))
             print(gps)
+
+            #recalculate new target when arrived at ddestination
+            if(util.has_reached_destination):
+                distance_to_left = util.distance_between(util.current_location, util.left_boundary)
+                distance_to_right = util.distance_between(util.current_location, util.right_boundary)
+                #TODO: check if current destination is moving to the left/right or up/down
+
+                # CHANGE DIRECTON
+                #current location in near left boundary
+                if(distance_to_left <= 5):
+                    self.direction_is_left = False
+
+
+                #current location in near right boundary
+                elif(distance_to_right <=5):
+                    self.direction_is_left = True
+
+                # MOVE HORIZONTALLY OR VERTICALLY
+                if(self.last_movement_is_horizontal):
+                    self.last_movement_is_horizontal = False
+                    util.adjust_trajectory_to_boundary()
+                else:
+                    self.last_movement_is_horizontal = True
+                    if(self.direction_is_left):
+                        util.move_destination_to_right()
+                    else:
+                        util.move_destination_to_left()
+
+
+
+
+
+
+
+
+
+
+
+                    util.adjust_trajectory_to_boundary()
+
+
+
+
         # self.publisher_.publish(msg)
         # self.get_logger().info('\n\r CENTRAL_PUB: "%s" \n\r' % msg)
         # self.i += 1
