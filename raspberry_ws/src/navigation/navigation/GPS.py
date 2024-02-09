@@ -83,21 +83,6 @@ class Gps(Node):
                     else:
                         util.move_destination_to_left()
 
-
-
-
-
-
-
-
-
-
-
-                    util.adjust_trajectory_to_boundary()
-
-
-
-
         # self.publisher_.publish(msg)
         # self.get_logger().info('\n\r CENTRAL_PUB: "%s" \n\r' % msg)
         # self.i += 1
