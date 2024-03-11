@@ -7,6 +7,7 @@ from rclpy.node import Node
 from custom_msgs.msg import Detection
 from std_msgs.msg import String
 from navigation.GPSUtil import GPSUtil
+from control.arduinoCommandCenter import Command
 
 
 class Gps(Node):
@@ -39,6 +40,7 @@ class Gps(Node):
         self.is_moving_vertically = False
         self.last_movement_is_horizontal = False
 
+        self.cmd = Command()
 
 
     #TODO: create action for when requested the map file is sent to the central node
@@ -67,7 +69,6 @@ class Gps(Node):
                 if(distance_to_left <= 5):
                     self.direction_is_left = False
 
-
                 #current location in near right boundary
                 elif(distance_to_right <=5):
                     self.direction_is_left = True
@@ -82,6 +83,17 @@ class Gps(Node):
                         util.move_destination_to_right()
                     else:
                         util.move_destination_to_left()
+            #following a line
+            else:
+                if(util.point_position_relative_to_line() == "left"):
+                    #go_left
+                    self.cmd.go_left
+                elif(util.point_position_relative_to_line() == "right"):
+                    #go_right
+                    self.cmd.go_right
+                elif(util.point_position_relative_to_line() == "forward"):
+                    #go_forward
+                    self.cmd.go_forward
 
         # self.publisher_.publish(msg)
         # self.get_logger().info('\n\r CENTRAL_PUB: "%s" \n\r' % msg)

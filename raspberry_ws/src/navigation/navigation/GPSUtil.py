@@ -84,11 +84,11 @@ class GPSUtil:
         """
         cross = self.cross_product(start, end, point)
         if cross > 0:
-            return "Left"
+            return "left"
         elif cross < 0:
-            return "Right"
+            return "right"
         else:
-            return "On the line"
+            return "forward" #on the line
 
     def distance_point_to_line(self, point, start, end):
         """
