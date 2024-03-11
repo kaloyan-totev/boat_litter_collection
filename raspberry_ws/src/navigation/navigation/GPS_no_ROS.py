@@ -1,4 +1,6 @@
 from GPSUtil import GPSUtil
+import pynmea2
+import serial
 
 top_left_point = (42.65585256186259, 27.57744174007652)
 top_right_point = (42.655882914489375, 27.577553290251092)
@@ -11,9 +13,10 @@ util = GPSUtil(current_location = current  ,frame=frame)
 
 util.adjust_trajectory_to_boundary()
 util.plot_map()
-
+port = "/dev/ttyAMA0"
+ser = serial.Serial(port,baudrate=9600,timeout=1)
 while(True):
-    newdata = self.ser.readline()
+    newdata = ser.readline()
     print(f"newdata[0:6] : {newdata[0:6]}")
     if newdata[0:6] == "$GPRMC":
         newmsg = pynmea2.parse(newdata)
