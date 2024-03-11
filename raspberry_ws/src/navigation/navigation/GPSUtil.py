@@ -175,6 +175,7 @@ class GPSUtil:
         self.mymap.save("trajectory_map.html")
 
     def plot_map(self,name="map"):
+        self.mymap = folium.Map(location=self.current_location, zoom_start=20)
         # Create a map centered at the start coordinate
         self.visualize_trajectory()
 
