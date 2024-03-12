@@ -2,6 +2,7 @@ import folium
 from folium.plugins import MeasureControl
 from folium.plugins import Geocoder
 from geopy.distance import geodesic
+import geopy
 
 class GPSUtil:
     def __init__(self, current_location, frame):
@@ -26,6 +27,7 @@ class GPSUtil:
 
     def distance_between(self, point1, point2):
         # Calculate the difference between two points (gps coordinates)
+        print(f"point1:{point1},point2:{point2}")
         return geodesic(point1, point2).meters
 
     def distance_to_trajectory(self):
@@ -208,6 +210,7 @@ class GPSUtil:
 
     def has_reached_destination(self):
         distance_to_destiantion = self.distance_between(self.current_location,self.destination)
+        print(f"distance to destination: {distance_to_destiantion}")
         # units are in meters
         return distance_to_destiantion<=5
 

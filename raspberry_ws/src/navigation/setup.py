@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'gps = navigation.GPS:main',
+            'trrajectory_follower = navigation.trajectoryFollower:main',
         ],
     },
 )

@@ -8,17 +8,19 @@ from custom_msgs.msg import Detection
 from std_msgs.msg import String
 from navigation.GPSUtil import GPSUtil
 from control.arduinoCommandCenter import Command
+import os
 
 
 class Gps(Node):
 
     def __init__(self):
         super().__init__('gps')
-        self.publisher_ = self.create_publisher(Detection, 'raspberry_gps', 10)
+        self.publisher_ = self.create_publisher(String, 'raspberry_gps', 10)
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
 
+        os.system("sudo chmod 666 /dev/ttyAMA0")
         port = "/dev/ttyAMA0"
         self.ser = serial.Serial(port, baudrate=9600, timeout=0.5)
         self.dataout = pynmea2.NMEAStreamReader()
@@ -47,57 +49,68 @@ class Gps(Node):
     # and from there to a server
     def timer_callback(self):
         msg = String()
-
-        newdata = self.ser.readline()
+        newdata = ""
+        try:
+            newdata = self.ser.readline()
+        except:
+            os.system("sudo chmod 666 /dev/ttyAMA0")
         print(f"newdata[0:6] : {newdata[0:6]}")
         if newdata[0:6] == "$GPRMC":
             newmsg = pynmea2.parse(newdata)
             lat = newmsg.latitude
             lng = newmsg.longitude
             gps = "Latitude=" + str(lat) + "and Longitude=" + str(lng)
-            self.util.update_current_location((lat, lng))
             print(gps)
+            gps = str(lat) + "," + str(lng)
 
-            #recalculate new target when arrived at ddestination
-            if(util.has_reached_destination):
-                distance_to_left = util.distance_between(util.current_location, util.left_boundary)
-                distance_to_right = util.distance_between(util.current_location, util.right_boundary)
-                #TODO: check if current destination is moving to the left/right or up/down
+            self.util.update_current_location((lat, lng))
+            msg.data = gps
 
-                # CHANGE DIRECTON
-                #current location in near left boundary
-                if(distance_to_left <= 5):
-                    self.direction_is_left = False
+        """
+        #recalculate new target when arrived at ddestination
+        if(util.has_reached_destination):
+            distance_to_left = util.distance_between(util.current_location, util.left_boundary)
+            distance_to_right = util.distance_between(util.current_location, util.right_boundary)
+            #TODO: check if current destination is moving to the left/right or up/down
 
-                #current location in near right boundary
-                elif(distance_to_right <=5):
-                    self.direction_is_left = True
+            # CHANGE DIRECTON
+            #current location in near left boundary
+            if(distance_to_left <= 5):
+                self.direction_is_left = False
 
-                # MOVE HORIZONTALLY OR VERTICALLY
-                if(self.last_movement_is_horizontal):
-                    self.last_movement_is_horizontal = False
-                    util.adjust_trajectory_to_boundary()
-                else:
-                    self.last_movement_is_horizontal = True
-                    if(self.direction_is_left):
-                        util.move_destination_to_right()
-                    else:
-                        util.move_destination_to_left()
-            #following a line
+            #current location in near right boundary
+            elif(distance_to_right <=5):
+                self.direction_is_left = True
+
+            # MOVE HORIZONTALLY OR VERTICALLY
+            if(self.last_movement_is_horizontal):
+                self.last_movement_is_horizontal = False
+                util.adjust_trajectory_to_boundary()
             else:
-                if(util.point_position_relative_to_line() == "left"):
-                    #go_left
-                    self.cmd.go_left
-                elif(util.point_position_relative_to_line() == "right"):
-                    #go_right
-                    self.cmd.go_right
-                elif(util.point_position_relative_to_line() == "forward"):
-                    #go_forward
-                    self.cmd.go_forward
-
-        # self.publisher_.publish(msg)
-        # self.get_logger().info('\n\r CENTRAL_PUB: "%s" \n\r' % msg)
-        # self.i += 1
+                self.last_movement_is_horizontal = True
+                if(self.direction_is_left):
+                    util.move_destination_to_right()
+                else:
+                    util.move_destination_to_left()
+        #following a line
+        else:
+            msg = util.point_position_relative_to_line()
+            if(util.point_position_relative_to_line() == "left"):
+                #go_left
+                #self.cmd.go_left
+                pass
+            elif(util.point_position_relative_to_line() == "right"):
+                #go_right
+                #self.cmd.go_right
+                pass
+            elif(util.point_position_relative_to_line() == "forward"):
+                #go_forward
+                #self.cmd.go_forward
+                pass
+"""
+        self.publisher_.publish(msg)
+        self.get_logger().info('\n\r CENTRAL_PUB: "%s" \n\r' % msg)
+        self.i += 1
 
 
 def main(args=None):
