@@ -21,8 +21,8 @@ class Gps(Node):
         self.i = 0
 
         os.system("sudo chmod 666 /dev/ttyAMA0")
-        port = "/dev/ttyAMA0"
-        self.ser = serial.Serial(port, baudrate=9600, timeout=0.5)
+        self.port = "/dev/ttyAMA0"
+        self.ser = serial.Serial(self.port, baudrate=9600, timeout=0.5)
         self.dataout = pynmea2.NMEAStreamReader()
         # Set frame points
         top_left_point = (42.727850, 27.608618)
@@ -49,19 +49,29 @@ class Gps(Node):
     # and from there to a server
     def timer_callback(self):
         msg = String()
-        newdata = ""
+        self.newdata = ""
         try:
-            newdata = self.ser.readline()
+            self.newdata = self.ser.readline()
+            print(f"newdata[0:6] : {str(self.newdata[0:6])}")
         except:
+            print(f"failed")
             os.system("sudo chmod 666 /dev/ttyAMA0")
-        print(f"newdata[0:6] : {newdata[0:6]}")
-        if newdata[0:6] == "$GPRMC":
-            newmsg = pynmea2.parse(newdata)
-            lat = newmsg.latitude
-            lng = newmsg.longitude
-            gps = "Latitude=" + str(lat) + "and Longitude=" + str(lng)
-            print(gps)
-            gps = str(lat) + "," + str(lng)
+            self.ser = serial.Serial(self.port, baudrate=9600, timeout=1)
+        if (self.newdata[0:6] == b'$GPRMC'):
+            print("here")
+            ndata = str(self.newdata)+ ""
+            ndata= str(ndata[2:-5])
+            try:
+                newmsg = pynmea2.parse(str(ndata))
+                lat = newmsg.latitude
+                lng = newmsg.longitude
+                gps = f"Latitude= {str(lat)} Longitude= {str(lng)}"
+                self.util.update_current_location((lat, lng))
+                self.util.plot_map()
+                print(gps)
+            except pynmea2.nmea.ParseError as e:
+                print(e)
+                gps = str(lat) + "," + str(lng)
 
             self.util.update_current_location((lat, lng))
             msg.data = gps

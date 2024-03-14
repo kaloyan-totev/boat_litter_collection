@@ -6,7 +6,7 @@ import geopy
 
 class GPSUtil:
     def __init__(self, current_location, frame):
-
+	
         self.current_location = current_location
         self.mymap = folium.Map(location=self.current_location, zoom_start=17)
         self.mymap.add_child(MeasureControl())
