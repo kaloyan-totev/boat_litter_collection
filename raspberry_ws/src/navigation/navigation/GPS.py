@@ -31,7 +31,8 @@ class Gps(Node):
         bottom_left_point = (42.725343, 27.602592)
         example_location = (42.725343, 27.602592)
         frame = (top_left_point, top_right_point, bottom_right_point, bottom_left_point)
-        self.util = GPSUtil(current_location=example_location,frame=frame)
+        self.util = GPSUtil.get_instance()
+        self.util = GPSUtil.get_instance(current_location=example_location,frame=frame)
         #prevents trajectory from recalculating every cycle because this way the boat will
         # always be on the trajectory ( when recalculating the boat's current location
         # is almost always the start of the trajectory)

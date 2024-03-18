@@ -16,13 +16,15 @@ class TrajectoryFollower(Node):
             self.image_callback,
             10)
         self.subscription  # prevent unused variable warning
+        """
         top_left_point = (42.727850, 27.608618)
         top_right_point = (42.725266, 27.612694)
         bottom_right_point = (42.722352, 27.608125)
         bottom_left_point = (42.725343, 27.602592)
         example_location = (42.725343, 27.602592)
         frame = (top_left_point, top_right_point, bottom_right_point, bottom_left_point)
-        self.util = GPSUtil(current_location=example_location,frame=frame)
+        """
+        self.util = GPSUtil.get_instance()
         #prevents trajectory from recalculating every cycle because this way the boat will
         # always be on the trajectory ( when recalculating the boat's current location
         # is almost always the start of the trajectory)

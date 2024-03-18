@@ -4,9 +4,12 @@ from folium.plugins import Geocoder
 from geopy.distance import geodesic
 import geopy
 
+
 class GPSUtil:
+
+    __instance = None
     def __init__(self, current_location, frame):
-	
+
         self.current_location = current_location
         self.mymap = folium.Map(location=self.current_location, zoom_start=17)
         self.mymap.add_child(MeasureControl())
@@ -24,6 +27,17 @@ class GPSUtil:
         # here self.destination is assigned a value
         self.adjust_trajectory_to_boundary()
         self.trajectory = folium.PolyLine(locations=[self.start, self.destination], color='blue', popup="Trajectory")
+
+    def get_instance(self,current_location, frame):
+        if (GPSUtil.__instance == None):
+            GPSUtil.__instance = GPSUtil(current_location,frame)
+        else:
+            print("a GPSUtil. instance already exists")
+    def get_instance(self):
+        if (GPSUtil.__instance == None):
+            print("a GPSUtil. instance does not yet exists\nPlease use get_instance(self,current_location, frame)")
+        else:
+            return GPSUtil.__instance
 
     def distance_between(self, point1, point2):
         # Calculate the difference between two points (gps coordinates)
@@ -65,12 +79,12 @@ class GPSUtil:
             return None, None
 
     def point_position_relative_to_line(self, line=None, point=None):
-        if(line==None):
+        if (line == None):
             line = self.trajectory
 
         start = line.locations[0]
         end = line.locations[1]
-        if(not point):
+        if (not point):
             point = self.current_location
 
         """
@@ -90,7 +104,7 @@ class GPSUtil:
         elif cross < 0:
             return "right"
         else:
-            return "forward" #on the line
+            return "forward"  # on the line
 
     def distance_point_to_line(self, point, start, end):
         """
@@ -148,14 +162,15 @@ class GPSUtil:
         }
         # Update separate fields for each boundary
         self.top_boundary = folium.PolyLine(locations=[top_left, top_right], color='green', popup="Top Boundary")
-        self.right_boundary = folium.PolyLine(locations=[top_right, bottom_right], color='green', popup="Right Boundary")
-        self.bottom_boundary = folium.PolyLine(locations=[bottom_right, bottom_left], color='green', popup="Bottom Boundary")
+        self.right_boundary = folium.PolyLine(locations=[top_right, bottom_right], color='green',
+                                              popup="Right Boundary")
+        self.bottom_boundary = folium.PolyLine(locations=[bottom_right, bottom_left], color='green',
+                                               popup="Bottom Boundary")
         self.left_boundary = folium.PolyLine(locations=[bottom_left, top_left], color='green', popup="Left Boundary")
 
     def visualize_trajectory(self):
         # Create a map centered at the start coordinate
         map_center = self.current_location
-
 
         # Add markers for start, destination, and current location
         points = {
@@ -176,7 +191,7 @@ class GPSUtil:
         # Save the map as an HTML file
         self.mymap.save("trajectory_map.html")
 
-    def plot_map(self,name="map"):
+    def plot_map(self, name="map"):
         self.mymap = folium.Map(location=self.current_location, zoom_start=20)
         # Create a map centered at the start coordinate
         self.visualize_trajectory()
@@ -201,7 +216,7 @@ class GPSUtil:
         if self.current_location:
             closest_point_on_trajectory = self.closest_point_on_trajectory()
             distance_line = folium.PolyLine(locations=[self.current_location, closest_point_on_trajectory],
-                                           color='red', popup="Distance to Trajectory")
+                                            color='red', popup="Distance to Trajectory")
             distance_line.add_to(self.mymap)
 
         # Save the map as an HTML file
@@ -209,12 +224,12 @@ class GPSUtil:
         self.mymap.save(f"{name}.html")
 
     def has_reached_destination(self):
-        distance_to_destiantion = self.distance_between(self.current_location,self.destination)
+        distance_to_destiantion = self.distance_between(self.current_location, self.destination)
         print(f"distance to destination: {distance_to_destiantion}")
         # units are in meters
-        return distance_to_destiantion<=5
+        return distance_to_destiantion <= 5
 
-    def move_destination_to_right(self,distance_meters = 10):
+    def move_destination_to_right(self, distance_meters=10):
         if not self.current_location:
             return None
 
@@ -224,46 +239,49 @@ class GPSUtil:
         # Calculate the destination point using geopy
         new_destination = geopy.distance.distance(meters=distance_meters).destination(self.current_location, bearing)
         self.destination = new_destination
-    def move_destination_to_left(self,distance_meters = 10):
+
+    def move_destination_to_left(self, distance_meters=10):
         if not self.current_location:
             return None
 
         # Define the direction and distance to move in meters
         bearing = 270  # 270 degrees represents moving westwards (to the left)
 
-
         # Calculate the destination point using geopy
         new_destination = geopy.distance.distance(meters=distance_meters).destination(self.current_location, bearing)
         self.destination = new_destination
+
     def adjust_trajectory_to_boundary(self):
-            """
+        """
             Adjusts the trajectory based on the current location's proximity to the top or bottom boundary.
             """
-            if not self.current_location or not self.frame or len(self.frame) == 0:
-                return
+        if not self.current_location or not self.frame or len(self.frame) == 0:
+            return
 
-            top_boundary = self.frame.get("Top", ())[0]
-            bottom_boundary = self.frame.get("Bottom", ())[0]
+        top_boundary = self.frame.get("Top", ())[0]
+        bottom_boundary = self.frame.get("Bottom", ())[0]
 
-            if not top_boundary or not bottom_boundary:
-                return
+        if not top_boundary or not bottom_boundary:
+            return
 
-            distance_to_top = self.distance_between(self.current_location, top_boundary)
-            distance_to_bottom = self.distance_between(self.current_location, bottom_boundary)
+        distance_to_top = self.distance_between(self.current_location, top_boundary)
+        distance_to_bottom = self.distance_between(self.current_location, bottom_boundary)
 
-            # Check if the current location is closer to the top or bottom boundary
-            if distance_to_top < distance_to_bottom:
-                # If closer to the top boundary, adjust the trajectory
-                self.update_trajectory(self.current_location, self.closest_point_on_trajectory(trajectory=self.bottom_boundary))
-            else:
-                # If closer to the bottom boundary, adjust the trajectory
-                self.update_trajectory(self.current_location, self.closest_point_on_trajectory(trajectory= self.top_boundary))
+        # Check if the current location is closer to the top or bottom boundary
+        if distance_to_top < distance_to_bottom:
+            # If closer to the top boundary, adjust the trajectory
+            self.update_trajectory(self.current_location,
+                                   self.closest_point_on_trajectory(trajectory=self.bottom_boundary))
+        else:
+            # If closer to the bottom boundary, adjust the trajectory
+            self.update_trajectory(self.current_location,
+                                   self.closest_point_on_trajectory(trajectory=self.top_boundary))
 
     def is_inside_frame(self):
-        sides = (self.left_boundary, self.bottom_boundary,self.right_boundary,self.top_boundary)
+        sides = (self.left_boundary, self.bottom_boundary, self.right_boundary, self.top_boundary)
         for side in sides:
             point_on_side = str(self.point_position_relative_to_line(line=side)).lower()
-            if(point_on_side == "left" ):
+            if (point_on_side == "left"):
                 pass
             else:
                 return False
@@ -272,7 +290,7 @@ class GPSUtil:
     def closest_point_on_trajectory(self, trajectory=None):
         point = self.current_location
 
-        if(trajectory==None):
+        if (trajectory == None):
             trajectory = self.trajectory
             start = self.start
             destination = self.destination
@@ -304,7 +322,7 @@ class GPSUtil:
             # If start and destination are the same, return start
             return start
 
-        t = ((x0 - x1) * dx + (y0 - y1) * dy) / (dx**2 + dy**2)
+        t = ((x0 - x1) * dx + (y0 - y1) * dy) / (dx ** 2 + dy ** 2)
 
         if t < 0:
             # Closest point is before the start of the trajectory
@@ -344,7 +362,7 @@ class GPSUtil:
                     start_point[1] + ratio * (end_point[1] - start_point[1])
                 )
                 label = f"point_{side}_{i}"
-                marker = folium.Marker(location=new_point, popup=label,color="purple")
+                marker = folium.Marker(location=new_point, popup=label, color="purple")
                 marker.add_to(self.mymap)
                 # Assign the new point with the specified name pattern
                 point_name = f"{side}_{i}"

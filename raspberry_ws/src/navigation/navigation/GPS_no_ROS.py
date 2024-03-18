@@ -12,7 +12,8 @@ bottom_left_point = (42.65574973707147, 27.577530671961426)
 current = (42.65583022937629, 27.5775306523617)
 frame = (top_left_point,top_right_point,bottom_right_point,bottom_left_point)
 
-util = GPSUtil(current_location = current  ,frame=frame)
+util = GPSUtil.get_instance()
+util = GPSUtil.get_instance(current_location = current  ,frame=frame)
 
 util.adjust_trajectory_to_boundary()
 #util.plot_map()
