@@ -80,15 +80,15 @@ class TrajectoryFollower(Node):
             command = self.util.point_position_relative_to_line()
             if (command == "left"):
                 print("go_left")
-                # self.cmd.go_left
+                self.cmd.go_left
 
             elif (command == "right"):
                   print("go_right")
-                # self.cmd.go_right
+                  self.cmd.go_right
 
             elif (command == "forward"):(
-                print("go_forward"))
-                # self.cmd.go_forward
+                  print("go_forward"))
+                  self.cmd.go_forward
 
         self.follow_func_locked = False
 

@@ -8,6 +8,8 @@ import geopy
 class GPSUtil:
 
     __instance = None
+    
+
     def __init__(self, current_location, frame):
 
         self.current_location = current_location
@@ -28,15 +30,19 @@ class GPSUtil:
         self.adjust_trajectory_to_boundary()
         self.trajectory = folium.PolyLine(locations=[self.start, self.destination], color='blue', popup="Trajectory")
 
-    def get_instance(self,current_location, frame):
+   
+    def get_instance2(current_location, frame):
         if (GPSUtil.__instance == None):
+            print("returning instance")
             GPSUtil.__instance = GPSUtil(current_location,frame)
+            return GPSUtil.__instance
         else:
             print("a GPSUtil. instance already exists")
-    def get_instance(self):
+    def get_instance():
         if (GPSUtil.__instance == None):
             print("a GPSUtil. instance does not yet exists\nPlease use get_instance(self,current_location, frame)")
         else:
+            print("returning instance")
             return GPSUtil.__instance
 
     def distance_between(self, point1, point2):
