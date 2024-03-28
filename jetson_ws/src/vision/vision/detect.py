@@ -12,11 +12,11 @@ class DetectionPublisher(Node):
 
         super().__init__('vision_detections') # name of the node
         self.publisher_ = self.create_publisher(DetectionsArray, 'detections', 10) # initializing publisher with a name 'detections' of type string
-        timer_period = 0.5  # seconds between message published
+        timer_period = 0.05  # seconds between message published
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
 
-        self.model = YOLO('yolov8n.engine')
+        self.model = YOLO('yolov8s.pt')
         #self.model = YOLO('v4_greyscale_best.pt')  # load a custom model
         video_path = 0
         self.cap = cv2.VideoCapture(video_path)
@@ -29,7 +29,7 @@ class DetectionPublisher(Node):
         self.ret, self.frame = self.cap.read()
 
         if(self.ret):
-            results = self.model.track(self.frame, persist=True,conf=0.5, iou=0.3, show=True)
+            results = self.model.track(self.frame, persist=True,conf=0.5, iou=0.3, show=True, imgsz=320)
 
             # count boxes from left and from right side of frame
             for r in results:
