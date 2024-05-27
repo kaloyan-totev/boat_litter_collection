@@ -41,13 +41,13 @@ class CentralRaspberrySubscriber(Node):
 
         #trying to check if detections is empty string (NOT TRIED)
         if(msg == DetectionsArray()):
-            self.job = self.JOBS.FOLLOW_LINE
+            self.job = self.JOBS.FOLLOW_OBJECT #FOLLOW_LINE
         else:
             self.job = self.JOBS.FOLLOW_OBJECT
         #self.get_logger().info('I heard: "%s"' % msg)
 
     def timer_callback(self):
-
+        print(f"TIMER CALLBACK JOB = {self.job}")
         if(self.job == self.JOBS.FOLLOW_OBJECT):
             msg = DetectionsArray()
             self.follow_trajectory = False
@@ -57,17 +57,18 @@ class CentralRaspberrySubscriber(Node):
 
             # msg.data = 'CENTRAL_PUB: %d' % self.i
             self.publisher_.publish(msg)
-            self.get_logger().info('\n\r CENTRAL_PUB: "%s" \n\r' % msg)
+            self.get_logger().info('\n\r CENTRAL_PUB CAMERA FOLLOW: "%s" \n\r' % msg)
             self.i += 1
         elif(self.job == self.JOBS.FOLLOW_LINE):
             self.follow_trajectory = True
 
     def line_follow_callback(self):
-            msg = Bool()
-            msg.data = self.follow_trajectory
-            self.gps_switch_publisher.publish(msg)
-            self.get_logger().info('\n\r CENTRAL_PUB: "%s" \n\r' % msg)
-            self.i += 1
+        print("LINE FOLLOW")
+        msg = Bool()
+        msg.data = self.follow_trajectory
+        self.gps_switch_publisher.publish(msg)
+        self.get_logger().info('\n\r CENTRAL_PUB LINE FOLLOW: "%s" \n\r' % msg)
+        self.i += 1
             
 def main(args=None):
     rclpy.init(args=args)

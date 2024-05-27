@@ -1,89 +1,100 @@
-import json
-import serial
 import time
-import threading
-import logging
-#from custom_msgs.msg import Detection
-
-
-response = None
-ser = serial.Serial("/dev/ttyACM0", 9600, timeout=1)
-def flusfhDTR():
-    #ser.setDTR(False)
-    ser.flushInput()
-    #ser.setDTR(True)
-    
-    
-def read_serial():
-    logging.info(f"ARDUINO SAID: {ser.read()}")
+import RPi.GPIO as GPIO
+#from control.right_motor import set_throttle_right
+#from control.left_motor import set_throttle_left
 
 class Command:
     def __init__(self):
-        flusfhDTR()
-        self.currentCommand = b''
-        pass
+        # Define servo pins
+        self.left_motor_pin = 19
+        self.right_motor_pin = 13
+        GPIO.setmode(GPIO.BCM)
+        GPIO.setup(self.left_motor_pin, GPIO.OUT)
+        GPIO.setup(self.right_motor_pin, GPIO.OUT)
 
-    def stop_motors(self):
+        # Initialize PWM
+        self.left_pwm = GPIO.PWM(self.left_motor_pin, 50)
+        self.right_pwm = GPIO.PWM(self.right_motor_pin, 50)
+        self.left_pwm.start(0)
+        self.right_pwm.start(0)
+
+        # Define servo angles
+        self.zero_speed = 90  # 0 degree position for servo
+        self.max_speed = 120  # Maximum duty cycle for maximum speed
+        self.min_speed = 60  # Minimum duty cycle for minimum speed
         
-        ser.write(b'0')
-        self.currentCommand = b'0'
-        print(ser.read())
-        flusfhDTR()
-        pass
+        self.currentCommand = 0
 
-
-    def go_forward(self):
-        self.stop_motors()
-        self.currentCommand = b'1'
-        ser.write(b'1')
+    def set_throttle_left(self,throttle,pin=0):
+        duty = throttle / 18 + 2
+        #GPIO.output(pin, True)
+        self.left_pwm.ChangeDutyCycle(duty)
+        time.sleep(0.1)
+    def set_throttle_right(self,throttle,pin=0):
+        duty = throttle / 18 + 2
+        #GPIO.output(pin, True)
+        self.right_pwm.ChangeDutyCycle(duty)
+        time.sleep(0.1)
         
-        #print(ser.read())
-
-
+    def go_left(self):
+        self.currentCommand = 3
+        self.set_throttle_right(self.max_speed)
 
     def go_right(self):
-        self.stop_motors()
-        self.currentCommand = b'2'
-        ser.write(b'2')
-        
-        #print(ser.read())
+        self.currentCommand = 2
+        self.set_throttle_left(self.max_speed)
+
+    def go_forward(self):
+        self.currentCommand = 1
+        self.set_throttle_left(self.max_speed)
+        self.set_throttle_right(self.max_speed)
 
 
-    def go_left(self):
-        self.stop_motors()
-        self.currentCommand = b'3'
-        ser.write(b'3')
-        
-        #print(ser.read())
+    def stop_left_motor(self):
+        self.currentCommand = 6
+        self.set_throttle_left(self.zero_speed)
+
+    def stop_right_motor(self):
+        self.currentCommand = 5
+        self.set_throttle_right(self.zero_speed)
+
+    def stop_motors(self):
+        self.currentCommand = 0
+        self.set_throttle_left(self.zero_speed)
+        self.set_throttle_right(self.zero_speed)
 
 
     # decides which command to use, given the detection's location
-    def decide(self,target, offset = 20):
-        frame_x = float(target.screen_size_x.data)/2
-        frame_y = float(target.screen_size_y.data)
-        
-        object_y = float(target.location_y.data)
+    def decide(self, target, offset=20):
+    
+        if target is None or target == []:
+            print(f"STOP MOTORS target = {target}")
+            time.sleep(10)
+            self.stop_motors()
+            return
+
+        frame_x = float(target.screen_size_x.data) / 2
         object_x = float(target.location_x.data)
 
-        #is_centered = (object_x >= frame_x - offset) and (object_x <= frame_x + offset)
         is_left = object_x < frame_x - offset
         is_right = object_x > frame_x + offset
         is_centered = not is_left and not is_right
         
         print(f"OBJECT CENTER: {object_x} \n FRAME CENTER {frame_x} \n CURRENT COMMAND {self.currentCommand} \n")
         print(f"is_centered: {is_centered} \n is_right {is_right} \n is_left {is_left} \n")
-
-        if( is_centered and self.currentCommand != b'1'):
-            print("GO FORWARD \n")
+        
+        if is_centered and self.currentCommand != 1:
+            print("GO FORWARD")
             self.go_forward()
-        elif(is_left and self.currentCommand != b'3'):
-            print("GO LEFT \n")
+        elif is_left and self.currentCommand != 3:
+            print("GO LEFT")
             self.go_left()
-        elif(is_right and self.currentCommand != b'2'):
-            print("GO RIGHT \n")
+        elif is_right and self.currentCommand != 2:
+            print("GO RIGHT")
             self.go_right()
-        elif(target == None or target == [] and self.currentCommand != b'0'):
-            print("STOP_MOTORS \n")
-            self.stop_motors
-          
-          
+        elif self.currentCommand != 0 and not is_centered and not is_left and not is_right:
+            print("STOP MOTORS")
+            self.stop_motors()
+        #del self.left_pwm
+        #del self.right_pwm
+

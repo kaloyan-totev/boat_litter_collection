@@ -1,7 +1,11 @@
 from arduinoCommandCenter import Command
 import time
+import RPi.GPIO as GPIO
+
 
 cmd = Command()
+GPIO.setmode(GPIO.BCM)
+GPIO.cleanup()
 inp = None
 while(str(inp) != "q"):
     print("started")
