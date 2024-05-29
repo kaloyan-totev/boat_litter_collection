@@ -23,9 +23,10 @@ class TargetSelect(Node):
 
     def listener_callback(self, msg):
         self.detections = msg.detections
-        print(f"\nRECEIVED: \n")
+        print(f"\nRECEIVED: {self.detections}\n")
         for d in self.detections:
             print(f"\n{d}\n")
+            pass
 
     def select_target(self, detections=None, trait="conf", preferred_target=None):
         print(f"[select_target] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
@@ -59,8 +60,10 @@ class TargetSelect(Node):
             self.is_target_locked = False
 
         print(f"[/lock_target]=================================================================")
+        
+        
     def timer_callback(self):
-        print(f"[timer_callback] ---------------------------------------------------------------")
+        print(f"[timer_callback] ---------------------------------------------------------------{self.detections}")
         msg = self.last_locked_target if self.is_target_locked else Detection()
 
         if self.detections and not self.is_target_locked:
@@ -72,8 +75,8 @@ class TargetSelect(Node):
             msg = self.last_locked_target if self.is_target_locked else Detection()
 
         self.publisher_.publish(msg)
-        print(f"\nSENT: {msg}\n")
-        self.get_logger().info('\n Target_select_PUB: "%s" \n' % msg)
+        #print(f"\nSENT: {msg}\n")
+        #self.get_logger().info('\n Target_select_PUB: "%s" \n' % msg)
 
         self.lock_attempts = 4 if not self.is_target_locked else 5  # Reset attempts when a target is locked
         print(f"[/timer_callback] ---------------------------------------------------------------")

@@ -18,6 +18,8 @@ class CentralRaspberrySubscriber(Node):
             10)
         self.subscription  # prevent unused variable warning
 
+
+
         # Locked detection PUBLISHER
         self.publisher_ = self.create_publisher(DetectionsArray, 'raspberry_detections_array', 10)
         timer_period = 0.5  # seconds
@@ -45,6 +47,9 @@ class CentralRaspberrySubscriber(Node):
         else:
             self.job = self.JOBS.FOLLOW_OBJECT
         #self.get_logger().info('I heard: "%s"' % msg)
+
+
+
 
     def timer_callback(self):
         print(f"TIMER CALLBACK JOB = {self.job}")

@@ -10,18 +10,26 @@ from navigation.GPSUtil import GPSUtil
 from control.arduinoCommandCenter import Command
 import os
 
+""" CONNECTING GPS TO RASPBERRY 
+
+pi4              gps
+5v               vcc
+GND              GND
+8(GPIO14)        RX
+10(GPIO15)       TX
+
+"""
 
 class Gps(Node):
 
     def __init__(self):
         super().__init__('gps')
-        self.publisher_ = self.create_publisher(String, 'raspberry_gps', 10)
+        self.publisher_ = self.create_publisher(String, 'raspberry_gps_stream', 10)
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
 
-        os.system("sudo chmod 666 /dev/ttyAMA0")
-        self.port = "/dev/ttyAMA0"
+        self.port = "/dev/serial0"
         self.ser = serial.Serial(self.port, baudrate=9600, timeout=0.5)
         self.dataout = pynmea2.NMEAStreamReader()
         # Set frame points
@@ -32,7 +40,7 @@ class Gps(Node):
         example_location = (42.725343, 27.602592)
         frame = (top_left_point, top_right_point, bottom_right_point, bottom_left_point)
         self.util = GPSUtil.get_instance()
-        self.util = GPSUtil.get_instance(current_location=example_location,frame=frame)
+        #self.util = GPSUtil.get_instance2(current_location=example_location,frame=frame)
         #prevents trajectory from recalculating every cycle because this way the boat will
         # always be on the trajectory ( when recalculating the boat's current location
         # is almost always the start of the trajectory)
@@ -43,84 +51,40 @@ class Gps(Node):
         self.is_moving_vertically = False
         self.last_movement_is_horizontal = False
 
-        self.cmd = Command()
-
-
     #TODO: create action for when requested the map file is sent to the central node
     # and from there to a server
     def timer_callback(self):
         msg = String()
-        self.newdata = ""
+
         try:
-            self.newdata = self.ser.readline()
-            print(f"newdata[0:6] : {str(self.newdata[0:6])}")
-        except:
-            print(f"failed")
-            os.system("sudo chmod 666 /dev/ttyAMA0")
-            self.ser = serial.Serial(self.port, baudrate=9600, timeout=1)
-        if (self.newdata[0:6] == b'$GPRMC'):
-            print("here")
-            ndata = str(self.newdata)+ ""
-            ndata= str(ndata[2:-5])
-            try:
-                newmsg = pynmea2.parse(str(ndata))
-                lat = newmsg.latitude
-                lng = newmsg.longitude
-                gps = f"Latitude= {str(lat)} Longitude= {str(lng)}"
-                self.util.update_current_location((lat, lng))
-                self.util.plot_map()
-                print(gps)
-            except pynmea2.nmea.ParseError as e:
-                print(e)
-                gps = str(lat) + "," + str(lng)
+            if self.ser.in_waiting > 0:
+                line = self.ser.readline().decode('ascii', errors='replace').strip()
+                if line.startswith('$GPGGA'):
+                    self.newmsg = pynmea2.parse(line)
+                    lat = self.newmsg.latitude
+                    lng = self.newmsg.longitude
+                    gps = f"Latitude= {str(lat)} Longitude= {str(lng)}"
+                    self.util.update_current_location((lat, lng))
+                    self.util.plot_map()
+                    print(gps)
+
+                    print(
+                        f"Latitude: {self.newmsg.latitude} {self.newmsg.lat_dir}, Longitude: {self.newmsg.longitude} {self.newmsg.lon_dir}, Altitude: {self.newmsg.altitude} {self.newmsg.altitude_units}")
+        except pynmea2.ParseError as e:
+            print(f"Parse error: {e}")
+            gps = str(lat) + "," + str(lng)
 
             self.util.update_current_location((lat, lng))
             msg.data = gps
+        except Exception as e:
+            print(f"Error reading GPS data: {e}")
 
-        """
-        #recalculate new target when arrived at ddestination
-        if(util.has_reached_destination):
-            distance_to_left = util.distance_between(util.current_location, util.left_boundary)
-            distance_to_right = util.distance_between(util.current_location, util.right_boundary)
-            #TODO: check if current destination is moving to the left/right or up/down
+        time.sleep(0.5)
 
-            # CHANGE DIRECTON
-            #current location in near left boundary
-            if(distance_to_left <= 5):
-                self.direction_is_left = False
+        #self.ser.close()
 
-            #current location in near right boundary
-            elif(distance_to_right <=5):
-                self.direction_is_left = True
-
-            # MOVE HORIZONTALLY OR VERTICALLY
-            if(self.last_movement_is_horizontal):
-                self.last_movement_is_horizontal = False
-                util.adjust_trajectory_to_boundary()
-            else:
-                self.last_movement_is_horizontal = True
-                if(self.direction_is_left):
-                    util.move_destination_to_right()
-                else:
-                    util.move_destination_to_left()
-        #following a line
-        else:
-            msg = util.point_position_relative_to_line()
-            if(util.point_position_relative_to_line() == "left"):
-                #go_left
-                #self.cmd.go_left
-                pass
-            elif(util.point_position_relative_to_line() == "right"):
-                #go_right
-                #self.cmd.go_right
-                pass
-            elif(util.point_position_relative_to_line() == "forward"):
-                #go_forward
-                #self.cmd.go_forward
-                pass
-"""
         self.publisher_.publish(msg)
-        self.get_logger().info('\n\r CENTRAL_PUB: "%s" \n\r' % msg)
+        if(msg.data): self.get_logger().info('\n\r CENTRAL_PUB: "%s" \n\r' % msg)
         self.i += 1
 
 
