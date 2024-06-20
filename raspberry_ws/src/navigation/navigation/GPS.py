@@ -40,8 +40,8 @@ class Gps(Node):
         example_location = (42.725343, 27.602592)
         frame = (top_left_point, top_right_point, bottom_right_point, bottom_left_point)
         self.util = GPSUtil.get_instance()
-        #self.util = GPSUtil.get_instance2(current_location=example_location,frame=frame)
-        #prevents trajectory from recalculating every cycle because this way the boat will
+        # self.util = GPSUtil.get_instance2(current_location=example_location,frame=frame)
+        # prevents trajectory from recalculating every cycle because this way the boat will
         # always be on the trajectory ( when recalculating the boat's current location
         # is almost always the start of the trajectory)
         self.trajectory_is_set = False
@@ -69,7 +69,9 @@ class Gps(Node):
                     print(gps)
 
                     print(
-                        f"Latitude: {self.newmsg.latitude} {self.newmsg.lat_dir}, Longitude: {self.newmsg.longitude} {self.newmsg.lon_dir}, Altitude: {self.newmsg.altitude} {self.newmsg.altitude_units}")
+                        f"Latitude: {self.newmsg.latitude} {self.newmsg.lat_dir}, "
+                        f"Longitude: {self.newmsg.longitude} {self.newmsg.lon_dir}, "
+                        f"Altitude: {self.newmsg.altitude} {self.newmsg.altitude_units}")
         except pynmea2.ParseError as e:
             print(f"Parse error: {e}")
             gps = str(lat) + "," + str(lng)
@@ -87,7 +89,6 @@ class Gps(Node):
         if(msg.data): self.get_logger().info('\n\r CENTRAL_PUB: "%s" \n\r' % msg)
         self.i += 1
 
-
 def main(args=None):
     rclpy.init(args=args)
     minimal_subscriber = Gps()
@@ -98,7 +99,6 @@ def main(args=None):
     # when the garbage collector destroys the node object)
     minimal_subscriber.destroy_node()
     rclpy.shutdown()
-
 
 if __name__ == '__main__':
     main()

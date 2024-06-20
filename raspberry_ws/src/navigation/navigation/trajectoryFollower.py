@@ -43,25 +43,36 @@ class TrajectoryFollower(Node):
         self.is_moving_vertically = False
         self.last_movement_is_horizontal = False
 
-        # this field changes wether the program is working. it is designed to be changed from the central node
-        # when switching between camera and gps
+        # this field changes weather the program is working. it is designed to
+        # be changed from the central node when switching between camera and gps
         self.working = False
-        # as the callback executes too often, this field indicates if the follow function has finished
-        # before starting anew
+        # as the callback executes too often, this field indicates if the
+        #  follow function has finishedbefore starting anew
         self.follow_func_locked = False
         self.cmd = Command()
 
-
+# this function is called upon each tick
     def follow(self):
+        # locks command control on gps
         self.follow_func_locked = True
-        # recalculate new target when arrived at destination
         if (self.util.has_reached_destination()):
-            distance_to_left = self.util.distance_point_to_line(self.util.current_location, self.util.left_boundary.locations[0], self.util.left_boundary.locations[1])
-            distance_to_right = self.util.distance_point_to_line(self.util.current_location, self.util.right_boundary.locations[0], self.util.right_boundary.locations[1])
+            distance_to_left = self.util.distance_point_to_line(self.util.current_location,
+                                                                self.util.left_boundary.locations[0],
+                                                                self.util.left_boundary.locations[1])
+
+            distance_to_right = self.util.distance_point_to_line(self.util.current_location,
+                                                                 self.util.right_boundary.locations[0],
+                                                                 self.util.right_boundary.locations[1])
             # TODO: check if current destination is moving to the left/right or up/down
             print(f"[follower(follow)] distance to left:{distance_to_left}, distance to right:{distance_to_right}")
-            # CHANGE DIRECTON
-            # current location in near left boundary
+            # CHANGE DIRECTION
+            # as the function is being called constantly by the timer's ticks, it is checking
+            # if the current location is near a border of a frame. The boat is designed to move from
+            # left to right, drawing a zig-zag line across the frame. When the current location
+            # approaches the left or right border of the frame, this means that the direction of traversal
+            # needs to be changed
+
+            # current location is near left boundary
             if (distance_to_left <= 5):
                 print("[follower(follow)] direction changed to right")
                 self.direction_is_left = False
@@ -72,6 +83,12 @@ class TrajectoryFollower(Node):
                 self.direction_is_left = True
 
             # MOVE HORIZONTALLY OR VERTICALLY
+            # when the destination point is reached, the new destination point needs to be calculated.
+            #in case the boat has last moved vertically, it means the next destination
+            # needs to be 5 meters to the left/right. In the oposite case it means that the last action
+            # has been to move the boat 5 meters and now the destination needs to be moved
+            # to the opposite boundary of the frame
+
             if (self.last_movement_is_horizontal):
                 self.last_movement_is_horizontal = False
                 self.util.adjust_trajectory_to_boundary()
