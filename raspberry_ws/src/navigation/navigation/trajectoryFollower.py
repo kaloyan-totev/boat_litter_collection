@@ -4,7 +4,7 @@ from rclpy.node import Node
 from sensor_msgs.msg import Image
 from std_msgs.msg import Bool
 from std_msgs.msg import String
-from control.arduinoCommandCenter import Command
+from control.motorCommandCenter import Command
 import time
 class TrajectoryFollower(Node):
 
@@ -57,12 +57,12 @@ class TrajectoryFollower(Node):
         self.follow_func_locked = True
         if (self.util.has_reached_destination()):
             distance_to_left = self.util.distance_point_to_line(self.util.current_location,
-                                                                self.util.left_boundary.locations[0],
-                                                                self.util.left_boundary.locations[1])
+                                                                (self.util.left_boundary.locations[0],
+                                                                self.util.left_boundary.locations[1]))
 
             distance_to_right = self.util.distance_point_to_line(self.util.current_location,
-                                                                 self.util.right_boundary.locations[0],
-                                                                 self.util.right_boundary.locations[1])
+                                                                 (self.util.right_boundary.locations[0],
+                                                                 self.util.right_boundary.locations[1]))
             # TODO: check if current destination is moving to the left/right or up/down
             print(f"[follower(follow)] distance to left:{distance_to_left}, distance to right:{distance_to_right}")
             # CHANGE DIRECTION

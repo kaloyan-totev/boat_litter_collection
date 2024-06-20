@@ -1,8 +1,12 @@
 import folium
-from folium.plugins import MeasureControl, Geocoder
+from folium.plugins import MeasureControl, Geocoder, Draw,BoatMarker
 from geopy.distance import geodesic
+from geopy.point import Point
+from geopy.distance import distance as geopy_distance
 import geopy
 import threading
+import math
+import time
 
 #TODO: make self.trajectory to self.main_trajectory.
 # use self.main_trajectory to save the starting and ending point.
@@ -32,7 +36,7 @@ class GPSUtil:
             return
         self._initialized = True
 
-        self.current_location = current_location or (0.0, 0.0)
+        self.current_location = current_location or (42.6554,  27.6778903)
         self.mymap = folium.Map(location=self.current_location, zoom_start=17)
         self.mymap.add_child(MeasureControl())
         self.mymap.add_child(Geocoder())
@@ -41,73 +45,75 @@ class GPSUtil:
         self.right_boundary = (42.725266, 27.612694)
         self.top_boundary = (42.722352, 27.608125)
         self.bottom_boundary = (42.725343, 27.602592)
+        self.previous_location = None
 
         self.frame = frame or [self.left_boundary, self.right_boundary, self.top_boundary, self.bottom_boundary]
         self.update_frame(self.frame)
 
         self.start = self.current_location
-        self.destination = (10, 10)  # Here self.destination is assigned a value
+        self.destination = (42.655504666666666, 27.5777275)  # Here self.destination is assigned a value
         self.adjust_trajectory_to_boundary()
         self.trajectory = folium.PolyLine(locations=[self.start, self.destination], color='blue', popup="Trajectory")
 
-# POINTS, LINES AND DISTANCE
+        self.last_execution_time = time.time() + 30 # used to calculate bearing
+        self.bearing = 0
+
+    # POINTS, LINES AND DISTANCE
     def distance_between(self, point1, point2):
         """Calculate the difference between two points (GPS coordinates)
         and returns the difference in meters."""
+        distance = geodesic(point1, point2).meters
+        print(f"[GPSUTIL](distance between)point1: {point1}, point2: {point2} = {distance} meters")
+        return distance
 
-        print(f"[GPSUTIL](distance between)point1: {point1}, point2: {point2}")
-        return geodesic(point1, point2).meters
+    def distance_point_to_line(self, point = None, trajectory = None):
+        """Returns the perpendicular distance and the closest point on the line
+        between a point and a given line.
 
-# TODO: compare thew two functions
-    def distance_point_to_line(self, point, start, end):
-        """Returns the perpendicular distance  between point and a given line.
+        Parameters
+        ----------
+        point : tuple of floats, optional
+            Defines the location from which to measure (longitude, latitude)
+            default is self.current location
+        trajectory : tuple of points (start and end), optional
+            Defines the starting point of the line (longitude, latitude)
+            default is self.main_trajectory
 
-               Parameters
-               ----------
-               point : gps point( longitude, latitude)
-                   Defines the location from which to measure
-               start : gps point( longitude, latitude)
-                    Defines the starting point of the line
-               end : gps point( longitude, latitude)
-                   Defines the ending point of the line
+
+        Returns
+        -------
+        tuple
+            A tuple containing the perpendicular distance and the closest point
+            on the line (longitude, latitude)
         """
 
-        x, y = point
-        x1, y1 = start
-        x2, y2 = end
+        point = self.current_location
 
-        numerator = abs((y2 - y1) * x - (x2 - x1) * y + x2 * y1 - y2 * x1)
-        denominator = ((y2 - y1) ** 2 + (x2 - x1) ** 2) ** 0.5
+        if not trajectory:
+            trajectory = self.trajectory
+            start = self.start
+            end = self.destination
+        else:
+            trajectory = trajectory
+            start = trajectory.locations[0]
+            end = trajectory.locations[1]
+        if not point:
+            point = self.current_location
 
-        return numerator / denominator
+        if not trajectory:
+            return None
+        # Convert input coordinates to geopy Points
+        point = Point(point[1], point[0])
+        start = Point(start[1], start[0])
+        end = Point(end[1], end[0])
 
-    def distance_point_to_line_closest(self, point, start, end):
-        """Returns the closest distance between point and a given line (segment).
+        # Vector from start to end
+        ABx = end.longitude - start.longitude
+        ABy = end.latitude - start.latitude
 
-                       Parameters
-                       ----------
-                       point : gps point( longitude, latitude)
-                           Defines the location from which to measure
-                       start : gps point( longitude, latitude)
-                            Defines the starting point of the line
-                       end : gps point( longitude, latitude)
-                           Defines the ending point of the line
-                """
-        x, y = point
-        x1, y1 = start
-        x2, y2 = end
-
-        # Vector AB - the vector from the start to the end of line
-        ABx = x2 - x1
-        ABy = y2 - y1
-
-        # Vector AP - - the vector from the start of the line to the point
-        APx = x - x1
-        APy = y - y1
-
-        # Vector BP - the vector from the end of the line to the point
-        BPx = x - x2
-        BPy = y - y2
+        # Vector from start to point
+        APx = point.longitude - start.longitude
+        APy = point.latitude - start.latitude
 
         # Dot product of AP and AB
         dot_product = APx * ABx + APy * ABy
@@ -118,23 +124,19 @@ class GPSUtil:
         # Parameter t to determine the closest point on the line segment
         t = dot_product / len_AB_squared
 
-        # there are two possible options from here on. first is if the point
-        # is next to the line and the second is when the point is above or
-        # below the line
+        # Ensure t is between 0 and 1
+        t = max(0, min(1, t))
 
-        # Closest point falls within the segment
-        if 0 <= t <= 1:
-            closest_x = x1 + t * ABx
-            closest_y = y1 + t * ABy
-            distance = math.sqrt((closest_x - x) ** 2 + (closest_y - y) ** 2)
-        else:
-            # Closest point falls outside the segment, closer to one of the endpoints
-            # Calculate distance to both endpoints and return the smaller one
-            dist_to_start = math.sqrt(APx ** 2 + APy ** 2)
-            dist_to_end = math.sqrt(BPx ** 2 + BPy ** 2)
-            distance = min(dist_to_start, dist_to_end)
+        # Calculate the closest point on the line segment
+        closest_x = start.longitude + t * ABx
+        closest_y = start.latitude + t * ABy
+        closest_point = Point(closest_y, closest_x)
 
-        return distance
+        # Calculate the perpendicular distance using geodesic
+        distance = geodesic(point, closest_point).meters
+
+        # Return perpendicular distance and closest point as (longitude, latitude)
+        return distance, (closest_point.longitude, closest_point.latitude)
 
     def point_position_relative_to_line(self, line=None, point=None):
         """returns the position of a provided point (str - left/right)
@@ -178,7 +180,10 @@ class GPSUtil:
         """Returns the cross product between three points"""
 
         return (p2[0] - p1[0]) * (p3[1] - p1[1]) - (p2[1] - p1[1]) * (p3[0] - p1[0])
+
     def update_current_location(self, point):
+        if(self.current_location):
+            self.previous_location = self.current_location
         self.current_location = point
 
 # FRAME
@@ -321,57 +326,11 @@ class GPSUtil:
         distance_to_bottom = self.distance_between(self.current_location, bottom_boundary)
 
         if distance_to_top < distance_to_bottom:
-            self.update_trajectory(self.current_location, self.closest_point_on_trajectory(trajectory=self.bottom_boundary))
+            distance,point = self.distance_point_to_line(trajectory=self.bottom_boundary)
+            self.update_trajectory(self.current_location, point )
         else:
-            self.update_trajectory(self.current_location, self.closest_point_on_trajectory(trajectory=self.top_boundary))
-
-    # TODO: find the difference between this "closest_point_on_trajectory"
-    #  function and "distance_point_to_line_closest"
-    def closest_point_on_trajectory(self, trajectory=None):
-        """Returns the closest point to a given line (segment) relative to current location.
-
-           Parameters
-           ----------
-           trajectory : list of two gps points, optional
-               Default value is current_trajectory
-
-                        """
-        point = self.current_location
-
-        if not trajectory:
-            trajectory = self.trajectory
-            start = self.start
-            destination = self.destination
-        else:
-            trajectory = trajectory
-            start = trajectory.locations[0]
-            destination = trajectory.locations[1]
-
-        if not trajectory:
-            return None
-
-        x0, y0 = point
-        x1, y1 = start
-        x2, y2 = destination
-
-        dx = x2 - x1
-        dy = y2 - y1
-
-        if dx == 0 and dy == 0:
-            return start
-
-        t = ((x0 - x1) * dx + (y0 - y1) * dy) / (dx ** 2 + dy ** 2)
-
-        if t < 0:
-            return start
-        elif t > 1:
-            return destination
-        else:
-            x = x1 + t * dx
-            y = y1 + t * dy
-            return x, y
-
-
+            distance, point =self.distance_point_to_line(trajectory=self.top_boundary)
+            self.update_trajectory(self.current_location, point )
 
     def update_trajectory(self, start, destination):
         """changes the current_trajectory value.
@@ -385,54 +344,72 @@ class GPSUtil:
 
                         """
 
+    def calculate_rhumb_bearing(self, pointA, pointB):
+        """
+        Calculates the rhumb line bearing between two points.
+        """
+        pointA = Point(pointA[1], pointA[0])
+        pointB = Point(pointB[1], pointB[0])
+
+        lat1 = math.radians(pointA.latitude)
+        lon1 = math.radians(pointA.longitude)
+        lat2 = math.radians(pointB.latitude)
+        lon2 = math.radians(pointB.longitude)
+
+        dLon = lon2 - lon1
+        if abs(dLon) > math.pi:
+            if dLon > 0:
+                dLon = -(2 * math.pi - dLon)
+            else:
+                dLon = (2 * math.pi + dLon)
+
+        dPhi = math.log(math.tan(lat2 / 2 + math.pi / 4) / math.tan(lat1 / 2 + math.pi / 4))
+        bearing = math.atan2(dLon, dPhi)
+        bearing = math.degrees(bearing)
+        bearing = (bearing + 360) % 360
+
+        return bearing
+
         self.start = start
         self.destination = destination
         self.trajectory = folium.PolyLine(locations=[start, destination], color='blue', popup="Trajectory")
-    def distance_to_trajectory(self):
-        "Returns the distance between the current location and the current destination in meters"
-
-        point = self.current_location
-        if self.trajectory:
-            closest_point = self.closest_point_on_trajectory()
-            distance = self.distance_between(point, closest_point)
-
-            # Determine if the point is on the left or right side of the trajectory
-            cross_product = (point[0] - closest_point[0]) * (self.destination[1] - closest_point[1]) - \
-                            (point[1] - closest_point[1]) * (self.destination[0] - closest_point[0])
-
-            if cross_product > 0:
-                side = 'Right'
-            elif cross_product < 0:
-                side = 'Left'
-            else:
-                side = 'On the Trajectory'
-
-            return distance, side
-        else:
-            return None, None
 
     # VISUALIZATION
+
     def plot_trajectory(self):
         "plots the trajectory on the map (self.mymap)"
         map_center = self.current_location
-
+        #global last_execution_time
         points = {
             "Starting Point": self.start,
             "Destination Point": self.destination,
-            "Current Location": self.current_location,
+
         }
 
         for label, point in points.items():
             if point:
                 marker = folium.Marker(location=point, popup=label)
                 marker.add_to(self.mymap)
+                current_time = time.time()
+                if(self.previous_location):
+                    if(self.last_execution_time):
+                        time_elapsed = self.last_execution_time - current_time
+                        print(f"time elapsed: {time_elapsed}")
+                        if(time_elapsed <= 0):
+                            self.bearing = self.calculate_rhumb_bearing(self.previous_location, self.current_location)
+                            print(f"time elapsed: {time_elapsed}, bearing: {self.bearing}")
+                            self.last_execution_time = current_time + 30
 
+        marker = folium.plugins.BoatMarker(location = self.current_location,heading=self.bearing, popup = f"Current Location: {self.current_location}")
+        print(f"bearingg: {self.bearing}")
+        marker.add_to(self.mymap)
         if self.trajectory:
             self.trajectory.add_to(self.mymap)
 
     def plot_map(self, name="map"):
         "Generates html file that visualizes all the points and maps on the map"
 
+        print("drawing map")
         self.mymap = folium.Map(location=self.current_location, zoom_start=20)
         self.plot_trajectory()
 
@@ -451,8 +428,9 @@ class GPSUtil:
             self.left_boundary.add_to(self.mymap)
 
         if self.current_location:
-            closest_point_on_trajectory = self.closest_point_on_trajectory()
-            distance_line = folium.PolyLine(locations=[self.current_location, closest_point_on_trajectory], color='red', popup="Distance to Trajectory")
+            distance, closest_point_on_trajectory = self.distance_point_to_line()
+            distance_line = folium.PolyLine(locations=[self.current_location, closest_point_on_trajectory], color='red', popup=f"Distance to Trajectory {distance}")
             distance_line.add_to(self.mymap)
-
+            Draw(export=True).add_to(self.mymap)
+        print(f"{self.has_reached_destination()}")
         self.mymap.save(f"{name}.html")

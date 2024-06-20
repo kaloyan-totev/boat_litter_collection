@@ -7,7 +7,7 @@ from rclpy.node import Node
 from custom_msgs.msg import Detection
 from std_msgs.msg import String
 from navigation.GPSUtil import GPSUtil
-from control.arduinoCommandCenter import Command
+from control.motorCommandCenter import Command
 import os
 
 """ CONNECTING GPS TO RASPBERRY 
@@ -65,6 +65,7 @@ class Gps(Node):
                     lng = self.newmsg.longitude
                     gps = f"Latitude= {str(lat)} Longitude= {str(lng)}"
                     self.util.update_current_location((lat, lng))
+                    print("plot_map")
                     self.util.plot_map()
                     print(gps)
 
