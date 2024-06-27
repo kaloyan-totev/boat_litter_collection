@@ -21,7 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'select_target = control.selectTarget:main',
-            'arduino_control = control.ArduinoControl:main',
+            'motor_control = control.motorControl:main',
         ],
     },
 )

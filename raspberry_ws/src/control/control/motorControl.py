@@ -3,7 +3,7 @@ from rclpy.node import Node
 from custom_msgs.msg import Detection
 from std_msgs.msg import String
 
-from control.arduinoCommandCenter import Command
+from control.motorCommandCenter import Command
 
 class MotorControl(Node):
 
