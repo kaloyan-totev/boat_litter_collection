@@ -30,7 +30,7 @@ class DetectionPublisher(Node):
 
         if(self.ret):
             results = self.model.track(self.frame, persist=True,conf=0.5, iou=0.3, show=True, imgsz=320)
-            self.msg.is_empty = len(results) == 0
+            self.msg.is_empty.data = len(results) == 0
             # count boxes from left and from right side of frame
             for r in results:
                 left_item_counter = 0
