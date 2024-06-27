@@ -1,6 +1,5 @@
 import rclpy
 from rclpy.node import Node
-
 from std_msgs.msg import String
 from custom_msgs.msg import DetectionsArray
 from custom_msgs.msg import Detection
@@ -36,9 +35,11 @@ class CentralJetsonPublisher(Node):
         print("MESSAGE TYPE: " + str(type(self.detection_msg)))
         if(self.detection_msg != None):
             msg.detections = self.detection_msg
+            msg.is_empty = False
         else:
             det = Detection()
             msg.detections.append(det)
+            msg.is_empty = True
 
 
         #msg.data = 'CENTRAL_PUB: %d' % self.i
@@ -50,7 +51,7 @@ class CentralJetsonPublisher(Node):
 
     def listener_callback(self, msg):
         self.get_logger().info('IMAGE_SUB : "%s"' % msg)
-        self.detection_msg = msg.detections
+        self.detection_msg = msg
 
 
 
