@@ -10,7 +10,7 @@ class CentralRaspberryNode(Node):
         super().__init__('central_raspberry_subscriber')
 
         # Subscriptions
-        self.create_subscription(DetectionsArray, 'central_jetson_pub', self.listener_callback, 10)
+        self.create_subscription(DetectionsArray, 'central_jetson_pub', self.detections_listener_callback, 10)
 
         # Publishers
         self.detections_publisher = self.create_publisher(DetectionsArray, 'raspberry_detections_array', 10)
@@ -21,14 +21,19 @@ class CentralRaspberryNode(Node):
         self.create_timer(0.5, self.line_follow_callback)
 
         # State variables
-        self.detection_msg = None
+        self.detections_msg = None
         self.follow_trajectory = False
         self.JOBS = Enum('JOBS', ['FOLLOW_LINE', 'FOLLOW_OBJECT'])
         self.job = self.JOBS.FOLLOW_LINE
 
-    def listener_callback(self, msg):
-        self.detection_msg = msg
-        self.job = self.JOBS.FOLLOW_LINE if msg == DetectionsArray() else self.JOBS.FOLLOW_OBJECT
+    def detections_listener_callback(self, msg):
+        try:
+            self.detections_msg = msg
+            self.job = self.JOBS.FOLLOW_LINE if len(msg.detections) == 0 and msg.detections[0].name.data != "dummy" else self.JOBS.FOLLOW_OBJECT
+        except:
+            self.job = self.JOBS.FOLLOW_LINE
+
+
 
     # the node is continuously sending the follow_trajectory message to trajectory follower.
     # if the value is true, the robot will be controlled by trajectoryFollower, otherwise the camera.
@@ -36,19 +41,23 @@ class CentralRaspberryNode(Node):
     #  detections and the enum can be deleted
     def timer_callback(self):
         self.get_logger().debug(f"TIMER CALLBACK JOB = {self.job}")
-        if self.job == self.JOBS.FOLLOW_OBJECT and self.detection_msg:
+        if self.job == self.JOBS.FOLLOW_OBJECT and self.detections_msg.detections and len(self.detections_msg.detections) != 0 and self.detections_msg.detections[0].name.data != "dummy":
             self.follow_trajectory = False
-            self.detections_publisher.publish(self.detection_msg)
-            self.get_logger().info(f'CENTRAL_PUB CAMERA FOLLOW: {self.detection_msg}')
+            self.detections_publisher.publish(self.detections_msg)
+            self.get_logger().info(f'CENTRAL_PUB CAMERA FOLLOW:\n{len(self.detections_msg.detections) != 0}') #{self.detection_msg}')
+
         elif self.job == self.JOBS.FOLLOW_LINE:
             self.follow_trajectory = True
 
     def line_follow_callback(self):
-        self.get_logger().debug("LINE FOLLOW")
-        msg = Bool(data=self.follow_trajectory)
-        self.gps_switch_publisher.publish(msg)
-        self.get_logger().info(f'CENTRAL_PUB LINE FOLLOW: {msg}')
-
+        try:
+            self.get_logger().debug("LINE FOLLOW")
+            msg = Bool(data=self.follow_trajectory)
+            self.gps_switch_publisher.publish(msg)
+            self.get_logger().info(f'\nCENTRAL_PUB LINE FOLLOW: {msg.data}'
+                                   f'\nCENTRAL_PUB CAMERA FOLLOW: {len(self.detections_msg.detections) != 0 and self.detections_msg.detections[0].name.data != "dummy" }')
+        except:
+            print("NO DATA")
 
 def main(args=None):
     rclpy.init(args=args)

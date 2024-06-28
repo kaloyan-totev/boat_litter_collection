@@ -63,7 +63,7 @@ class GPSUtil:
         """Calculate the difference between two points (GPS coordinates)
         and returns the difference in meters."""
         distance = geodesic(point1, point2).meters
-        print(f"[GPSUTIL](distance between)point1: {point1}, point2: {point2} = {distance} meters")
+        #print(f"[GPSUTIL](distance between)point1: {point1}, point2: {point2} = {distance} meters")
         return distance
 
     def distance_point_to_line(self, point = None, trajectory = None):
