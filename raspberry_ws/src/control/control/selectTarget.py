@@ -2,7 +2,7 @@ import rclpy
 from rclpy.node import Node
 from custom_msgs.msg import DetectionsArray, Detection
 
-class TargetSelect(Node):
+class TargetSelector(Node):
 
     def __init__(self):
         super().__init__('target_selection')
@@ -84,7 +84,7 @@ class TargetSelect(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    target_selector = TargetSelect()
+    target_selector = TargetSelector()
 
     try:
         rclpy.spin(target_selector)

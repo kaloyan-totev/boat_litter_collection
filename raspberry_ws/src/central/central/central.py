@@ -5,7 +5,7 @@ from enum import Enum
 from std_msgs.msg import Bool
 
 
-class CentralRaspberrySubscriber(Node):
+class CentralRaspberryNode(Node):
     def __init__(self):
         super().__init__('central_raspberry_subscriber')
 
@@ -32,6 +32,8 @@ class CentralRaspberrySubscriber(Node):
 
     # the node is continuously sending the follow_trajectory message to trajectory follower.
     # if the value is true, the robot will be controlled by trajectoryFollower, otherwise the camera.
+    # TODO: the switch can be reduced to the follow_trajectory boolean based on whether the camera has
+    #  detections and the enum can be deleted
     def timer_callback(self):
         self.get_logger().debug(f"TIMER CALLBACK JOB = {self.job}")
         if self.job == self.JOBS.FOLLOW_OBJECT and self.detection_msg:
@@ -50,7 +52,7 @@ class CentralRaspberrySubscriber(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = CentralRaspberrySubscriber()
+    node = CentralRaspberryNode()
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
