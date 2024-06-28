@@ -2,7 +2,7 @@ import rclpy
 from rclpy.node import Node
 from custom_msgs.msg import DetectionsArray
 from enum import Enum
-from std_msgs.msg import Bool
+from std_msgs.msg import Bool, String
 
 
 class CentralRaspberryNode(Node):
@@ -36,8 +36,8 @@ class CentralRaspberryNode(Node):
     # the node is continuously sending the follow_trajectory message to trajectory follower.
     # if the value is true, the robot will be controlled by trajectoryFollower, otherwise the camera.
     def timer_callback(self):
-        self.get_logger().debug(f"TIMER CALLBACK JOB = {self.job}")
-        if self.detections_msg.detections and len(self.detections_msg.detections) != 0 and self.detections_msg.detections[0].name.data != "dummy":
+
+        if self.detections_msg and len(self.detections_msg.detections) != 0 and self.detections_msg.detections[0].name.data != "dummy":
             self.follow_trajectory = False
             self.detections_publisher.publish(self.detections_msg)
         else:

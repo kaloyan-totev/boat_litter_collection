@@ -97,6 +97,7 @@ class TrajectoryFollower(Node):
         self.gps_stream = msg.data
 
     def command_callback(self):
+        msg = String()
         msg.data = self.current_command
         self.command_publisher_.publish(msg)
 

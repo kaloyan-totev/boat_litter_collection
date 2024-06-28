@@ -8,7 +8,7 @@ from control.motorCommandCenter import Command
 class MotorControl(Node):
 
     def __init__(self):
-        super().__init__('camera_motor_controller')
+        super().__init__('motor_controller')
         self.camera_subscription = self.create_subscription(
             Detection,
             'locked_target',
@@ -27,7 +27,7 @@ class MotorControl(Node):
             self.switch_listener_callback,
             10)
 
-        self.subscription  # prevent unused variable warning
+        #self.subscription  # prevent unused variable warning
         self.cmd = Command()
         self.current_command = "STOP"
         self.current_follower = "gps"
@@ -45,7 +45,7 @@ class MotorControl(Node):
                 self.cmd.go_right
             elif (self.current_command == "STOP"):
                 self.cmd.stop_motors
-            self.get_logger().info('I heard: "%s"' % msg.name)
+            self.get_logger().info('Target Listener: "%s"' % msg.name)
 
     def gps_listener_callback(self, msg):
         if(self.current_follower == "gps"):
@@ -57,8 +57,10 @@ class MotorControl(Node):
                 self.cmd.go_right
             elif(msg.data == "STOP"):
                 self.cmd.stop_motors
+            print(f"GPS LISTENER: {msg.data}")
 
     def switch_listener_callback(self,msg):
+        print(f"SWITCH: {msg.data}")
         self.current_follower = msg.data
 
 def main(args=None):
