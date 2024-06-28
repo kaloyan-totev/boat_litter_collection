@@ -27,14 +27,19 @@ class CentralRaspberrySubscriber(Node):
         self.job = self.JOBS.FOLLOW_LINE
 
     def detections_listener_callback(self, msg):
-        self.detections_msg = msg
-        self.job = self.JOBS.FOLLOW_LINE if len(msg.detections) == 0 else self.JOBS.FOLLOW_OBJECT
+        try:
+            self.detections_msg = msg
+            self.job = self.JOBS.FOLLOW_LINE if len(msg.detections) == 0 and msg.detections[0].name.data != "dummy" else self.JOBS.FOLLOW_OBJECT
+        except:
+            self.job = self.JOBS.FOLLOW_LINE
+
+
 
     # the node is continuously sending the follow_trajectory message to trajectory follower.
     # if the value is true, the robot will be controlled by trajectoryFollower, otherwise the camera.
     def timer_callback(self):
         self.get_logger().debug(f"TIMER CALLBACK JOB = {self.job}")
-        if self.job == self.JOBS.FOLLOW_OBJECT and self.detections_msg.detections and len(self.detections_msg.detections) != 0:
+        if self.job == self.JOBS.FOLLOW_OBJECT and self.detections_msg.detections and len(self.detections_msg.detections) != 0 and self.detections_msg.detections[0].name.data != "dummy":
             self.follow_trajectory = False
             self.detections_publisher.publish(self.detections_msg)
             self.get_logger().info(f'CENTRAL_PUB CAMERA FOLLOW:\n{len(self.detections_msg.detections) != 0}') #{self.detection_msg}')
@@ -47,7 +52,8 @@ class CentralRaspberrySubscriber(Node):
             self.get_logger().debug("LINE FOLLOW")
             msg = Bool(data=self.follow_trajectory)
             self.gps_switch_publisher.publish(msg)
-            self.get_logger().info(f'\nCENTRAL_PUB LINE FOLLOW: {msg.data}\nCENTRAL_PUB CAMERA FOLLOW: {len(self.detections_msg.detections) != 0 }')
+            self.get_logger().info(f'\nCENTRAL_PUB LINE FOLLOW: {msg.data}'
+                                   f'\nCENTRAL_PUB CAMERA FOLLOW: {len(self.detections_msg.detections) != 0 and self.detections_msg.detections[0].name.data != "dummy" }')
         except:
             print("NO DATA")
 
