@@ -35,11 +35,9 @@ class CentralJetsonPublisher(Node):
         print("MESSAGE TYPE: " + str(type(self.detection_msg)))
         if(self.detection_msg != None):
             msg.detections = self.detection_msg.detections
-            msg.is_empty.data = False
         else:
             det = Detection()
             msg.detections.append(det)
-            msg.is_empty.data = True
 
 
         #msg.data = 'CENTRAL_PUB: %d' % self.i
