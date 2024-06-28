@@ -57,8 +57,6 @@ class TargetSelector(Node):
         msg = self.last_locked_target if self.is_target_locked else Detection()
         self.publisher_.publish(msg)
 
-        # self.get_logger().info(f'Target_select_PUB: {msg}')
-
         self.lock_attempts = 5 if self.is_target_locked else 4
 
 

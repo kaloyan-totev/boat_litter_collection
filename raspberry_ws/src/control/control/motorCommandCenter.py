@@ -25,6 +25,7 @@ class Command:
         
         self.currentCommand = 0
 
+
     def set_throttle_left(self,throttle,pin=0):
         duty = throttle / 18 + 2
         #GPIO.output(pin, True)
@@ -85,16 +86,20 @@ class Command:
         
         if is_centered and self.currentCommand != 1:
             print("GO FORWARD")
-            self.go_forward()
+            return "GO FORWARD"
+            #self.go_forward()
         elif is_left and self.currentCommand != 3:
             print("GO LEFT")
-            self.go_left()
+            return "GO LEFT"
+            #self.go_left()
         elif is_right and self.currentCommand != 2:
             print("GO RIGHT")
-            self.go_right()
+            return "GO RIGHT"
+            #self.go_right()
         elif self.currentCommand != 0 and not is_centered and not is_left and not is_right:
             print("STOP MOTORS")
-            self.stop_motors()
+            return "STOP"
+            #self.stop_motors()
         #del self.left_pwm
         #del self.right_pwm
 

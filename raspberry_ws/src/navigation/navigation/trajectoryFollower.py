@@ -13,8 +13,12 @@ class TrajectoryFollower(Node):
         self.create_subscription(Bool, 'raspberry_gps_follower', self.image_callback, 10)
         self.create_subscription(String, 'raspberry_gps_stream', self.gps_stream_callback, 10)
 
+        self.command_publisher_ = self.create_publisher(String, 'trajectory_follower_command', 10)
+        self.timer = self.create_timer(0.2, self.command_callback)
+
         self.util = GPSUtil.get_instance()
         self.cmd = Command()
+        self.current_command = "STOP"
 
         self.trajectory_is_set = False
         self.direction_is_left = False
@@ -28,8 +32,9 @@ class TrajectoryFollower(Node):
         try:
             if self.util.has_reached_destination():
                 self._handle_destination_reached()
+                self.current_command = "STOP"
             else:
-                self._follow_trajectory()
+                self.current_command = self._follow_trajectory()
         finally:
             self.follow_func_locked = False
 
@@ -71,13 +76,16 @@ class TrajectoryFollower(Node):
         command = self.util.point_position_relative_to_line()
         if command == "left":
             self.get_logger().info("Going left")
-            self.cmd.go_left()
+            return "GO LEFT"
+            #self.cmd.go_left()
         elif command == "right":
             self.get_logger().info("Going right")
-            self.cmd.go_right()
+            return "GO RIGHT"
+            #self.cmd.go_right()
         elif command == "forward":
             self.get_logger().info("Going forward")
-            self.cmd.go_forward()
+            return "GO FORWARD"
+            #self.cmd.go_forward()
 
     def image_callback(self, msg):
         self.get_logger().info(f"Following GPS data: {msg.data}, Following camera data: {not msg.data}")
@@ -88,6 +96,9 @@ class TrajectoryFollower(Node):
     def gps_stream_callback(self, msg):
         self.gps_stream = msg.data
 
+    def command_callback(self):
+        msg.data = self.current_command
+        self.command_publisher_.publish(msg)
 
 def main(args=None):
     rclpy.init(args=args)
