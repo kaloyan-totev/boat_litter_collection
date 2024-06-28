@@ -28,25 +28,28 @@ class CentralRaspberrySubscriber(Node):
 
     def detections_listener_callback(self, msg):
         self.detections_msg = msg
-        self.job = self.JOBS.FOLLOW_LINE if msg.is_empty else self.JOBS.FOLLOW_OBJECT
+        self.job = self.JOBS.FOLLOW_LINE if len(msg.detections) == 0 else self.JOBS.FOLLOW_OBJECT
 
     # the node is continuously sending the follow_trajectory message to trajectory follower.
     # if the value is true, the robot will be controlled by trajectoryFollower, otherwise the camera.
     def timer_callback(self):
         self.get_logger().debug(f"TIMER CALLBACK JOB = {self.job}")
-        if self.job == self.JOBS.FOLLOW_OBJECT and self.detections_msg.detections and not self.detections_msg.is_empty:
+        if self.job == self.JOBS.FOLLOW_OBJECT and self.detections_msg.detections and len(self.detections_msg.detections) != 0:
             self.follow_trajectory = False
-            self.detections_publisher.publish(self.detections_msg.detections)
-            self.get_logger().info(f'CENTRAL_PUB CAMERA FOLLOW:\n{not self.detections_msg.is_empty}') #{self.detection_msg}')
+            self.detections_publisher.publish(self.detections_msg)
+            self.get_logger().info(f'CENTRAL_PUB CAMERA FOLLOW:\n{len(self.detections_msg.detections) != 0}') #{self.detection_msg}')
+
         elif self.job == self.JOBS.FOLLOW_LINE:
             self.follow_trajectory = True
 
     def line_follow_callback(self):
-        self.get_logger().debug("LINE FOLLOW")
-        msg = Bool(data=self.follow_trajectory)
-        self.gps_switch_publisher.publish(msg)
-        self.get_logger().info(f'\nCENTRAL_PUB LINE FOLLOW: {msg.data}\nCENTRAL_PUB CAMERA FOLLOW: {not self.detections_msg.is_empty }')
-
+        try:
+            self.get_logger().debug("LINE FOLLOW")
+            msg = Bool(data=self.follow_trajectory)
+            self.gps_switch_publisher.publish(msg)
+            self.get_logger().info(f'\nCENTRAL_PUB LINE FOLLOW: {msg.data}\nCENTRAL_PUB CAMERA FOLLOW: {len(self.detections_msg.detections) != 0 }')
+        except:
+            print("NO DATA")
 
 def main(args=None):
     rclpy.init(args=args)
