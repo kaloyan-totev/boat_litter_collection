@@ -17,15 +17,10 @@ class MotorControl(Node):
         self.subscription  # prevent unused variable warning
         self.cmd = Command()
 
-
-
     def listener_callback(self, msg):
         if(msg != None and msg != [] and msg.id.data != 0.0):
             self.cmd.decide(msg)
         self.get_logger().info('I heard: "%s"' % msg.name)
-
-
-
 
 def main(args=None):
     rclpy.init(args=args)
